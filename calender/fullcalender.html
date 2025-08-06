@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../calender/stylesheet.css" />
+<html lang='ko'>
+  <head>
+    <meta charset='utf-8' />
     <link href='./full_calender/main.css' rel='stylesheet' />
     <script src='./full_calender/main.js'></script>
     <script>
@@ -14,7 +12,7 @@
                 headerToolbar: {
                     left: 'prevYear,prev,next,nextYear today',
                     center: 'title',
-                    right: 'dayGridMonth'
+                    right: 'dayGridMonth,dayGridWeek,dayGridDay'
                 },
 
                 selectable: true,
@@ -91,8 +89,6 @@
                     });
                 },
                 dayMaxEvents: true, // allow "more" link when too many events
-                height: 600,
-                aspectRatio: 1.35,
                 // 이벤트 객체 필드 document : https://fullcalendar.io/docs/event-object
                 events: [
                     {
@@ -156,36 +152,9 @@
         });
 
     </script>
-</head>
-
-<body>
-    <div class="screen">
-        <div class="header">
-            <div class="auto-layout-left">
-                <img class="logo-colored" src="../asset/Logo_colored.svg">
-                <div class="header-menu">캘린더</div>
-                <div class="header-menu">펀딩</div>
-                <div class="header-menu">초대장</div>
-                <div class="header-menu">구매내역</div>
-            </div>
-            <div class="auto-layout-right">
-                <div class="shopping-cart-frame">
-                    <img class="icon-shopping-cart" src="../asset/icon-shopping-cart.svg" />
-                </div>
-                <div class="header-usermenu">사용자이름</div>
-                <img class="icon-caret-down" src="../asset/icon-caret-down.svg" />
-            </div>
-        </div>
-        <div class="body">
-            <div class="calender-form">
-                <div class="calender">
-                    <div id="calendar"></div>
-                </div>
-            </div>
-            <div class="detail-form">
-                
-            </div>
-        </div>
-    </div>
-</body>
+  </head>
+  <body>
+    <div id='calendar'></div>
+  </body>
 </html>
+출처: https://kyurasi.tistory.com/entry/달력-뷰-만들기-fullcalendar-사용하기-일정-달력-만들기-캘린더-만들기 [Junmannn의 Archive:티스토리]
