@@ -46,18 +46,7 @@
   border-color: #EAEAEA;
 }
 
-.my .text-wrapper {
-  position: absolute;
-  width: 178px;
-  top: 723px;
-  left: 912px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
+
 
 .my .element {
   position: absolute;
@@ -156,24 +145,6 @@
   left: 0;
 }
 
-.my .line {
-  position: absolute;
-  width: 8px;
-  height: 10px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.my .line-2 {
-  position: absolute;
-  width: 8px;
-  height: 10px;
-  top: 0;
-  left: 7px;
-  object-fit: cover;
-}
-
 .my .group {
   position: absolute;
   width: 335px;
@@ -192,6 +163,12 @@
   font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
+}
+
+.my .btn-funding1 {
+  position: absolute;
+  top: 190px;
+  left: 245px;
 }
 
 .my .text-wrapper-5 {
@@ -490,35 +467,6 @@
   left: 1px;
 }
 
-.my .overlap-group-2 {
-  position: relative;
-  height: 22px;
-  top: -1px;
-}
-
-.my .rectangle-5 {
-  position: absolute;
-  width: 17px;
-  height: 16px;
-  top: 6px;
-  left: 0;
-  background-color: #ef5327;
-  border-radius: 1px 1px 5px 5px;
-  border: 1px solid;
-}
-
-.my .rectangle-6 {
-  position: absolute;
-  width: 13px;
-  height: 12px;
-  top: 8px;
-  left: 2px;
-  background-color: #ffffff;
-  border-radius: 1px 1px 5px 5px;
-  border: 1px solid;
-  border-color: #ef5327;
-}
-
 .my .vector {
   position: absolute;
   width: 9px;
@@ -659,10 +607,8 @@
 
 .my .div-wrapper {
   position: absolute;
-  width: 17px;
-  height: 21px;
-  top: 77px;
-  left: 144px;
+  top: 72px;
+  left: 135px;
 }
 
 .my .image-5 {
@@ -719,21 +665,8 @@
   border-color: #000000;
 }
 
-.my .overlap-6 {
-  height: 18px;
-  top: 39px;
-  position: absolute;
-  width: 15px;
-  left: 0;
-}
 
-.my .rectangle-7 {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 3px;
-  left: 0;
-}
+
 
 .my .group-wrapper {
   position: absolute;
@@ -757,6 +690,12 @@
   height: 100px;
   top: 0;
   left: 31px;
+}
+
+.my .first-a-to-cart {
+  position: absolute;
+  top: 75px;
+  left: 105px;
 }
 
 .my .image-6 {
@@ -822,6 +761,12 @@
   object-fit: cover;
 }
 
+.my #chk-1 {
+  position: absolute;
+  top: 10;
+  left: 95;
+}
+
 .my .group-6 {
   position: absolute;
   width: 332px;
@@ -842,13 +787,6 @@
   line-height: normal;
 }
 
-.my .overlap-7 {
-  height: 17px;
-  top: 40px;
-  position: absolute;
-  width: 15px;
-  left: 0;
-}
 
 .my .group-7 {
   position: absolute;
@@ -1030,11 +968,8 @@
 
 .my .icon-shopping-cart {
   position: absolute;
-  size:15px;
-  width: 10px;
-  height: 10px;
-  top: 10px;
-  left: 1000px;
+  top: 14px;
+  left: 1153px;
   aspect-ratio: 1;
 }
 
@@ -1064,10 +999,8 @@
 
 .my .icon-caret-down {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 19px;
-  left: 1264px;
+  top: 20px;
+  left: 1265px;
 }
 
 .my .vector-13 {
