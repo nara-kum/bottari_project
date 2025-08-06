@@ -64,6 +64,19 @@
   left: 143px;
 }
 
+.my .image-cao1 {
+  position: absolute;
+  top: 63px;
+  left: 1px;
+  padding: 0px;
+}
+
+.my .image-cao {
+  position: absolute;
+  top: 68px;
+  left: 33px;
+}
+
 .my .img {
   position: absolute;
   width: 51px;
@@ -356,6 +369,22 @@
   line-height: normal;
 }
 
+.my .carnation-cart{
+  position: absolute;
+  width: 51px;
+  height: 22px;
+  top: 74px;
+  left: 143px;
+}
+
+.my .carnation-heart{
+  position: absolute;
+  width: 51px;
+  height: 22px;
+  top: 78px;
+  left: 180px; 
+}
+
 .my .text-wrapper-13 {
   position: absolute;
   width: 660px;
@@ -419,8 +448,8 @@
   position: absolute;
   width: 78px;
   height: 42px;
-  top: 53px;
-  left: 143px;
+  top: 50px;
+  left: 138px;
 }
 
 .my .overlap-5 {
@@ -433,9 +462,7 @@
 
 .my .text-wrapper-15 {
   position: absolute;
-  width: 78px;
   top: 0;
-  left: 0;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -577,8 +604,8 @@
 
 .my .div-wrapper {
   position: absolute;
-  top: 72px;
-  left: 135px;
+  top: 73px;
+  left: 137px;
 }
 
 .my .image-5 {
@@ -587,6 +614,21 @@
   height: 17px;
   top: 81px;
   left: 177px;
+}
+
+.my .heyrumi-cart {
+  position: absolute;
+  top: 20px;
+  left: 1px;
+  padding-left: 0px;
+}
+
+.my .heyrumi-heart {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  top: 25px;
+  left: 35px;
 }
 
 .my .group-4 {
@@ -635,9 +677,6 @@
   border-color: #000000;
 }
 
-
-
-
 .my .group-wrapper {
   position: absolute;
   width: 1280px;
@@ -664,7 +703,7 @@
 
 .my .first-a-to-cart {
   position: absolute;
-  top: 75px;
+  top: 72px;
   left: 105px;
 }
 
@@ -674,14 +713,6 @@
   height: 17px;
   top: 80px;
   left: 145px;
-}
-
-.my .view-3 {
-  position: absolute;
-  width: 17px;
-  height: 21px;
-  top: 76px;
-  left: 112px;
 }
 
 .my .text-wrapper-23 {
@@ -754,24 +785,18 @@
 
 .my .chk-box #chk-4 {
   position: absolute;
-  top: 500px;
+  top: 385px;
   left: 2px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-5 {
   position: absolute;
-  top: 700px;
+  top: 500px;
   left: 2px;
   padding-left: 0px;
 }
 
-.my .chk-box #chk-6 {
-  position: absolute;
-  top: 800px;
-  left: 2px;
-  padding-left: 0px;
-}
 
 .my .group-6 {
   position: absolute;
@@ -1033,8 +1058,8 @@
 .my .frame-3 {
   display: inline-flex;
   justify-content: center;
-  gap: 10px;
-  padding: 5px 10px;
+  gap: 12px;
+  padding: 5px 10px 5px 10px;
   top: 0;
   left: 107px;
   align-items: center;
@@ -1044,7 +1069,7 @@
 .my .text-wrapper-34 {
   position: relative;
   width: fit-content;
-  margin-top: -1.00px;
+  margin-top: -2.00px;
   font-family: "Inter-SemiBold", Helvetica;
   font-weight: 600;
   color: #0000004c;
