@@ -3,11 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="../calender/stylesheet.css" />
     <link href='./full_calender/main.css' rel='stylesheet' />
     <script src='./full_calender/main.js'></script>
     <script>
     	document.addEventListener('DOMContentLoaded', function() {
+            console.log('돔트리 완료');
+
+            let lastClickTime = 0;
+            let lastClickedDate = null;
+
         	var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 // Tool Bar 목록 document : https://fullcalendar.io/docs/toolbar
@@ -25,6 +32,7 @@
                 
 
                 datesSet: function(info) {
+                    console.log('현재 월 정보 추출');
                     // info.view.currentStart 또는 info.view.title에서 현재 월 정보 추출
                     var currentDate = info.view.currentStart;
                     var year = currentDate.getFullYear();
@@ -49,61 +57,65 @@
                         customTitle.textContent = year + '-' + month;
                     }, 50);
                 },
-                
-                selectable: true,
-                selectMirror: true,
 
                 navLinks: false, // can click day/week names to navigate views
                 //navLinks: false => 클릭시 뷰 변경 제한
-                editable: true,
-                // Create new event
-                select: function (arg) {
-                    Swal.fire({
-                        html: "<div class='mb-7'>Create new event?</div><div class='fw-bold mb-5'>Event Name:</div><input type='text' class='form-control' name='event_name' />",
-                        icon: "info",
-                        showCancelButton: true,
-                        buttonsStyling: false,
-                        confirmButtonText: "Yes, create it!",
-                        cancelButtonText: "No, return",
-                        customClass: {
-                            confirmButton: "btn btn-primary",
-                            cancelButton: "btn btn-active-light"
-                        }
-                    }).then(function (result) {
-                        if (result.value) {
-                            var title = document.querySelector("input[name=;event_name']").value;
-                            if (title) {
-                                calendar.addEvent({
-                                    title: title,
-                                    start: arg.start,
-                                    end: arg.end,
-                                    allDay: arg.allDay
-                                })
-                            }
-                            calendar.unselect()
-                        } else if (result.dismiss === "cancel") {
-                            Swal.fire({
-                                text: "Event creation was declined!.",
-                                icon: "error",
-                                buttonsStyling: false,
-                                confirmButtonText: "Ok, got it!",
-                                customClass: {
-                                    confirmButton: "btn btn-primary",
-                                }
-                            });
-                        }
-                    });
-                },
 
-                //날짜 클릭 이벤트
+                editable: true,
+
+                // Create new event
                 dateClick: function(info) {
-                // 이전에 선택된 날짜의 스타일 제거
-                document.querySelectorAll('.fc-daygrid-day').forEach(function(day) {
-                    day.classList.remove('selected-date');
-                });
-                
-                // 클릭한 날짜에 스타일 추가
-                info.dayEl.classList.add('selected-date');
+                    console.log("날짜 클릭됨:", info.dateStr);
+                    
+                    const currentTime = new Date().getTime();
+                    const clickedDate = info.dateStr;
+
+                    // 이전에 선택된 날짜 스타일 제거
+                    document.querySelectorAll('.fc-daygrid-day').forEach(function(day) {
+                        day.classList.remove('selected-date');
+                    });
+                    //새로운 스타일 추가
+                    info.dayEl.classList.add('selected-date');
+
+                    if (lastClickedDate === clickedDate && (currentTime - lastClickTime) < 400) {
+                        // 더블 클릭으로 간주
+                        Swal.fire({
+                            html: "<div class='mb-7'>Create new event?</div><div class='fw-bold mb-5'>Event Name:</div><input type='text' class='form-control' name='event_name' />",
+                            icon: "info",
+                            showCancelButton: true,
+                            buttonsStyling: false,
+                            confirmButtonText: "Yes, create it!",
+                            cancelButtonText: "No, return",
+                            customClass: {
+                                confirmButton: "btn btn-primary",
+                                cancelButton: "btn btn-active-light"
+                            }
+                        }).then(function (result) {
+                            if (result.value) {
+                                const title = document.querySelector("input[name='event_name']").value;
+                                if (title) {
+                                    calendar.addEvent({
+                                        title: title,
+                                        start: info.dateStr,
+                                        allDay: true
+                                    });
+                                }
+                            } else if (result.dismiss === "cancel") {
+                                Swal.fire({
+                                    text: "Event creation was declined!",
+                                    icon: "error",
+                                    buttonsStyling: false,
+                                    confirmButtonText: "Ok, got it!",
+                                    customClass: {
+                                        confirmButton: "btn btn-primary",
+                                    }
+                                });
+                            }
+                        });
+                    }
+
+                    lastClickTime = currentTime;
+                    lastClickedDate = clickedDate;
                 },
 
                 // Delete event
@@ -199,7 +211,6 @@
 
             calendar.render();
         });
-
     </script>
 </head>
 
@@ -237,7 +248,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </body>
 </html>
