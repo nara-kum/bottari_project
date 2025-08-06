@@ -2,27 +2,104 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title></title>   
+        <title>bottari</title>   
     </head>
 
     <body>
-        <div id="wrap">
-            <header>
-                <h1>Bottari</h1>
+        <form action="" method="get">
+            <h2>My 위시리스트        마이 펀딩        친구 펀딩</h2>
+            <h5>전체보기      친구 공개      나만보기</h5>
+            
+            <img src="./img/Korea.jpg">대한민국
 
-            </header>
-            <nav>
+            <label for="rdo-m 1">5%</label>
+            <input id="rdo-m 1" type="radio" name="month" value="1" checked="checked"><br>
 
-            </nav>
+            <label for="rdo-m 2">전액</label>
+            <input id="rdo-m 2" type="radio" name="month" value="2"><br>
            
+<!--anima 에서 가져옴------------------------->            
+import React from "react";
+import { DivWrapper } from "./DivWrapper";
+import { Element } from "./Element";
+import { ElementWrapper } from "./ElementWrapper";
+import { GroupWrapper } from "./GroupWrapper";
+import { NavbarWrapper } from "./NavbarWrapper";
+import { View } from "./View";
+
+export const My = () => {
+  return (
+    <div className="bg-white grid justify-items-center [align-items:start] w-screen min-h-screen h-full">
+      <div className="bg-white w-[1920px] h-[1000px] relative">
+        <div className="absolute w-[1280px] h-[809px] top-[156px] left-[323px] border-t-2 [border-top-style:solid] border-[#919191]">
+          <div className="absolute w-[896px] h-[764px] -top-0.5 -left-0.5 border border-solid border-[#f9f7f4]" />
+
+          <div className="absolute w-96 h-[764px] -top-0.5 left-[894px] border border-solid border-[#f9f7f4]" />
+
+          <div className="absolute w-[178px] top-[723px] left-[912px] [font-family:'Inter-Bold',Helvetica] font-bold text-black text-lg tracking-[0] leading-[normal]">
+            합계 금액 : 18,575원
+          </div>
+
+          <Element />
+          <ElementWrapper />
+          <DivWrapper />
+          <View />
+          <GroupWrapper />
+          <div className="absolute w-[278px] h-[22px] top-2.5 left-[47px]">
+            <div className="absolute top-0 left-0 [font-family:'Inter-Regular',Helvetica] font-normal text-black text-lg tracking-[0] leading-[normal]">
+              전체보기
+            </div>
+
+            <div className="absolute top-0 left-[100px] [font-family:'Inter-Regular',Helvetica] font-normal text-black text-lg tracking-[0] leading-[normal]">
+              친구 공개
+            </div>
+
+            <div className="absolute top-0 left-[205px] [font-family:'Inter-Regular',Helvetica] font-normal text-black text-lg tracking-[0] leading-[normal]">
+              나만보기
+            </div>
+          </div>
         </div>
+
+        <NavbarWrapper />
+        <div className="absolute w-[222px] h-[39px] top-28 left-[530px]">
+          <div className="relative h-[39px]">
+            <div className="inline-flex justify-center gap-2.5 px-2.5 py-[5px] top-0 left-[107px] items-center absolute">
+              <div className="relative w-fit mt-[-1.00px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-[#0000004c] text-2xl tracking-[0] leading-[normal]">
+                친구 펀딩
+              </div>
+            </div>
+
+            <div className="inline-flex justify-center gap-2.5 px-2.5 py-[5px] top-0 left-0 items-center absolute">
+              <div className="relative w-fit mt-[-2.00px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-[#0000004c] text-2xl tracking-[0] leading-[normal]">
+                마이 펀딩
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="absolute top-[117px] left-[371px] [font-family:'Inter-Bold',Helvetica] font-bold text-black text-2xl tracking-[0] leading-[normal]">
+          My 위시리스트
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
 
 
         <footer>
-            <p>
-                Copyright ⓒ 2025 이아름. All right reserved
-            </p>
-
         </footer>
     </body>
 </html>
