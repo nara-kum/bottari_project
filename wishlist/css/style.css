@@ -377,6 +377,14 @@
   left: 143px;
 }
 
+/*5% 전액*/
+/*
+.form-group>input[type="radio"],
+.form-group>input[type="checkbox"]{
+    margin-right: 10px;
+}
+*/
+
 .my .carnation-heart{
   position: absolute;
   width: 51px;
