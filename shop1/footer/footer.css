@@ -9,7 +9,7 @@
 .footer {
     background-color: #F9F7F4;
     color: #929292;
-    padding: 40px 20px 20px;
+    padding: 7px 20px 7px;
     font-size: 13px;
     line-height: 1.8;
     font-family: 'Noto Sans KR', Arial, sans-serif;
@@ -29,8 +29,7 @@
 /* 푸터 링크 섹션 */
 .footer-links {
     text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 3px;
 }
 
 .footer-links a {
@@ -48,21 +47,20 @@
 .footer-links a:not(:last-child)::after {
     content: "|";
     color: #666;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 /* 회사 정보 섹션 */
 .company-info {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .company-info p {
-    margin-bottom: 8px;
+    margin-bottom: 3px;
 }
 
 .company-name {
-    font-weight: bold;
     color: #929292;
 }
 
@@ -73,7 +71,7 @@
 /* 저작권 섹션 */
 .copyright {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 5px;
     border-top: 1px solid #929292;
     color: #929292;
     font-size: 12px;

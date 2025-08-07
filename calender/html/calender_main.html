@@ -36,14 +36,18 @@
                 </div>
             </div>
             <div class="detail-form">
+                <div id="select-date-box"></div>
                 <div class="no-detail">
                     <img class="icon-calender" src="../../asset/icon-calendar-exclamation.svg" />
                     <div class="view">
                         <div class="explanation-text">등록된 기념일이 없어요</div>
                         <div class="overlap-group">
-                            <div class="text-wrapper">기념일 등록하기</div>
+                            <button class="btn-add-event">기념일 등록하기</button>
                         </div>
                     </div>
+                </div>
+                <div>
+                    
                 </div>
             </div>
         </div>
@@ -55,6 +59,140 @@
 
             let lastClickTime = 0;
             let lastClickedDate = null;
+            let selectedDate = null; // 선택된 날짜를 추적하는 변수
+
+            // openSchedulePopup 함수를 전역으로 이동
+            function openSchedulePopup(dateStr = null) {
+                // dateStr이 없으면 선택된 날짜나 오늘 날짜 사용
+                if (!dateStr) {
+                    if (selectedDate) {
+                        dateStr = selectedDate;
+                    } else {
+                        const today = new Date();
+                        dateStr = today.getFullYear() + '-' + 
+                                  String(today.getMonth() + 1).padStart(2, '0') + '-' + 
+                                  String(today.getDate()).padStart(2, '0');
+                    }
+                }
+
+                Swal.fire({
+                    html: ` 
+                                        <div class="cross-container">
+                                            <img class="box-icon icon-cross" src="../../asset/icon-cross.svg">
+                                        </div>
+                                        <div class="schedule-name">
+                                            <div class="icon-selector">
+                                                <div class="selected-icon" onclick="toggleIconDropdown()">
+                                                    <img src="../../asset/icon-cake-birthday.svg" id="selected-icon-img">
+                                                    <img class="dropdown-arrow" src="../../asset/icon-caret-down.svg">
+                                                </div>
+                                                <div class="icon-dropdown" id="icon-dropdown" style="display: none;">
+                                                    <div class="icon-option" data-value="birthday" onclick="selectIcon('birthday', '../../asset/icon-cake-birthday.svg')">
+                                                        <img src="../../asset/icon-cake-birthday.svg">
+                                                    </div>
+                                                    <div class="icon-option" data-value="wedding" onclick="selectIcon('wedding', '../../asset/icon-rings-wedding.svg')">
+                                                        <img src="../../asset/icon-rings-wedding.svg">
+                                                    </div>
+                                                    <div class="icon-option" data-value="thanks" onclick="selectIcon('thanks', '../../asset/icon-hand-holding-heart.svg')">
+                                                        <img src="../../asset/icon-hand-holding-heart.svg">
+                                                    </div>
+                                                    <div class="icon-option" data-value="baby" onclick="selectIcon('baby', '../../asset/icon-child-head.svg')">
+                                                        <img src="../../asset/icon-child-head.svg">
+                                                    </div>
+                                                    <div class="icon-option" data-value="event" onclick="selectIcon('event', '../../asset/icon-glass-cheers.svg')">
+                                                        <img src="../../asset/icon-glass-cheers.svg">
+                                                    </div>
+                                                    <div class="icon-option" data-value="celebrate" onclick="selectIcon('celebrate', '../../asset/icon-party-horn.svg')">
+                                                        <img src="../../asset/icon-party-horn.svg">
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" id="selected-icon-value" value="birthday">
+                                            </div>
+                                            <div class="textbox">
+                                                <input name="event_name" type="text" class="custom-schedule-name" placeholder="일정 제목"></input>
+                                            </div>
+                                        </div>
+                                        <div class="repeat-option">
+                                            <div><img class="box-icon repeat-icon" src="../../asset/icon-refresh.svg"></div>
+                                            <select name="repeat" class="custom-select">
+                                                <option value="no-repeat">반복 안함</option>
+                                                <option value="every-day">매일</option>
+                                                <option value="every-week">매주</option>
+                                                <option value="evey-month">매월</option>
+                                                <option value="every-year">매년</option>
+                                            </select>
+                                        </div>
+                                        <div class="explanation-group">
+                                            <div><img class="box-icon explanation-icon" src="../../asset/icon-comment.svg"></div>
+                                            <div><textarea name="explanation" class="explanation-textarea" placeholder="설명 추가"></textarea></div>
+                                        </div>
+                                            <button class="btn-save">저장</button>`,
+                    showCancelButton: false,
+                    showConfirmButton: false,
+
+                    customClass: {
+                        confirmButton: "btn btn-primary",
+                        cancelButton: "btn btn-active-light"
+                    },
+                    showClass: {
+                        popup: ''
+                    },
+                    hideClass: {
+                        popup: ''
+                    },
+                    didOpen: () => {
+                        // 아이콘 드롭다운 관련 함수들을 전역으로 설정
+                        window.toggleIconDropdown = function() {
+                            const dropdown = document.getElementById('icon-dropdown');
+                            dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+                        };
+
+                        window.selectIcon = function(value, imageSrc) {
+                            document.getElementById('selected-icon-img').src = imageSrc;
+                            document.getElementById('selected-icon-value').value = value;
+                            document.getElementById('icon-dropdown').style.display = 'none';
+                        };
+
+                        // 드롭다운 외부 클릭시 닫기
+                        document.addEventListener('click', function(event) {
+                            const iconSelector = document.querySelector('.icon-selector');
+                            const dropdown = document.getElementById('icon-dropdown');
+                            if (iconSelector && !iconSelector.contains(event.target)) {
+                                dropdown.style.display = 'none';
+                            }
+                        });
+
+                        // 저장 버튼 클릭 이벤트
+                        document.querySelector('.btn-save').addEventListener('click', () => {
+                            const title = document.querySelector("input[name='event_name']").value;
+                            const repeat = document.querySelector("select[name='repeat']").value;
+                            const explanation = document.querySelector(".explanation-textarea").value;
+                            const selectedIcon = document.getElementById('selected-icon-value').value;
+
+                            if (title) {
+                                calendar.addEvent({
+                                    title: title,
+                                    start: dateStr,
+                                    allDay: true,
+                                    extendedProps: {
+                                        icon: selectedIcon,
+                                        repeat: repeat,
+                                        explanation: explanation
+                                    }
+                                });
+                            }
+
+                            Swal.close();
+                        });
+
+                        // 닫기 아이콘 클릭 이벤트
+                        document.querySelector('.icon-cross').addEventListener('click', () => {
+                            Swal.close();
+                        });
+
+                    }
+                });
+            }
 
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -69,6 +207,46 @@
                 titleFormat: {
                     year: 'numeric',
                     month: 'short'
+                },
+
+                // 이벤트 렌더링 커스터마이징
+                eventContent: function(arg) {
+                    const icon = arg.event.extendedProps.icon;
+                    let iconSrc = '';
+                    
+                    // 아이콘 타입에 따른 이미지 경로 설정
+                    switch(icon) {
+                        case 'birthday':
+                            iconSrc = '../../asset/icon-cake-birthday.svg';
+                            break;
+                        case 'wedding':
+                            iconSrc = '../../asset/icon-rings-wedding.svg';
+                            break;
+                        case 'thanks':
+                            iconSrc = '../../asset/icon-hand-holding-heart.svg';
+                            break;
+                        case 'baby':
+                            iconSrc = '../../asset/icon-child-head.svg';
+                            break;
+                        case 'event':
+                            iconSrc = '../../asset/icon-glass-cheers.svg';
+                            break;
+                        case 'celebrate':
+                            iconSrc = '../../asset/icon-party-horn.svg';
+                            break;
+                        default:
+                            iconSrc = '../../asset/icon-cake-birthday.svg';
+                    }
+
+                    // 커스텀 HTML 반환
+                    return {
+                        html: `
+                            <div class="custom-event">
+                                <img src="${iconSrc}" class="event-icon" />
+                                <span class="event-title">${arg.event.title}</span>
+                            </div>
+                        `
+                    };
                 },
 
 
@@ -108,6 +286,17 @@
                 dateClick: function (info) {
                     console.log("날짜 클릭됨:", info.dateStr);
 
+                    const date = new Date(info.dateStr);
+                    const month = date.getMonth() + 1; // 월은 0부터 시작하므로 +1
+                    const day = date.getDate();
+                    const year = date.getFullYear();
+
+                    // 선택된 날짜 업데이트
+                    selectedDate = info.dateStr;
+
+                    document.getElementById('select-date-box').textContent = `${year}-${month}-${day}`;
+
+
                     const currentTime = new Date().getTime();
                     const clickedDate = info.dateStr;
 
@@ -119,67 +308,9 @@
                     info.dayEl.classList.add('selected-date');
 
                     if (lastClickedDate === clickedDate && (currentTime - lastClickTime) < 400) {
-                        // 더블 클릭으로 간주
-                        Swal.fire({
-                            html: ` 
-                                        <img class="box-icon icon-cross" src="../../asset/icon-cross.svg">
-                                        <div class="schedule-name">
-                                            <div class="btn-listbox">
-                                                <img class="box-icon" src="../../asset/icon-interrogation.svg">
-                                                <img class="box-icon" src="../../asset/icon-caret-down.svg"></div>
-                                                <div class="textbox">
-                                                    <input type="text" class="custom-schedule-name" value="일정 제목"></input>
-                                                </div>
-                                            </div>
-                                            <div id="schedule-icon"></div>
-                                        </div>
-                                        <div class="repeat-option">
-                                            <div><img class="box-icon repeat-icon" src="../../asset/icon-refresh.svg"></div>
-                                            <select class="custom-select">
-                                                <option value="no-repeat">반복 안함</option>
-                                                <option value="every-day">매일</option>
-                                                <option value="every-week">매주</option>
-                                                <option value="evey-month">매월</option>
-                                                <option value="every-year">매년</option>
-                                            </select>
-                                        </div>
-                                        <div class="explanation-group">
-                                            <div><img class="box-icon explanation-icon" src="../../asset/icon-comment.svg"></div>
-                                            <div><textarea class="explanation-textarea">설명 추가</textarea></div>
-                                        </div>
-                                            <div class="btn-save">저장</div>`,
-                            showCancelButton: true,
-                            buttonsStyling: false,
-                            confirmButtonText: "Yes, create it!",
-                            cancelButtonText: "No, return",
-                            customClass: {
-                                confirmButton: "btn btn-primary",
-                                cancelButton: "btn btn-active-light"
-                            }
-                        }).then(function (result) {
-                            if (result.value) {
-                                const title = document.querySelector("input[name='event_name']").value;
-                                if (title) {
-                                    calendar.addEvent({
-                                        title: title,
-                                        start: info.dateStr,
-                                        allDay: true
-                                    });
-                                }
-                            } else if (result.dismiss === "cancel") {
-                                Swal.fire({
-                                    text: "Event creation was declined!",
-                                    icon: "error",
-                                    buttonsStyling: false,
-                                    confirmButtonText: "Ok, got it!",
-                                    customClass: {
-                                        confirmButton: "btn btn-primary",
-                                    }
-                                });
-                            }
-                        });
+                        openSchedulePopup(info.dateStr);
                     }
-
+                    
                     lastClickTime = currentTime;
                     lastClickedDate = clickedDate;
                 },
@@ -218,64 +349,17 @@
                 aspectRatio: 1.35,
                 // 이벤트 객체 필드 document : https://fullcalendar.io/docs/event-object
                 events: [
-                    {
-                        title: 'All Day Event',
-                        start: '2022-07-01'
-                    },
-                    {
-                        title: 'Long Event',
-                        start: '2022-07-07',
-                        end: '2022-07-10'
-                    },
-                    {
-                        groupId: 999,
-                        title: 'Repeating Event',
-                        start: '2022-07-09T16:00:00'
-                    },
-                    {
-                        groupId: 999,
-                        title: 'Repeating Event',
-                        start: '2022-07-16T16:00:00'
-                    },
-                    {
-                        title: 'Conference',
-                        start: '2022-07-11',
-                        end: '2022-07-13'
-                    },
-                    {
-                        title: 'Meeting',
-                        start: '2022-07-12T10:30:00',
-                        end: '2022-07-12T12:30:00'
-                    },
-                    {
-                        title: 'Lunch',
-                        start: '2022-07-12T12:00:00'
-                    },
-                    {
-                        title: 'Meeting',
-                        start: '2022-07-12T14:30:00'
-                    },
-                    {
-                        title: 'Happy Hour',
-                        start: '2022-07-12T17:30:00'
-                    },
-                    {
-                        title: 'Dinner',
-                        start: '2022-07-12T20:00:00'
-                    },
-                    {
-                        title: 'Birthday Party',
-                        start: '2022-07-13T07:00:00'
-                    },
-                    {
-                        title: 'Click for Google',
-                        url: 'http://google.com/',
-                        start: '2022-07-28'
-                    }
+
                 ]
             });
 
             calendar.render();
+
+            // 기념일 생성버튼 클릭 이벤트 - 여기에 위치시킴
+            document.querySelector('.btn-add-event').addEventListener('click', function () {
+                console.log('기념일 생성버튼 클릭 감지');
+                openSchedulePopup(); // 날짜는 오늘로 기본 적용됨
+            });
         });
     </script>
 </body>
