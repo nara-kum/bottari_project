@@ -1,12 +1,12 @@
-.header .logo-colored {
+.my .logo-colored {
   position: absolute;
-  width: 130px;
-  height: 40px;
+  width: 100px;
+  height: 30px;
   top: 22px;
   left: 290px;
 }
 
-.header .text-wrapper-29 {
+.my .text-wrapper-29 {
   top: 25px;
   left: 450px;
   font-family: "Inter-Bold", Helvetica;
@@ -19,7 +19,7 @@
   line-height: normal;
 }
 
-.header .text-wrapper-30 {
+.my .text-wrapper-30 {
   top: 25px;
   left: 520px;
   font-family: "Inter-Bold", Helvetica;
@@ -32,7 +32,7 @@
   line-height: normal;
 }
 
-.header .text-wrapper-31 {
+.my .text-wrapper-31 {
   top: 25px;
   left: 570px;
   font-family: "Inter-Bold", Helvetica;
@@ -45,7 +45,7 @@
   line-height: normal;
 }
 
-.header .text-wrapper-32 {
+.my .text-wrapper-32 {
   top: 25px;
   left: 640px;
   font-family: "Inter-Bold", Helvetica;
@@ -56,72 +56,6 @@
   color: #000000;
   letter-spacing: 0;
   line-height: normal;
-}
-
-.container01{
-  width: 1280px;
-  height: 200px;
-  margin-bottom: 30px;
-  justify-content: center;  
-}
-
-
-.container{
-  width: 1280px;
-  height: 200px;
-  margin-bottom: 30px;
-  justify-content: center;
-}    
-
-.container.row{
-  display: flex;
-  flex-direction: row;
-  width: 1520px;
-  height: 200px;  
-  top: 25px;
-  left: 0px;
-  letter-spacing: 0;
-  line-height: normal; 
-  justify-content: flex-end;
-}
-
-.container.column{
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-start; */
-  /* justify-content: flex-end; */
-  /* justify-content: center; */
-  /* justify-content: space-between; */
-  /* justify-content: space-around; */
-  justify-content: space-evenly;
-}
-
-.container-row .item1{
-  width: 1280px;
-  height: 200px;
-  margin-right: 100px;
-  margin-bottom: 20px;
-  border: 3px solid #000; 
-  align-self: flex-end;
-}
-
-.container-row .item2{
-  width: 1280px;
-  height: 200px;
-  align-self: flex-end;  
-  margin-bottom: 20px;
-  font-family: "Inter-Bold", Helvetica;  
-  font-weight: 700;
-  font-size: 14px;
-  border: 3px solid #000;
-}
-
-.container-row .item3{
-  width: 1280px;
-  height: 200px;
-  align-self: flex-end;
-  margin-bottom: 20px;
-  border: 3px solid #000;
 }
 
 .my {
@@ -135,9 +69,9 @@
 }
 
 .my .text-wrapper-36 {
-  position: absolute;
-  margin-top: -10px;
-  margin-left: -200px;
+  align-content: space-between;
+  margin-top: 10px;
+  margin-left: 200px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 600;
   color: #000000;
@@ -879,7 +813,7 @@
   width: 626px;
   height: 100px;
   top: 0;
-  left: 31px;
+  left: 49px;
 }
 
 .my .first-a-to-cart {
