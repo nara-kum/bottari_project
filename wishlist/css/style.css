@@ -1,3 +1,63 @@
+.header .logo-colored {
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  top: 22px;
+  left: 290px;
+}
+
+.header .text-wrapper-29 {
+  top: 25px;
+  left: 450px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 20px;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.header .text-wrapper-30 {
+  top: 25px;
+  left: 520px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 20px;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.header .text-wrapper-31 {
+  top: 25px;
+  left: 570px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 20px;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.header .text-wrapper-32 {
+  top: 25px;
+  left: 640px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 20px;
+  white-space: nowrap;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
 .my {
   background-color: #ffffff;
   display: grid;
@@ -6,6 +66,74 @@
   width: 100vw;
   min-height: 100vh;
   height: 100%;
+}
+
+.my .text-wrapper-36 {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -200px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.my .text-wrapper-33 {
+  top: 100px;
+  left: 0px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 14px;
+  position: absolute;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.my .text-wrapper-34 {
+  position: relative;
+  width: fit-content;
+  margin-top: -10px;
+  margin-left: -30px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #0000004c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.my .text-wrapper-35 {
+  position: relative;
+  margin-top: -10px;
+  margin-left: -35px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #0000004c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.my .frame-3 {
+  display: inline-flex;
+  justify-content: center;
+  gap: 12px;
+  top: 0;
+  left: 107px;
+  align-items: center;
+  position: absolute;
+}
+.my .frame-4 {
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+  top: 0;
+  left: 0;
+  align-items: center;
+  position: absolute;
 }
 
 .my .div {
@@ -40,13 +168,11 @@
   position: absolute;
   width: 386px;
   height: 764px;
-  top: -2px;
+  top: 0px;
   left: 894px;
   border: 1px solid;
   border-color: #EAEAEA;
 }
-
-
 
 .my .element {
   position: absolute;
@@ -468,7 +594,7 @@
   left: 0;
 }
 
-.my .text-wrapper-15 {
+.third-heyrumi .text-wrapper-15 {
   position: absolute;
   top: 0;
   font-family: "Inter-Bold", Helvetica;
@@ -524,8 +650,8 @@
 .my .text-wrapper-17 {
   position: absolute;
   width: 70px;
-  top: 42px;
-  left: 2px;
+  top: 100px;
+  left: 50px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -693,13 +819,6 @@
   left: -2px;
 }
 
-.my .group-5 {
-  position: relative;
-  width: 1224px;
-  height: 100px;
-  top: 13px;
-  left: 18px;
-}
 
 .my .view-2 {
   position: absolute;
@@ -772,36 +891,36 @@
 
 .my .chk-box #chk-1 {
   position: absolute;
-  top: 40px;
-  left: 2px;
+  top: 150px;
+  left: 320px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-2 {
   position: absolute;
-  top: 150px;
-  left: 2px;
+  top: 200px;
+  left: 320px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-3 {
   position: absolute;
-  top: 270px;
-  left: 2px;
+  top: 320px;
+  left: 320px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-4 {
   position: absolute;
-  top: 385px;
-  left: 2px;
+  top: 435px;
+  left: 320px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-5 {
   position: absolute;
-  top: 500px;
-  left: 2px;
+  top: 550px;
+  left: 320px;
   padding-left: 0px;
 }
 
@@ -826,51 +945,6 @@
   line-height: normal;
 }
 
-
-.my .group-7 {
-  position: absolute;
-  width: 278px;
-  height: 22px;
-  top: 10px;
-  left: 47px;
-}
-
-.my .text-wrapper-26 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.my .text-wrapper-27 {
-  position: absolute;
-  top: 0;
-  left: 100px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.my .text-wrapper-28 {
-  position: absolute;
-  top: 0;
-  left: 205px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
 .my .navbar-wrapper {
   position: absolute;
   width: 1920px;
@@ -891,65 +965,10 @@
   left: 319px;
 }
 
-.my .text-wrapper-29 {
-  top: 18px;
-  left: 177px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
-.my .text-wrapper-30 {
-  top: 18px;
-  left: 256px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
-.my .text-wrapper-31 {
-  top: 18px;
-  left: 316px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
-.my .text-wrapper-32 {
-  top: 18px;
-  left: 395px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
-.my .logo-colored {
-  position: absolute;
-  width: 148px;
-  height: 37px;
-  top: 0;
-  left: 0;
-}
 
 .my .vector-2 {
   position: absolute;
@@ -993,17 +1012,7 @@
   left: 140px;
 }
 
-.my .text-wrapper-33 {
-  top: 19px;
-  left: 1199px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  font-size: 14px;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
-}
+
 
 .my .icon-shopping-cart {
   position: absolute;
@@ -1063,60 +1072,6 @@
   height: 39px;
 }
 
-.my .frame-3 {
-  display: inline-flex;
-  justify-content: center;
-  gap: 12px;
-  padding: 5px 10px 5px 10px;
-  top: 0;
-  left: 107px;
-  align-items: center;
-  position: absolute;
-}
 
-.my .text-wrapper-34 {
-  position: relative;
-  width: fit-content;
-  margin-top: -2.00px;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #0000004c;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
-.my .frame-4 {
-  display: inline-flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 5px 10px;
-  top: 0;
-  left: 0;
-  align-items: center;
-  position: absolute;
-}
 
-.my .text-wrapper-35 {
-  position: relative;
-  width: fit-content;
-  margin-top: -2.00px;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #0000004c;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.my .text-wrapper-36 {
-  position: absolute;
-  top: 117px;
-  left: 371px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
