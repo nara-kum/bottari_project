@@ -1,15 +1,5 @@
 @charset "utf-8";
 
-.screen {
-  background-color: #ffffff;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  width: 100vw;
-  min-height: 100vh;
-  height: 100%;
-}
-
 .screen .div {
   background-color: #ffffff;
   border: 1px solid;
