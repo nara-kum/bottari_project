@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottari - 회원가입</title>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .signup-container {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 40px;
+            width: 500px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: #f8f8f8;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #ff6b35;
+            background-color: white;
+        }
+
+        .input-with-btn {
+            display: flex;
+            gap: 8px;
+        }
+
+        .input-with-btn input {
+            flex: 1;
+        }
+
+        .check-btn {
+            padding: 12px 16px;
+            background-color: #ff6b35;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background-color 0.3s ease;
+        }
+
+        .check-btn:hover {
+            background-color: #e55a2b;
+        }
+
+        .email-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .email-group input {
+            flex: 1;
+        }
+
+        .email-group span {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .email-group select {
+            flex: 1;
+        }
+
+        .date-group {
+            display: flex;
+            gap: 8px;
+        }
+
+        .date-group select {
+            flex: 1;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 14px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #ff6b35;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #e55a2b;
+        }
+
+        .btn-secondary {
+            background-color: #f5f5f5;
+            color: #666;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e9e9e9;
+        }
+
+        .placeholder-text {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="header">
+            <h2>회원가입</h2>
+            <p>회원이 되어 다양한 혜택을 경험해 보세요!</p>
+        </div>
+        
+        <form>
+            <div class="form-group">
+                <label>아이디</label>
+                <div class="input-with-btn">
+                    <input type="text" placeholder="아이디 입력(6~20자)">
+                    <button type="button" class="check-btn">중복확인</button>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>비밀번호</label>
+                <input type="password" placeholder="비밀번호 입력 (문자, 숫자, 특수문자 포함 8~20자)">
+            </div>
+            
+            <div class="form-group">
+                <label>비밀번호 확인</label>
+                <input type="password" placeholder="비밀번호 재입력">
+            </div>
+            
+            <div class="form-group">
+                <label>이름</label>
+                <input type="text" placeholder="이름을 입력해주세요">
+            </div>
+            
+            <div class="form-group">
+                <label>전화번호</label>
+                <input type="tel" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)">
+            </div>
+            
+            <div class="form-group">
+                <label>이메일 주소</label>
+                <div class="email-group">
+                    <input type="text" placeholder="이메일 주소">
+                    <span>@</span>
+                    <select>
+                        <option value="">naver.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="yahoo.com">yahoo.com</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>생년월일</label>
+                <div class="date-group">
+                    <select>
+                        <option value="">년도</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                    </select>
+                    <select>
+                        <option value="">월</option>
+                        <option value="01">1월</option>
+                        <option value="02">2월</option>
+                        <option value="03">3월</option>
+                        <option value="04">4월</option>
+                        <option value="05">5월</option>
+                        <option value="06">6월</option>
+                        <option value="07">7월</option>
+                        <option value="08">8월</option>
+                        <option value="09">9월</option>
+                        <option value="10">10월</option>
+                        <option value="11">11월</option>
+                        <option value="12">12월</option>
+                    </select>
+                    <select>
+                        <option value="">일</option>
+                        <option value="01">1일</option>
+                        <option value="02">2일</option>
+                        <option value="03">3일</option>
+                        <!-- 더 많은 일자 옵션들... -->
+                    </select>
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="btn btn-primary">가입하기</button>
+                <button type="button" class="btn btn-secondary">가입취소</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -490,29 +490,8 @@ margin: 15px 0px;
   line-height: normal;
 }
 
-.x .logo-colored {
-  position: absolute;
-  width: 148px;
-  height: 37px;
-  top: 0;
-  left: 0;
-}
 
-.x .vector {
-  position: absolute;
-  width: 25px;
-  height: 37px;
-  top: 1px;
-  left: 0;
-}
 
-.x .vector-2 {
-  position: absolute;
-  width: 24px;
-  height: 27px;
-  top: 10px;
-  left: 94px;
-}
 
 .x .overlap-group-3 {
   position: absolute;
@@ -522,53 +501,6 @@ margin: 15px 0px;
   left: 26px;
 }
 
-.x .vector-3 {
-  position: absolute;
-  width: 31px;
-  height: 33px;
-  top: 3px;
-  left: 0;
-}
-
-.x .vector-4 {
-  position: absolute;
-  width: 18px;
-  height: 35px;
-  top: 0;
-  left: 31px;
-}
-
-.x .vector-5 {
-  position: absolute;
-  width: 18px;
-  height: 35px;
-  top: 2px;
-  left: 75px;
-}
-
-.x .vector-6 {
-  position: absolute;
-  width: 16px;
-  height: 27px;
-  top: 10px;
-  left: 122px;
-}
-
-.x .vector-7 {
-  position: absolute;
-  width: 9px;
-  height: 26px;
-  top: 10px;
-  left: 140px;
-}
-
-.x .vector-8 {
-  position: absolute;
-  width: 9px;
-  height: 8px;
-  top: 0;
-  left: 140px;
-}
 
 .x .text-wrapper-9 {
   top: 20px;
