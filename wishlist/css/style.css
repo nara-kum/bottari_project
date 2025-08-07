@@ -1,4 +1,6 @@
-.my .logo-colored {
+@charset "UTF-8";
+
+.screen .logo-colored {
   position: absolute;
   width: 100px;
   height: 30px;
@@ -6,35 +8,119 @@
   left: 290px;
 }
 
-.my .r-t01-1{
-  position: absolute;
-  border: 2px solid #ff0000;  
-  top: 22px;
-  left: 10px;
+.screen .wishlist-header{
+  display: flex;
+  align-items: flex-start;
+  max-width: 1280px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 
-.my .r-t01-2{
-  position: absolute;
-  border: 2px solid #3cff00;  
-  top: 40px;
-  left: 10px;
+.screen .tab-active{ /* 친구 펀딩 */
+  display: flex;
+  align-items: flex-start;
+  max-width: 1280px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #dddddd;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px; 
+  padding-top: 30px;
 }
 
-.my .r-t01-3{
-  position: absolute;
-  border: 2px solid #ff0000;  
-  top: 22px;
-  left: 290px;
+.screen .tab{  /* 마이 펀딩 */
+  display: flex;
+  align-items: flex-start;
+  max-width: 1280px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #dddddd;  
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;  
+  padding-top: 30px;
 }
 
-.my .r-t01-4{
+.screen .r-t01-1{
+  width: 180px;
+  height: 25px; 
   position: absolute;
-  border: 2px solid #2f00ff;  
-  top: 22px;
-  left: 290px;
+  border: 2px solid #91836F;  
+  top: 90px;
+  left: 1200px;
+  text-align: center;      /* 가로 정렬 */
+  vertical-align: middle;  /* 세로 정렬 */  
 }
 
-.my .text-wrapper-29 {
+.screen .r-t01-2{
+  position: absolute;
+  width: 180px;
+  height: 25px; 
+  border: 2px solid #91836F;  
+  top: 113px;
+  left: 1200px;
+  text-align: center;      /* 가로 정렬 */
+  vertical-align: middle;  /* 세로 정렬 */  
+}
+
+.screen .r-t01-3{
+  position: absolute;
+  width: 180px;
+  height: 25px; 
+  border: 2px solid #91836F;  
+  top: 136px;
+  left: 1200px;
+  text-align: center;      /* 가로 정렬 */
+  vertical-align: middle;  /* 세로 정렬 */  
+}
+
+.screen .r-t01-4{
+  position: absolute;
+  width: 180px;
+  height: 25px;    
+  border: 2px solid #91836F;  
+  top: 159px;
+  left: 1200px;
+  text-align: center;      /* 가로 정렬 */
+  vertical-align: middle;  /* 세로 정렬 */
+}
+
+.screen .r-t01-5{
+  position: absolute;
+  width: 180px;
+  height: 25px;    
+  border: 2px solid #91836F;  
+  top: 182px;
+  left: 1200px;
+  text-align: center;      /* 가로 정렬 */
+  vertical-align: middle;  /* 세로 정렬 */
+
+}
+
+.screen .r-t01-6{
+  position: absolute;
+  width: 180px;
+  height: 25px;    
+  border: 2px solid #91836F; 
+  top: 205px;
+  left: 1200px;
+  text-align: center;      /* 가로 정렬 */
+  vertical-align: middle;  /* 세로 정렬 */
+}
+
+.screen .r-t01-7{
+  position: absolute;
+  width: 180px;
+  height: 25px;    
+  border: 2px solid #91836F;  
+  top: 228px;
+  left: 1200px;
+  text-align: center;      /* 가로 정렬 */
+  vertical-align: middle;  /* 세로 정렬 */
+}
+
+.screen .text-wrapper-29 {
   top: 25px;
   left: 450px;
   font-family: "Inter-Bold", Helvetica;
@@ -47,7 +133,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-30 {
+.screen .text-wrapper-30 {
   top: 25px;
   left: 520px;
   font-family: "Inter-Bold", Helvetica;
@@ -60,7 +146,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-31 {
+.screen .text-wrapper-31 {
   top: 25px;
   left: 570px;
   font-family: "Inter-Bold", Helvetica;
@@ -73,7 +159,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-32 {
+.screen .text-wrapper-32 {
   top: 25px;
   left: 640px;
   font-family: "Inter-Bold", Helvetica;
@@ -86,17 +172,7 @@
   line-height: normal;
 }
 
-.my {
-  background-color: #ffffff;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  width: 100vw;
-  min-height: 100vh;
-  height: 100%;
-}
-
-.my .text-wrapper-36 {
+.screen .text-wrapper-36 {
   align-content: space-between;
   margin-top: 60px;
   margin-left: 330px;
@@ -108,7 +184,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-34 {
+.screen .text-wrapper-34 {
   position: relative;
   width: fit-content;
   margin-top: -10px;
@@ -121,7 +197,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-35 {
+.screen .text-wrapper-35 {
   position: relative;
   margin-top: -10px;
   margin-left: -35px;
@@ -133,7 +209,7 @@
   line-height: normal;
 }
 
-.my .frame-3 {
+.screen .frame-3 {
   display: inline-flex;
   justify-content: center;
   gap: 12px;
@@ -142,7 +218,8 @@
   align-items: center;
   position: absolute;
 }
-.my .frame-4 {
+
+.screen .frame-4 {
   display: inline-flex;
   justify-content: center;
   gap: 10px;
@@ -152,14 +229,14 @@
   position: absolute;
 }
 
-.my .div {
+.screen .div {
   background-color: #ffffff;
   width: 1920px;
   height: 1000px;
   position: relative;
 }
 
-.my .overlap {
+.screen .overlap {
   position: absolute;
   width: 1280px;
   height: 809px;
@@ -170,27 +247,28 @@
   border-color: #919191;
 }
 
-.my .rectangle {
+.screen .left-product {
   position: absolute;
   width: 896px;
   height: 764px;
-  top: -2px;
-  left: -1px;
+  top: 79px;
+  left: 290px;
   border: 1px solid;
   border-color: #EAEAEA;
 }
 
-.my .rectangle-2 {
+.screen .right-product {
   position: absolute;
   width: 386px;
   height: 764px;
-  top: 0px;
-  left: 894px;
+  top: 79px;
+  left: 1186px;
   border: 1px solid;
   border-color: #EAEAEA;
+  border-top: #929292;
 }
 
-.my .element {
+.screen .element {
   position: absolute;
   width: 1227px;
   height: 100px;
@@ -198,7 +276,7 @@
   left: 15px;
 }
 
-.my .view {
+.screen .view {
   position: absolute;
   width: 597px;
   height: 89px;
@@ -206,20 +284,20 @@
   left: 143px;
 }
 
-.my .image-cao1 {
+.screen .image-cao1 {
   position: absolute;
   top: 63px;
   left: 1px;
   padding: 0px;
 }
 
-.my .image-cao {
+.screen .image-cao {
   position: absolute;
   top: 68px;
   left: 33px;
 }
 
-.my .img {
+.screen .img {
   position: absolute;
   width: 51px;
   height: 22px;
@@ -227,7 +305,7 @@
   left: 0;
 }
 
-.my .overlap-group {
+.screen .overlap-group {
   position: absolute;
   width: 591px;
   height: 38px;
@@ -235,7 +313,7 @@
   left: 0;
 }
 
-.my .text-wrapper-2 {
+.screen .text-wrapper-2 {
   position: absolute;
   width: 107px;
   top: 19px;
@@ -248,7 +326,7 @@
   line-height: normal;
 }
 
-.my .p {
+.screen .p {
   position: absolute;
   width: 591px;
   top: 0;
@@ -261,7 +339,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-3 {
+.screen .text-wrapper-3 {
   position: absolute;
   width: 65px;
   top: 0;
@@ -274,7 +352,7 @@
   line-height: normal;
 }
 
-.my .image {
+.screen .image {
   position: absolute;
   width: 99px;
   height: 100px;
@@ -284,7 +362,7 @@
   object-fit: cover;
 }
 
-.my .overlap-2 {
+.screen .overlap-2 {
   position: absolute;
   width: 15px;
   height: 17px;
@@ -292,15 +370,7 @@
   left: 0;
 }
 
-.my .rectangle-3 {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 2px;
-  left: 0;
-}
-
-.my .group {
+.screen .group {
   position: absolute;
   width: 335px;
   height: 80px;
@@ -308,7 +378,7 @@
   left: 898px;
 }
 
-.my .text-wrapper-4 {
+.screen .text-wrapper-4 {
   position: absolute;
   top: 63px;
   left: 2px;
@@ -320,13 +390,14 @@
   line-height: normal;
 }
 
-.my .btn-funding1 {
+.screen .btn-funding1 {
   position: absolute;
-  top: 190px;
-  left: 245px;
+  top: 280px;
+  right: -290px;
+  margin-bottom: 20px;
 }
 
-.my .text-wrapper-5 {
+.screen .text-wrapper-5 {
   position: absolute;
   width: 90px;
   top: 40px;
@@ -340,7 +411,7 @@
   line-height: normal;
 }
 
-.my .frame {
+.screen .frame {
   display: flex;
   width: 40px;
   height: 17px;
@@ -351,7 +422,7 @@
   position: absolute;
 }
 
-.my .text-wrapper-6 {
+.screen .percente5 {
   position: relative;
   width: fit-content;
   margin-top: -3.45px;
@@ -364,7 +435,7 @@
   line-height: normal;
 }
 
-.my .ellipse {
+.screen .ellipse {
   position: relative;
   width: 15px;
   height: 15px;
@@ -374,7 +445,7 @@
   border: 1px solid;
 }
 
-.my .text-wrapper-7 {
+.screen .text-wrapper-7 {
   position: absolute;
   top: 0;
   left: 73px;
@@ -386,8 +457,7 @@
   line-height: normal;
 }
 
-
-.my .ellipse-2 {
+.screen .ellipse-2 {
   top: 4px;
   left: 114px;
   border-radius: 7.5px;
@@ -399,7 +469,7 @@
   border-color: #000000;
 }
 
-.my .element-2 {
+.screen .element-2 {
   position: absolute;
   width: 1262px;
   height: 100px;
@@ -407,7 +477,7 @@
   left: 15px;
 }
 
-.my .group-2 {
+.screen .group-2 {
   position: absolute;
   width: 129px;
   height: 22px;
@@ -415,7 +485,7 @@
   left: 900px;
 }
 
-.my .frame-2 {
+.screen .frame-2 {
   display: flex;
   width: 40px;
   height: 17px;
@@ -426,7 +496,7 @@
   left: 0;
 }
 
-.my .text-wrapper-8 {
+.screen .text-wrapper-8 {
   position: relative;
   width: fit-content;
   margin-top: -3.61px;
@@ -439,7 +509,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-9 {
+.screen .text-wrapper-9 {
   position: absolute;
   width: 34px;
   top: 0;
@@ -453,19 +523,7 @@
   line-height: normal;
 }
 
-.my .ellipse-3 {
-  top: 3px;
-  left: 112px;
-  border-radius: 7.5px / 7.36px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: #ffffff;
-  border: 1px solid;
-  border-color: #000000;
-}
-
-.my .text-wrapper-10 {
+.screen .text-wrapper-10 {
   position: absolute;
   width: 351px;
   top: 72px;
@@ -478,7 +536,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-11 {
+.screen .text-wrapper-11 {
   position: absolute;
   top: 44px;
   left: 901px;
@@ -490,7 +548,7 @@
   line-height: normal;
 }
 
-.my .img-2 {
+.screen .img-2 {
   width: 51px;
   height: 22px;
   top: 74px;
@@ -498,7 +556,7 @@
   left: 143px;
 }
 
-.my .text-wrapper-12 {
+.screen .text-wrapper-12 {
   position: absolute;
   width: 88px;
   top: 50px;
@@ -511,7 +569,7 @@
   line-height: normal;
 }
 
-.my .carnation-cart{
+.screen .carnation-cart{
   position: absolute;
   width: 51px;
   height: 22px;
@@ -527,7 +585,7 @@
 }
 */
 
-.my .carnation-heart{
+.screen .carnation-heart{
   position: absolute;
   width: 51px;
   height: 22px;
@@ -535,7 +593,7 @@
   left: 180px; 
 }
 
-.my .text-wrapper-13 {
+.screen .text-wrapper-13 {
   position: absolute;
   width: 660px;
   top: 25px;
@@ -548,7 +606,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-14 {
+.screen .text-wrapper-14 {
   position: absolute;
   width: 65px;
   top: 5px;
@@ -562,7 +620,7 @@
   line-height: normal;
 }
 
-.my .image-2 {
+.screen .image-2 {
   position: absolute;
   width: 99px;
   height: 100px;
@@ -570,10 +628,10 @@
   left: 31px;
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: 10px;  
 }
 
-
-.my .element-3 {
+.screen .element-3 {
   position: absolute;
   width: 1258px;
   height: 100px;
@@ -581,7 +639,7 @@
   left: 15px;
 }
 
-.my .our-marriage {
+.screen .our-marriage {
   width: 643px;
   top: 28px;
   font-family: "Inter-Regular", Helvetica;
@@ -594,7 +652,7 @@
   left: 143px;
 }
 
-.my .overlap-4 {
+.screen .overlap-4 {
   position: absolute;
   width: 78px;
   height: 42px;
@@ -602,7 +660,7 @@
   left: 138px;
 }
 
-.my .overlap-5 {
+.screen .overlap-5 {
   position: absolute;
   width: 78px;
   height: 42px;
@@ -626,8 +684,7 @@
   line-height: normal;
 }
 
-
-.my .image-3 {
+.screen .image-3 {
   position: absolute;
   width: 18px;
   height: 17px;
@@ -635,7 +692,7 @@
   left: 34px;
 }
 
-.my .text-wrapper-16 {
+.screen .text-wrapper-16 {
   position: absolute;
   top: 5px;
   left: 143px;
@@ -647,7 +704,7 @@
   line-height: normal;
 }
 
-.my .group-3 {
+.screen .group-3 {
   position: absolute;
   width: 360px;
   height: 87px;
@@ -655,7 +712,7 @@
   left: 898px;
 }
 
-.my .our-marriage-2 {
+.screen .our-marriage-2 {
   position: absolute;
   width: 354px;
   top: 66px;
@@ -668,7 +725,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-17 {
+.screen .text-wrapper-17 {
   position: absolute;
   width: 70px;
   top: 100px;
@@ -682,21 +739,15 @@
   line-height: normal;
 }
 
-.my .element-wrapper {
-  position: absolute;
-  width: 1255px;
-  height: 100px;
-  top: 171px;
-  left: 15px;
-}
-
-.my .element-4 {
+.screen .element-4 {
   position: relative;
   width: 1263px;
   height: 100px;
+  top: 192px;
+  left: 29px;
 }
 
-.my .l-o-USB {
+.screen .l-o-USB {
   width: 651px;
   top: 28px;
   font-family: "Inter-Regular", Helvetica;
@@ -709,7 +760,7 @@
   left: 143px;
 }
 
-.my .text-wrapper-18 {
+.screen .text-wrapper-18 {
   position: absolute;
   width: 357px;
   top: 70px;
@@ -722,9 +773,9 @@
   line-height: normal;
 }
 
-.my .text-wrapper-19 {
+.screen .text-wrapper-19 {
   position: absolute;
-  top: 53px;
+  top: 49px;
   left: 143px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
@@ -735,7 +786,7 @@
   line-height: normal;
 }
 
-.my .text-wrapper-20 {
+.screen .text-wrapper-20 {
   position: absolute;
   top: 7px;
   left: 143px;
@@ -747,7 +798,7 @@
   line-height: normal;
 }
 
-.my .image-4 {
+.screen .image-2 {
   position: absolute;
   width: 98px;
   height: 100px;
@@ -755,30 +806,31 @@
   left: 31px;
   aspect-ratio: 0.98;
   object-fit: cover;
+
 }
 
-.my .div-wrapper {
+.screen .div-wrapper {
   position: absolute;
-  top: 73px;
-  left: 142px;
+  top: 72px;
+  left: 146px;
 }
 
-.my .image-5 {
+.screen .image-5 {
   position: absolute;
   width: 18px;
   height: 17px;
-  top: 81px;
-  left: 177px;
+  top: 270px;
+  left: -690px;
 }
 
-.my .heyrumi-cart {
+.screen .heyrumi-cart {
   position: absolute;
   top: 20px;
   left: 1px;
   padding-left: 0px;
 }
 
-.my .heyrumi-heart {
+.screen .heyrumi-heart {
   position: absolute;
   width: 18px;
   height: 17px;
@@ -786,21 +838,12 @@
   left: 35px;
 }
 
-.my .group-4 {
-  position: absolute;
-  width: 131px;
-  height: 59px;
-  top: 6px;
-  left: 900px;
-}
-
-.my .text-wrapper-21 {
+.screen .price-1990 { /* 1,990원  (레이문) */
   position: absolute;
   width: 70px;
-  top: 41px;
-  left: 0;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
+  top: 200px;
+  left: 10px;
+  font-weight: bold;
   color: #000000;
   font-size: 18px;
   white-space: nowrap;
@@ -808,7 +851,9 @@
   line-height: normal;
 }
 
-.my .text-wrapper-22 {
+/*
+.screen .text-wrapper-22 {  /* 전액 */
+/*
   position: absolute;
   top: 0;
   left: 71px;
@@ -819,53 +864,54 @@
   letter-spacing: 0;
   line-height: normal;
 }
+*/
 
-.my .ellipse-4 {
-  top: 4px;
-  left: 112px;
-  border-radius: 7.5px;
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: #ffffff;
-  border: 1px solid;
-  border-color: #000000;
-}
-
-.my .group-wrapper {
-  position: absolute;
-  width: 1280px;
-  height: 120px;
-  top: 44px;
-  left: -2px;
-}
-
-
-.my .view-2 {
+.screen .view-2 {   /* 첫번째 이키 상품 큰 테두리 */
   position: absolute;
   width: 626px;
   height: 100px;
-  top: 0;
-  left: 49px;
-}
-
-.my .first-a-to-cart {
-  position: absolute;
-  top: 72px;
-  left: 113px;
-}
-
-.my .image-6 {
-  position: absolute;
-  width: 18px;
-  height: 17px;
   top: 80px;
-  left: 145px;
+  left: 60px;
 }
 
-.my .text-wrapper-23 {
+.screen .group-5 .first-product-image {  /* 첫번째 '뱀띠 아기선물' 상품 이미지 */ 
   position: absolute;
-  top: 51px;
+  width: 99px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  aspect-ratio: 0.99;
+  object-fit: cover;
+  border-radius: 10px;  
+}
+
+.screen .left-product .first-product {  /* 임신/출산축하 뱀띠 아기선물 */
+  position: absolute;
+  top: 105px;
+  left: 171px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.screen .left-product .text-wrapper-24 {
+  position: absolute;
+  top: 82px;
+  left: 172px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.screen .group-5 .view-2 .price38900 {
+  position: absolute;
+  top: 49px;
   left: 112px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
@@ -876,69 +922,49 @@
   line-height: normal;
 }
 
-.my .element-5 {
+.screen .first-a-to-cart { /* 첫번째 상품 장바구니 */ 
   position: absolute;
-  top: 27px;
+  top: 72px;
   left: 113px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
-.my .text-wrapper-24 {
+.screen .first-heart {
   position: absolute;
-  top: 4px;
-  left: 112px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
+  width: 18px;
+  height: 17px;
+  top: 80px;
+  left: 145px;
 }
 
-.my .image-7 {
+.screen .chk-box #chk-1 {
   position: absolute;
-  width: 99px;
-  height: 100px;
-  top: 0;
-  left: 0;
-  aspect-ratio: 0.99;
-  object-fit: cover;
-}
-
-.my .chk-box #chk-1 {
-  position: absolute;
-  top: 41px;
-  left: 20px;
+  top: 201px;
+  left: 310px;
   padding-left: 0px;
 }
 
-.my .chk-box #chk-2 {
+.screen .chk-box #chk-2 {
   position: absolute;
   top: 170px;
   left: 20px;
   padding-left: 0px;
 }
 
-.my .chk-box #chk-3 {
+.screen .chk-box #chk-3 {
   position: absolute;
   top: 280px;
   left: 20px;
   padding-left: 0px;
 }
 
-.my .chk-box #chk-4 {
+.screen .chk-box #chk-4 {
   position: absolute;
   top: 400px;
   left: 20px;
   padding-left: 0px;
 }
 
-.my .chk-box #chk-5 {
+.screen .chk-box #chk-5 {
   position: absolute;
   top: 510px;
   left: 20px;
@@ -946,7 +972,7 @@
 }
 
 
-.my .group-6 {
+.screen .group-6 {
   position: absolute;
   width: 332px;
   height: 84px;
@@ -954,7 +980,7 @@
   left: 898px;
 }
 
-.my .text-wrapper-25 {
+.screen .text-wrapper-25 {
   position: absolute;
   top: 67px;
   left: 0;
@@ -965,134 +991,4 @@
   letter-spacing: 0;
   line-height: normal;
 }
-
-.my .navbar-wrapper {
-  position: absolute;
-  width: 1920px;
-  height: 100px;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: #919191;
-}
-
-.my .navbar {
-  position: relative;
-  width: 1292px;
-  height: 42px;
-  top: 29px;
-  left: 319px;
-}
-
-
-
-
-
-
-.my .vector-2 {
-  position: absolute;
-  width: 25px;
-  height: 37px;
-  top: 1px;
-  left: 0;
-}
-
-
-.my .overlap-group-3 {
-  position: absolute;
-  width: 48px;
-  height: 36px;
-  top: 2px;
-  left: 26px;
-}
-
-
-.my .vector-7 {
-  position: absolute;
-  width: 16px;
-  height: 27px;
-  top: 10px;
-  left: 122px;
-}
-
-.my .vector-8 {
-  position: absolute;
-  width: 9px;
-  height: 26px;
-  top: 10px;
-  left: 140px;
-}
-
-.my .vector-9 {
-  position: absolute;
-  width: 9px;
-  height: 8px;
-  top: 0;
-  left: 140px;
-}
-
-
-
-.my .icon-shopping-cart {
-  position: absolute;
-  top: 14px;
-  left: 1153px;
-  aspect-ratio: 1;
-}
-
-.my .vector-10 {
-  position: absolute;
-  width: 20px;
-  height: 16px;
-  top: 0;
-  left: 0;
-}
-
-.my .vector-11 {
-  position: absolute;
-  width: 3px;
-  height: 3px;
-  top: 17px;
-  left: 4px;
-}
-
-.my .vector-12 {
-  position: absolute;
-  width: 3px;
-  height: 3px;
-  top: 17px;
-  left: 12px;
-}
-
-.my .icon-caret-down {
-  position: absolute;
-  top: 20px;
-  left: 1265px;
-}
-
-.my .vector-13 {
-  position: absolute;
-  width: 10px;
-  height: 6px;
-  top: 7px;
-  left: 4px;
-}
-
-.my .overlap-wrapper {
-  position: absolute;
-  width: 222px;
-  height: 39px;
-  top: 112px;
-  left: 530px;
-}
-
-.my .overlap-8 {
-  position: relative;
-  height: 39px;
-}
-
-
-
 
