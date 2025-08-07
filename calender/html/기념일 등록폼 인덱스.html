@@ -3,43 +3,42 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/기념일 등록폼 인덱스 .css" />
   </head>
-  <body>
-    <div class="screen">
-      <div class="div">
+  <body>   
         <div class="button-listbox">
           <div class="image"></div>
           <div class="background-border"></div>
         </div>
-        <div class="container">
+        <div class="schedule-name">
+          <div id="schedule-icon"></div>
           <div class="input">
-            <div class="div-wrapper"><div class="text-wrapper">일정 제목</div></div>
+            <div class="name-wrapper">일정 제목</div>
           </div>
           <div class="horizontal-divider"></div>
         </div>
-        <div class="descriptions">
-          <div class="term"></div>
-          <div class="details">
-            <div class="overlap-group">
-              <div class="combobox-listbox"><div class="text-wrapper-2">반복 안 함</div></div>
-              <div class="image-2"></div>
-            </div>
+        <div class="repeat-option">
+          <div class="repeat-icon"><img src="../../asset/icon-refresh.svg"></div>
+          <div class="repeat-group">
+            <select class="custom-select">
+              <option value="no-repeat">반복 안함</option>
+              <option value="every-day">매일</option>
+              <option value="every-week">매주</option>
+              <option value="evey-month">매월</option>
+              <option value="every-year">매년</option>
+            </select>
           </div>
         </div>
-        <div class="descriptions-2">
-          <div class="term-label"></div>
-          <div class="details-2">
-            <div class="textarea"><div class="text-wrapper-3">설명 추가</div></div>
-            <p class="element"><span class="span">0</span> <span class="text-wrapper-4">/200</span></p>
+        <div class="explanation-group">
+          <div class="explanation-icon"></div>
+          <div class="explanation-textarea">
+            <textarea>설명 추가</textarea>
           </div>
         </div>
-        <div class="view">
-          <div class="overlap"><div class="text-wrapper-5">저장</div></div>
+        <div class="area-save">
+          <div class="btn-save">저장</div>
+          <div class="btn-cancel ">취소</div>
         </div>
-        <div class="icon-cross"></div>
-      </div>
-    </div>
+        <div class="icon-cross"><img src="../../asset/icon-cross.svg"></div>
   </body>
 </html>
