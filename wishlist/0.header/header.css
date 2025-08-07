@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 .screen {
+    width: 100vw;
+    height: 770px;    
     background-color: #ffffff;
     justify-items: center;
     align-items: start;
-    width: 100vw;
     min-height: 100vh;
-    height: 100%;
+    padding-right: 0;
 }
-
 
 /*헤더 css*/
 .screen .header {
@@ -18,7 +18,6 @@
     position: relative;
     border-bottom: 1px solid #eaeaea;
 }
-
 
 .logo-colored {
     position: relative;

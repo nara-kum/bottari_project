@@ -1,0 +1,105 @@
+/* 기본 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 푸터 메인 스타일 */
+.footer {
+    background-color: #F9F7F4;
+    color: #929292;
+    padding: 7px 20px 7px;
+    font-size: 13px;
+    line-height: 1.8;
+    font-family: 'Noto Sans KR', Arial, sans-serif;
+    width: 100%;
+    position: relative;
+    clear: both;
+    margin-top: 50px;
+    z-index: 10;
+}
+
+/* 푸터 컨테이너 */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 푸터 링크 섹션 */
+.footer-links {
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.footer-links a {
+    color: #929292;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4CAF50;
+}
+
+.footer-links a:not(:last-child)::after {
+    content: "|";
+    color: #666;
+    margin-left: 30px;
+}
+
+/* 회사 정보 섹션 */
+.company-info {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.company-info p {
+    margin-bottom: 3px;
+}
+
+.company-name {
+    color: #929292;
+}
+
+.contact-info {
+    color: #929292;
+}
+
+/* 저작권 섹션 */
+.copyright {
+    width: 1920px;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 0;
+    border-top: 1px solid #929292;
+    color: #929292;
+    font-size: 12px;
+}
+
+/* 반응형 디자인 - 태블릿/모바일 */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px 15px;
+        font-size: 12px;
+    }
+
+    .footer-links {
+        line-height: 2.5;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    .footer-links a:not(:last-child)::after {
+        display: none;
+    }
+
+    .company-info {
+        text-align: left;
+    }
+}
