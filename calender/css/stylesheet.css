@@ -9,10 +9,12 @@
     height: 100%;
 }
 
+
+/*헤더 css*/
 .screen .header {
     background-color: #ffffff;
     width: 1920px;
-    height: 99px;
+    height: 79px;   /* border가 들어가기 때문에 1px 줄임 */
     position: relative;
     border-bottom: 1px solid #929292;
 }
@@ -28,7 +30,7 @@
 .header-menu {
     position: relative;
     padding: 0px 14px 0px 14px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'inter';
     font-weight: bold;
 }
@@ -36,7 +38,7 @@
 .screen .auto-layout-left {
     display: flex;
     width: 799px;
-    height: 100px;
+    height: 80px;
     align-items: center;
     padding: 0px 0px 0px 320px;
     position: absolute;
@@ -46,7 +48,7 @@
 .screen .auto-layout-right {
     display: flex;
     width: 449px;
-    height: 100px;
+    height: 80px;
     align-items: center;
     padding: 0px 320px 0px 0px;
     position: absolute;
@@ -79,6 +81,8 @@
     width: 18px;
     height: 18px;
 }
+
+/* body css */
 
 .screen .body {
     background-color: #F9F7F4;
@@ -330,7 +334,7 @@
 }
 
 .icon-cross {
-    padding-left: 400px;
+    padding-left: 430px;
 }
 
 .btn-save {

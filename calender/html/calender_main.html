@@ -128,7 +128,7 @@
                                                 <img class="box-icon" src="../../asset/icon-interrogation.svg">
                                                 <img class="box-icon" src="../../asset/icon-caret-down.svg"></div>
                                                 <div class="textbox">
-                                                    <input type="text" class="custom-schedule-name" value="일정 제목"></input>
+                                                    <input name="event_name" type="text" class="custom-schedule-name" value="일정 제목"></input>
                                                 </div>
                                             </div>
                                             <div id="schedule-icon"></div>
@@ -145,7 +145,7 @@
                                         </div>
                                         <div class="explanation-group">
                                             <div><img class="box-icon explanation-icon" src="../../asset/icon-comment.svg"></div>
-                                            <div><textarea class="explanation-textarea">설명 추가</textarea></div>
+                                            <div><textarea name="explanation" class="explanation-textarea">설명 추가</textarea></div>
                                         </div>
                                             <div class="btn-save">저장</div>`,
                             showCancelButton: true,
@@ -166,16 +166,6 @@
                                         allDay: true
                                     });
                                 }
-                            } else if (result.dismiss === "cancel") {
-                                Swal.fire({
-                                    text: "Event creation was declined!",
-                                    icon: "error",
-                                    buttonsStyling: false,
-                                    confirmButtonText: "Ok, got it!",
-                                    customClass: {
-                                        confirmButton: "btn btn-primary",
-                                    }
-                                });
                             }
                         });
                     }
