@@ -1,8 +1,4 @@
-.Logo {
-width: 150px;
-height: 30px;
-margin: 15px 0px;
-}
+
 
 .search {
  fill: #ef5327;
@@ -15,14 +11,26 @@ margin: 15px 0px;
  pointer-events: none; /* 클릭 막기 */
 }
 
-.footer{
 
- background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
+
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
 
 .x {
   background-color: #ffffff;
@@ -38,23 +46,15 @@ margin: 15px 0px;
   background-color: #ffffff;
   overflow: hidden;
   width: 1920px;
-  height: 1696px;
+  height: 1420px;
 }
 
 .x .overlap {
-  position: relative;
-  height: 2083px;  .                                                                                  
-  top: -47px;
+  position: relative; /* 또는 relative */
+  margin-top: -200px;
+  height: 1883px;
 }
 
-.x .element {
-  position: absolute;
-  width: 1280px;
-  height: 2000px;
-  top: 83px;
-  left: 320px;
-  background-color: #ffffff;
-}
 
 .x .frame {
   height: 20px;
@@ -529,17 +529,17 @@ margin: 15px 0px;
 .x .element-14 {
   position: absolute;
   width: 731px;
-  height: 42px;
-  top: 157px;
-  left: 594px;
+  height: 32px;
+  top: 212px;
+  left: 420px;
 }
 
 .x .frame-4 {
-  padding: 10px 40px;
+  padding: 5px 30px;
   top: 0;
   left: 0;
   background-color: #ab946c;
-  border-radius: 10px;
+  border-radius: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -560,11 +560,11 @@ margin: 15px 0px;
 }
 
 .x .frame-5 {
-  padding: 10px 40px;
+  padding: 5px 30px;
   top: 0;
-  left: 117px;
+  left: 100px;
   background-color: #f0ebe2;
-  border-radius: 10px;
+  border-radius: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -573,11 +573,11 @@ margin: 15px 0px;
 }
 
 .x .frame-6 {
-  padding: 10px 40px;
+ padding: 5px 30px;
   top: 0;
-  left: 234px;
+  left: 200px;
   background-color: #f0ebe2;
-  border-radius: 10px;
+  border-radius: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -586,11 +586,11 @@ margin: 15px 0px;
 }
 
 .x .frame-7 {
-  padding: 10px 40px;
+  padding: 5px 30px;
   top: 0;
-  left: 367px;
+  left: 317px;
   background-color: #f0ebe2;
-  border-radius: 10px;
+  border-radius: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -599,11 +599,11 @@ margin: 15px 0px;
 }
 
 .x .frame-8 {
-  padding: 10px 40px;
+  padding: 5px 30px;
   top: 0;
-  left: 500px;
+  left: 434px;
   background-color: #f0ebe2;
-  border-radius: 10px;
+  border-radius: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -612,11 +612,11 @@ margin: 15px 0px;
 }
 
 .x .frame-9 {
-  padding: 10px 40px;
+  padding: 5px 30px;
   top: 0;
-  left: 617px;
+  left: 534px;
   background-color: #f0ebe2;
-  border-radius: 10px;
+  border-radius: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
