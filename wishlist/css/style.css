@@ -70,8 +70,8 @@
 
 .my .text-wrapper-36 {
   align-content: space-between;
-  margin-top: 10px;
-  margin-left: 200px;
+  margin-top: 60px;
+  margin-left: 330px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 600;
   color: #000000;
@@ -579,12 +579,17 @@
   width: 78px;
   height: 42px;
   top: 0;
-  left: 0;
+  left: 5px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
 }
 
 .third-heyrumi .text-wrapper-15 {
   position: absolute;
   top: 0;
+  left: -10px;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -727,7 +732,7 @@
 .my .div-wrapper {
   position: absolute;
   top: 73px;
-  left: 137px;
+  left: 142px;
 }
 
 .my .image-5 {
@@ -819,7 +824,7 @@
 .my .first-a-to-cart {
   position: absolute;
   top: 72px;
-  left: 105px;
+  left: 113px;
 }
 
 .my .image-6 {
@@ -879,36 +884,36 @@
 
 .my .chk-box #chk-1 {
   position: absolute;
-  top: 150px;
-  left: 320px;
+  top: 41px;
+  left: 20px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-2 {
   position: absolute;
-  top: 200px;
-  left: 320px;
+  top: 170px;
+  left: 20px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-3 {
   position: absolute;
-  top: 320px;
-  left: 320px;
+  top: 280px;
+  left: 20px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-4 {
   position: absolute;
-  top: 435px;
-  left: 320px;
+  top: 400px;
+  left: 20px;
   padding-left: 0px;
 }
 
 .my .chk-box #chk-5 {
   position: absolute;
-  top: 550px;
-  left: 320px;
+  top: 510px;
+  left: 20px;
   padding-left: 0px;
 }
 
