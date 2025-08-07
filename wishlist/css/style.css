@@ -6,6 +6,34 @@
   left: 290px;
 }
 
+.my .r-t01-1{
+  position: absolute;
+  border: 2px solid #ff0000;  
+  top: 22px;
+  left: 10px;
+}
+
+.my .r-t01-2{
+  position: absolute;
+  border: 2px solid #3cff00;  
+  top: 40px;
+  left: 10px;
+}
+
+.my .r-t01-3{
+  position: absolute;
+  border: 2px solid #ff0000;  
+  top: 22px;
+  left: 290px;
+}
+
+.my .r-t01-4{
+  position: absolute;
+  border: 2px solid #2f00ff;  
+  top: 22px;
+  left: 290px;
+}
+
 .my .text-wrapper-29 {
   top: 25px;
   left: 450px;
