@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Pretendard', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.site-header {
+  border-bottom: 1px solid #eee;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  height: 24px;
+}
+
+
+
+
+.nav-menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.header-right a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.signup-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.signup-container h2 {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.signup-form input,
+.signup-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.with-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.with-button input {
+  flex: 1;
+}
+
+.with-button button {
+  padding: 10px 15px;
+  background-color: #ff5a1f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.email-inputs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.email-inputs input {
+  flex: 1;
+}
+
+.email-inputs select {
+  width: 120px;
+}
+
+.birth-group .date-selects {
+  display: flex;
+  gap: 10px;
+}
+
+.form-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.submit-btn {
+  background-color: #ff5a1f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.site-footer {
+  margin-top: 100px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  line-height: 1.5;
+}

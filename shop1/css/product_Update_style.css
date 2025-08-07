@@ -19,11 +19,30 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+/* 
 h2 {
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: bold;
-}
+} */
 
 .section {
   margin-bottom: 30px;
