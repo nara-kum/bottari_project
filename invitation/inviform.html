@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bottari 초대장 작성</title>
+    <link rel="stylesheet" href="../invitation/css/inviform.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">b<span>🎁</span>ttari</div>
+        <nav>
+            <div>캘린더</div>
+            <div>펀딩</div>
+            <div>초대장</div>
+            <div>구매내역</div>
+        </nav>
+        <div class="user-menu">
+            <div>🛒</div>
+            <div>사용자이름 ▼</div>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <div class="form-title">초대장 작성</div>
+
+        <div class="card-box">
+            <div class="sub-title">기념일</div>
+            <select>
+                <option>선택하기 ▼</option>
+            </select>
+
+            <div class="category-buttons">
+                <button>결혼</button>
+                <button>생일</button>
+                <button>돌잔치</button>
+                <button>이벤트</button>
+                <button>축하</button>
+                <button>감사</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="preview-box">
+                <img src="https://via.placeholder.com/300x300.png?text=대표+이미지" alt="대표 이미지">
+            </div>
+
+            <div class="template-section">
+                <div class="card-box">
+                    <div class="sub-title">메인 이미지</div>
+
+                    <div class="template-grid">
+                        <div class="template-card">타입A</div>
+                        <div class="template-card">타입A</div>
+                        <div class="template-card">타입A</div>
+                        <div class="template-card">타입A</div>
+                        <div class="template-card">타입A</div>
+                        <div class="template-card">타입A</div>
+                        <div class="template-card">타입A</div>
+                        <div class="template-card">타입A</div>
+                    </div>
+                    <div class="upload-info">
+                        메인사진<br>이미지의 크기는 15MB 이내로 제한되어 있습니다.
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="sub-title">디자인</div>
+
+                    <div class="section">
+                        <div class="small-label">배경</div>
+                        <div class="option-group">
+                            <button class="btn">종이</button>
+                            <button class="btn">화이트</button>
+                        </div>
+
+                        <div class="small-label">테마</div>
+                        <div class="option-group">
+                            <div class="color-swatch" style="background-color: #d9cdbf;"></div>
+                            <div class="color-swatch" style="background-color: #e9d6cc;"></div>
+                            <div class="color-swatch" style="background-color: #e0b5a4;"></div>
+                            <div class="color-swatch" style="background-color: #a3a1dc;"></div>
+                        </div>
+
+                        <div class="small-label">폰트</div>
+                        <div class="option-group">
+                            <button class="btn">돋움1</button>
+                            <button class="btn">돋움2</button>
+                            <button class="btn">바탕1</button>
+                            <button class="btn">바탕2</button>
+                        </div>
+
+                        <div class="small-label">폰트</div>
+                        <div class="option-group">
+                            <button class="btn">보통</button>
+                            <button class="btn">약간굵게</button>
+                            <button class="btn">크게</button>
+                        </div>
+
+                        <div class="small-label">신랑/신부 표기 순서</div>
+                        <div class="option-group">
+                            <button class="btn">약간굵게</button>
+                            <button class="btn">신부먼저</button>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <span><strong>1단계</strong> / 4단계</span>
+                        <button class="save-btn">임시저장</button>
+                    </div>
+                </div>
+
+                <!-- 신랑측 정보 -->
+                <div class="card-box">
+                    <div class="sub-title">신랑측 정보</div>
+
+                    <div class="section">
+                        <div class="small-label">아버님</div>
+                        <div class="input-row">
+                            <input type="text" placeholder="성">
+                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="연락처">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="groom-father-deceased">
+                            <label for="groom-father-deceased">고인</label>
+                        </div>
+
+                        <div class="small-label">어머님</div>
+                        <div class="input-row">
+                            <input type="text" placeholder="성">
+                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="연락처">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="groom-mother-deceased">
+                            <label for="groom-mother-deceased">고인</label>
+                        </div>
+
+                        <div class="small-label">신랑 <span class="required">(필수)</span></div>
+                        <div class="input-row">
+                            <input type="text" placeholder="성">
+                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="연락처">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 신부측 정보 -->
+                <div class="card-box">
+                    <h3>신부측 정보</h3>
+                    <div class="section">
+                        <div class="small-label">아버님</div>
+                        <div class="input-row">
+                            <input type="text" placeholder="성">
+                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="연락처">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="bride-father-deceased">
+                            <label for="bride-father-deceased">고인</label>
+                        </div>
+
+                        <div class="small-label">어머님</div>
+                        <div class="input-row">
+                            <input type="text" placeholder="성">
+                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="연락처">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="bride-mother-deceased">
+                            <label for="bride-mother-deceased">고인</label>
+                        </div>
+
+                        <div class="small-label">신부 <span class="required">(필수)</span></div>
+                        <div class="input-row">
+                            <input type="text" placeholder="성">
+                            <input type="text" placeholder="이름">
+                            <input type="text" placeholder="연락처">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  /* 배경을 흰색으로 설정 */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+.logo span {
+  color: #f25c05;
+}
+nav {
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+}
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.form-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.form-title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.sub-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.form-section select,
+.category-buttons button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 6px;
+  cursor: pointer;
+  background: white;
+}
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.main-content {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+.preview-box {
+  position: sticky;
+  top: 100px;
+  background: #F9F7F4;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  min-height: 420px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  align-self: flex-start;
+}
+.preview-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+.template-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-box {
+  background: #fcfcfc;
+  border-radius: 12px;
+  padding: 24px 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.template-card {
+  background: #eceae3;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-info {
+  font-size: 12px;
+  color: #666;
+  margin-top: 16px;
+}
+.section {
+  margin-bottom: 24px;
+}
+.option-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.btn {
+  padding: 6px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.input-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+input[type="text"] {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.small-label {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.footer span {
+  font-size: 14px;
+}
+.save-btn {
+  padding: 6px 14px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.required {
+  color: red;
+  font-size: 12px;
+}
