@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../css/globals.css" />
         <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../header/header.css" />
+        <link rel="stylesheet" href="../0.header/header.css" />
+        <link rel="stylesheet" href="../0.footer/footer.css" />
         <title>bottari</title>   
     </head>
     <body>
@@ -30,9 +31,9 @@
         <!------------------------------------------header------------------------------------------------->  
             <section class="wishlist-header">
                 <h1>My 위시리스트</h1>
-                <div class="funding-tabs">
-                    <div class="tab-active">친구 펀딩</div>
-                    <div class="tab">마이 펀딩</div>
+                <div class="funding-tabs-1">
+                    <div class="funding-tabs-2" style="writing-mode: horizontal-tb;">친구 펀딩</div>
+                    <div class="funding-tabs-3" style="writing-mode: horizontal-tb;">마이 펀딩</div>
                 </div>
             </section> 
 
@@ -74,12 +75,13 @@
 
                 </div>
                 <!--group-5 끝나는 지점-->
-                <div class="element-4"> <!--왼쪽 2번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
+
+                <div class="second-product"> <!--왼쪽 2번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
                     <p class="l-o-USB">
                         &#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등 L사이즈 ( 인물테두리컷팅, 눈코입O,
                         USB케이블 )
                     </p>
-                    <p class="text-wrapper-18">&#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등...</p>
+                    <!--<p class="text-wrapper-18">&#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등...</p>-->
                     <div class="text-wrapper-19">39,800원</div>
                     <div class="text-wrapper-20">레이문</div>
                     <img class="image-2" src="../image/2.webp" />
@@ -89,13 +91,13 @@
 
                 </div>
 
-                <div class="element-3"> <!--왼쪽 3번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
+                <div class="third-product"> <!--왼쪽 3번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
                     <p class="our-marriage">
                     &#34;봄날의 우리&#34; [선물포장+엽서증정] Our Marriage 웨딩 머그컵 2P 세트 / 신혼부부 연인 결혼 기념일
                     선물
                     </p>
                     <div class="overlap-4">
-                    <div class="overlap-5">
+                    
                         <div class="text-wrapper-15">20,900원</div>
                         <div class="heyrumi-cart">
                             <img src="../image/add-to-cart.jpg"/>
@@ -105,13 +107,13 @@
                         </div>
                         
                     </div>
-                    </div>
+                    
                     <div class="text-wrapper-16">헤이루미(키친)</div>
-                    <img class="image" src="../image/3.webp" />
+                    <img class="image-1" src="../image/3.webp" />
 
                 </div>
 
-                <div class="element-2">  <!--왼쪽 4번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
+                <div class="fourth-product">  <!--왼쪽 4번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
                     <div class="text-wrapper-12">22,900원</div>
                     <div class="carnation-cart">
                         <img src="../image/add-to-cart.jpg" />
@@ -127,7 +129,37 @@
                     <img class="image-2" src="../image/4.webp" />
                 </div>
 
+                <div class="fifth-product"> <!--왼쪽 5번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
+                    <div class="view">
+                    <img class="image-cao1" src="../image/add-to-cart.jpg" />
+                    <img class="image-cao" src="../image/heart.jpg" />
+                    <div class="overlap-group">
+                        <div class="text-wrapper-2">249,000원</div>
+                        
+                        <p class="p">
+                        한우맘 1++등급 한우 패밀리 프리미엄 홈마카세 1.4kg(등심+살치+갈비+안심+채끝+업진+치마살)
+                        </p>
+                    </div>
+                    <div class="text-wrapper-3">한우맘</div>
+                    </div>
+                    <img class="image-1" src="../image/5.webp" />
 
+                    <div class="group">
+                    <!--<p class="text-wrapper-4">한우맘 1++등급 한우 패밀리</p>-->
+
+                    <div class="frame">
+                        <!--<div class="percent-a">5%</div>-->
+
+
+                    <!--<div>전액</div>-->
+                    </div>
+
+                    </div>
+                    <!--group 끝-->
+
+                </div>  
+                <!--왼쪽 5번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
+           
             </div>
             <!--left-product 끝나는 지점-->
 
@@ -135,107 +167,102 @@
 
 
 
-
-
-
             <div class="right-product"> <!--오른쪽 네모 상자 (5%, 전액 라디오버튼)-->
 
+                <section class="funding-table">
+                    <table>
+                        <tr>
+                            <td class="r-t01-1">기념일 선택 V</td>
+                            <td class="r-t01-2">7월 11일 어머니 환갑잔치</td>
+                            <td class="r-t01-3">7월 16일 ○○○생일</td>
+                            <td class="r-t01-4">7월 27일 내 생일</td>
+                            <td class="r-t01-5">8월 4일 결혼기념일</td>
+                            <td class="r-t01-6">8월 8일 돌잔치</td>
+                            <td class="r-t01-7">9월 5일 쫑파티</td>
+                        </tr>
+                    </table>
+                </section>
+
                 <div class="group-6">
-                    <div class="text-wrapper-17">1,945원</div>
                     <div class="frame">
-                    <div class="text-wrapper-6">5%</div>
-                    <div class="ellipse"></div>
+                    <div class="percent-a">5%</div>
                     </div>
-                    <div class="text-wrapper-7">전액</div>
-                    <div class="ellipse-2"></div>
-                    <p class="text-wrapper-25">&#34;신생아 오가닉 선물&#34; [임신/출산축하] &#34;뱀띠 아기선물&#34;...</p>
+                    <!--<div class="price-all-4">전액</div>-->
+
+                    <!--<p class="text-wrapper-25">&#34;신생아 오가닉 선물&#34; [임신/출산축하] &#34;뱀띠 아기선물&#34;...</p>-->
                 </div>
 
                 <img class="image-5" src="../image/heart.jpg" />
+                    <!--
                     <div class="price-1990">5%</div>
                     <input id="rdo-5-2" type="radio" name="range" value="">
-                    <div>전액</div>
+                    <div class="price-all-5">전액</div>
                     <input id="rdo-1" type="radio" name="range" value="">
+                    -->
 
                 <div class="group-3">
                     <p class="our-marriage-2">&#34;봄날의 우리&#34; [선물포장+엽서증정] Our Marriage 웨딩...</p>
-                    <div class="text-wrapper-17">1,045원</div>
+
                     <div class="frame">
-                        <div class="text-wrapper-6">5%</div>
+                        <div class="percent-a">5%
                         <input id="rdo-5" type="radio" name="range" value="">
-                    </div>
-                    <div class="text-wrapper-7">전액</div>
+                        </div>
+                    
+                    <div class="price-all-6">전액
                         <input id="rdo-all" type="radio" name="range" value="">
-                    <div class="ellipse-2"></div>
+                    </div>  
+
+                    </div>  
                 </div>    
 
                 <div class="group-2">
                     <div class="frame-2">
-                        <div class="text-wrapper-8">5%</div>
+                        <!--<div class="percent-a">5%</div>-->
 
                     </div>
                     <div class="text-wrapper-9">전액</div>
                     <div class="text-wrapper-10">[어버이날 스승의날] &#34;감사합니다사랑합니다&#34; 카네이션꽃...</div>
                     <div class="text-wrapper-11">1,145원</div>
                 </div>
-
-
-            </div>
-
-            <div class="element">
-                <div class="view">
-                <img class="image-cao1" src="../image/add-to-cart.jpg" />
-                <img class="image-cao" src="../image/heart.jpg" />
-                <div class="overlap-group">
-                    <div class="text-wrapper-2">249,000원</div>
-                    
-                    <p class="p">
-                    한우맘 1++등급 한우 패밀리 프리미엄 홈마카세 1.4kg(등심+살치+갈비+안심+채끝+업진+치마살)
-                    </p>
-                </div>
-                <div class="text-wrapper-3">한우맘</div>
-                </div>
-                <img class="image" src="../image/5.webp" />
-                <div class="group">
-                <p class="text-wrapper-4">한우맘 1++등급 한우 패밀리 프리미엄 홈마카세 1.4kg...</p>
-                <div class="text-wrapper-5">12,450원</div>
-
-                <div class="frame">
-                    <div class="text-wrapper-6">5%</div>
-
-                </div>
-                <div class="text-wrapper-7">전액</div>
-
-                </div>
-            </div>       
-            
-
-
-
-
-
+            </div>   
                 <button class="btn-funding1"  type="submit">펀딩시작하기</button>
-                
-
-
-
-            <section class="funding-table">
-                <table>
-                    <tr>
-                        <td class="r-t01-1">기념일 선택 V</td>
-                        <td class="r-t01-2">7월 11일 어머니 환갑잔치</td>
-                        <td class="r-t01-3">7월 16일 ○○○생일</td>
-                        <td class="r-t01-4">7월 27일 내 생일</td>
-                        <td class="r-t01-5">8월 4일 결혼기념일</td>
-                        <td class="r-t01-6">8월 8일 돌잔치</td>
-                        <td class="r-t01-7">9월 5일 쫑파티</td>
-                    </tr>
-                </table>
-            </section>
-
         </div>
         <!--screen 끝나는 지점-->
 
+    <!-----------------------------------footer------------------------------------------>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#terms">이용약관</a>
+                <a href="#privacy">개인정보처리방침</a>
+                <a href="#exchange">교환/반품 안내</a>
+                <a href="#faq">자주 묻는 질문</a>
+                <a href="#contact">1:1 문의</a>
+            </div>
+            </div>
 
+            <div class="company-info">
+                <p>
+                    <span class="company-name">상호: 주식회사 보따리</span> | 
+                    <span class="company-name">대표: 김보따리</span> | 
+                    <span>사업자등록번호: 123-45-67890</span> | 
+                    <span>통신판매업신고: 제2025-서울강동-0001</span>
+                </p>
+                <p class="contact-info">
+                    주소: 서울특별시 강동구 천호대로 1027, 5층 | 
+                    고객센터: 02-1234-5678
+                </p>
+                <p class="contact-info">
+                    운영시간: 평일 10:00 ~ 18:00 (점심시간 12:00~13:00)
+                </p>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 bottari.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-----------------------------------footer------------------------------------------>
+        
     </body>
 </html>
