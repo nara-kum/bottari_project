@@ -27,7 +27,7 @@
   margin: 0 auto 20px;
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
 
@@ -44,102 +44,111 @@
 
 .x .overlap-wrapper {
   background-color: #ffffff;
-  overflow: hidden;
   width: 1920px;
-  height: 1420px;
+  height: 1300px;
 }
 
+/*푸터 밑으로 내려가면 이거 수정하셈*/
 .x .overlap {
   position: relative; /* 또는 relative */
   margin-top: -200px;
-  height: 1883px;
+  height: 1600px;
 }
 
 
+
+.x .text-wrapper {
+  position: relative;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  line-height: normal;
+}
+
+/*금액대_전체*/
 .x .frame {
   height: 20px;
   padding: 10px;
   top: 267px;
-  left: 310px;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-color: #000000;
+  left: 310px; 
+  position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  position: absolute;
+  border-right: 1px solid #000;
+  white-space: nowrap;
 }
 
-.x .text-wrapper {
-  position: relative;
-  width: fit-content;
-  margin-top: -9.00px;
-  margin-bottom: -7.00px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 13px;
-  letter-spacing: 0;
-  line-height: normal;
-}
 
+/*금액대_2만원미만*/
 .x .div-wrapper {
   height: 20px;
   padding: 10px;
   top: 267px;
-  left: 354px;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-color: #000000;
+  left: 376px; 
+  position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  position: absolute;
+  border-right: 1px solid #000;
+  white-space: nowrap;
 }
 
+/*금액대_2만원대*/
 .x .div {
   height: 20px;
   padding: 10px;
   top: 267px;
-  left: 434px;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-color: #000000;
+  left: 475px;
+  position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  position: absolute;
+  border-right: 1px solid #000;
+  white-space: nowrap;
 }
 
+/*금액대_3만원대*/
 .x .frame-2 {
   height: 20px;
   padding: 10px;
   top: 267px;
-  left: 497px;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-color: #000000;
+  left: 560px;
+  position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  position: absolute;
+  border-right: 1px solid #000;
+  white-space: nowrap;
 }
 
+
+/*금액대_5만원대*/
 .x .frame-3 {
   height: 20px;
   padding: 10px;
   top: 267px;
-  left: 562px;
+  left: 650px;
+  position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  position: absolute;
+  border-right: 1px solid #000;
+  white-space: nowrap;
 }
+
+
+.icon-search {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  top: 300px;
+  left: 1559px;
+  aspect-ratio: 1;
+
+}
+
 
 .x .rectangle {
   position: absolute;
@@ -149,6 +158,7 @@
   left: 320px;
   background-color: #ef5327;
 }
+
 
 .x .text-wrapper-2 {
   position: absolute;
@@ -395,16 +405,6 @@
   border-color: #ef5327;
 }
 
-.x .icon-search {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 252px;
-  left: 1559px;
-  aspect-ratio: 1;
-  background-image: url(./img/vector-7.svg);
-  background-size: 100% 100%;
-}
 
 .x .text {
   position: absolute;
@@ -623,12 +623,7 @@
   gap: 10px;
   position: absolute;
 }
-/* 
-Original CSS code should be injected here.
-The following are additions and modifications to the original CSS.
-*/
 
-/* Semantic class names for better maintainability */
 .price-filter {
   display: flex;
   position: absolute;
