@@ -1,72 +1,22 @@
 @charset "UTF-8";
 
-.screen {
-  width: 1920px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding-right: 0;
-  /* height: 770px; */       
-  /* align-items: start; */
-  /* min-height: 100vh; */    
-}
-
-.screen .logo-colored {
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  top: 22px;
-  left: 290px;
-}
-
-.screen .nav{
-  position: absolute;
+.sec-sub-title{
+  height: 80px;
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 30px;
-  top: 40px;
-  left: 350px;  
+  padding-top: 30px;  /* 위 패딩 */
+  padding-bottom: -20px;   /* 아래 패딩 */
 }
 
-.screen .wishlist-header h1{ 
-  max-width: 1280px;
-  font-size: 20px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 30px;
-  top: 50px;
-  left: 700px;  
-}
-
-/*
-.screen .funding-tabs-1 .funding-tabs-2{ /* 친구 펀딩 */
-/*
+.sec-sub-title ul li{ /* 친구 펀딩, 마이 펀딩 */
   width: 90px;
-  position: absolute;
   font-size: 20px;
   font-weight: bold;
   color: #dddddd;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px; 
-  padding-top: 30px;
-  top: 30px;
-  left: 230px;  
-  writing-mode: horizontal-tb; /* 기본값 */  /*
-}
-*/
-
-.screen .funding-tabs-1 .funding-tabs-3{ /* 마이 펀딩 */
-  width: 90px;
-  position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  color: #dddddd;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px; 
-  padding-top: 30px;
-  top: 30px;
-  left: 140px;  
-  writing-mode: horizontal-tb; /* 기본값 */  
+  padding-top: -40px;   /* 위 패딩 */
+  padding-left: auto;
+  padding-bottom: -100px;    /* 아래 패딩 */
+  margin: 100 200;
 }
 
 /*
@@ -77,19 +27,6 @@
   left: 30px;  
 }
 */ 
-
-/*
-.screen .tab{  /* 마이 펀딩 */
-/*
-  position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  color: #dddddd;  
-  border-bottom: 1px solid #ccc;
-  top: 50px;
-  left: 150px;  
-}
-*/
 
 .screen .r-t01-1{
   width: 180px;
