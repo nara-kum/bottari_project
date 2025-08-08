@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .screen {
-  width: 1200px;
+  width: 1920px;
   margin: 0 auto;
   background-color: #ffffff;
   padding-right: 0;
@@ -297,13 +297,9 @@
 }
 
 .screen .left-product-form {
-  position: absolute;
-  width: 896px;
-  height: 764px;
-  top: 79px;
-  left: 290px;
-  border: 1px solid;
-  border-color: #EAEAEA;
+  width: 894px;
+  height: 900px;
+  border-right: 1px solid #929292;
 }
 
 .screen .right-product-form {
@@ -828,7 +824,7 @@
 }
 
 
-.screen .left-product .first-product {  /* 임신/출산축하 뱀띠 아기선물 */
+.screen .left-product-form .first-product {  /* 임신/출산축하 뱀띠 아기선물 */
   position: absolute;
   top: 105px;
   left: 171px;
@@ -840,7 +836,7 @@
   line-height: normal;
 }
 
-.screen .left-product .text-wrapper-24 {
+.screen .left-product-form .text-wrapper-24 {
   position: absolute;
   top: 82px;
   left: 172px;
