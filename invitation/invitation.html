@@ -2,24 +2,29 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../invitation/css/invitation.css" />
+    <meta charset="UTF-8">
+    <title>bottari 초대장 관리</title>
+	<link rel="stylesheet" href="../invitation/css/invitation.css">
 </head>
 
 <body>
-
-    <!-- 상단 헤더 -->
+    <!-- 헤더 -->
     <header>
-        <div class="logo">b<span>🎁</span>ttari</div>
-        <nav>
-            <div>캘린더</div>
-            <div>펀딩</div>
-            <div>초대장</div>
-            <div>구매내역</div>
-        </nav>
-        <div class="user-menu">
-            <div>🛒</div>
-            <div>사용자이름 ▼</div>
+        <div class="header">
+            <div class="auto-layout-left">
+                <img class="logo-colored" src="../asset/Logo_colored.svg" alt="bottari">
+                <div class="header-menu">캘린더</div>
+                <div class="header-menu">펀딩</div>
+                <div class="header-menu">초대장</div>
+                <div class="header-menu">구매내역</div>
+            </div>
+            <div class="auto-layout-right">
+                <div class="shopping-cart-frame">
+                    <img class="icon-shopping-cart" src="../asset/icon-shopping-cart.svg" alt="">
+                </div>
+                <div class="header-usermenu">사용자이름</div>
+                <img class="icon-caret-down" src="../asset/icon-caret-down.svg" alt="">
+            </div>
         </div>
     </header>
 
@@ -31,39 +36,42 @@
         </div>
 
         <div class="card-container">
-            <!-- 카드 1 -->
             <div class="card">
-                <div class="buttons">
-                    <button>수정하기</button>
-                    <button>전체보기</button>
-                </div>
+                <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
             </div>
-
-            <!-- 카드 2 -->
             <div class="card">
-                <div class="buttons">
-                    <button>수정하기</button>
-                    <button>전체보기</button>
-                </div>
+                <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
             </div>
-
-            <!-- 카드 3 -->
             <div class="card">
-                <div class="buttons">
-                    <button>수정하기</button>
-                    <button>전체보기</button>
-                </div>
+                <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
             </div>
-
-            <!-- 카드 4 (수정 비활성화) -->
             <div class="card">
-                <div class="buttons">
-                    <button class="disabled">수정하기</button>
-                    <button>전체보기</button>
-                </div>
+                <div class="buttons"><button class="disabled">수정하기</button><button>전체보기</button></div>
             </div>
         </div>
     </div>
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#terms">이용약관</a>
+                <a href="#privacy">개인정보처리방침</a>
+                <a href="#exchange">교환/반품 안내</a>
+                <a href="#faq">자주 묻는 질문</a>
+                <a href="#contact">1:1 문의</a>
+            </div>
+            <div class="company-info">
+                <p><span class="company-name">상호: 주식회사 보따리</span> | <span class="company-name">대표: 김보따리</span> |
+                    <span>사업자등록번호: 123-45-67890</span> | <span>통신판매업신고: 제2025-서울강동-0001</span>
+                </p>
+                <p class="contact-info">주소: 서울특별시 강동구 천호대로 1027, 5층 | 고객센터: 02-1234-5678</p>
+                <p class="contact-info">운영시간: 평일 10:00 ~ 18:00 (점심시간 12:00~13:00)</p>
+            </div>
+            <div class="copyright">
+                <p>© 2025 bottari.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
