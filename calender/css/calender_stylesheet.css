@@ -1,6 +1,145 @@
 @charset "utf-8";
+/*************************/
+/* calender_no_event css */
+/*************************/
 
 .left-main {
-    width: 896px;
+    width: 894px !important;
     border-right: 1px solid #eee;
+}
+
+.dummy-calender {
+    width: 800px;
+    height: 800px;
+}
+
+.right-main {
+    width: 385px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-calender {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.explain-text {
+    font-size: 20px;
+    font-family: 'inter';
+    margin: 0px auto 5px auto;
+}
+
+.btn-add-event {
+    background: none;
+    background-color: #ef5327;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #ff9a7e;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    font-family: "inter";
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+    appearance: none;       /* 브라우저 기본 스타일 제거 */
+    line-height: normal;
+    white-space: nowrap;
+    margin: auto;
+}
+
+/**************************************/
+/******* calender_add_event scc *******/
+/**************************************/
+
+#event-add-popup {
+    width:480px;
+    height: 365px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#event-add-popup .event-name {
+    width: 385px;
+    display: flex;
+    gap: 10px;
+    margin: 44px 0px 15px 30px;
+}
+
+.event-icon-box {
+    display: flex;
+    align-items: center;
+}
+
+.popup-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.event-name-box {
+    width: 338px;
+    height: 35px;
+    border-bottom: 2px solid #929292;
+    align-items: center;
+}
+
+.repeat-option {
+    display: flex;
+    gap: 35px;
+    margin: 10px 0px 10px 30px;
+    align-items: center;
+}
+
+.input-name {
+    width: 338px;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #eee;
+    padding: 1px 0px;
+}
+
+.select-option {
+    width: 142px;
+    height: 37px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.event-comment {
+    display: flex;
+    align-items: top;
+    margin: 10px 0px 10px 30px;
+    gap: 35px;
+}
+
+.input-comment {
+    resize: none; 
+    appearance: none;       /* 브라우저 기본 스타일 제거 */
+    width: 338px;
+    height: 121px;
+}
+
+.save-button {
+    appearance: none;       /* 브라우저 기본 스타일 제거 */
+    width: 90px;
+    height: 30px;
+    background-color: #ef5327;
+    border: 1px solid #ff9a7e;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-left: 300px;
 }

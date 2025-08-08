@@ -2,16 +2,15 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <!-- CDN(외부 사이트 프리셋) 리셋 css 대용-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
-    <!-- 난 외부링크 못 믿겠다! 하시는 분은 CDN을 삭제 or 주석처리 후 아래의 css링크 주석 해제 후 사용할것 -->
-    <!-- <link rel="stylesheet" href="../Global_css/reset.css"> -->
-    <link rel="stylesheet" href="../../Global_css/Global.css">     <!-- 본인 파일의 경로에 맞게 수정해야함 -->
-    <link rel="stylesheet" href="../css/calender_stylesheet.css">
+    <meta charset="UTF-8">
+    <title>bottari 초대장 관리</title>
+    <link rel="stylesheet" href="../../Global_css/reset.css">
+    <link rel="stylesheet" href="../../Global_css/Global.css">
+    <link rel="stylesheet" href="../../invitation/css/invitation_list.css">
 </head>
 
 <body class="family">
+    <!-- 헤더 -->
     <header class="controller">
         <div id="sec-header" class="sector">
             <div class="left-side">
@@ -28,37 +27,50 @@
             </div>
         </div>
     </header>
+
+    <!-- 본문 -->
     <content class="controller">
         <div id="sec-content" class="sector">
             <div class="sec-sub-title">
-
+                <h2>나의 초대장</h2>
             </div>
             <div class="sec-content-main">
-                <div class="left-main content-height">
-                    <img class="dummy-calender" src="../dummy_calender.JPG">
-                </div>
-                <div class="right-main content-height">
-                    <div class="no-event">
-                        <img class="icon-calender" src="../../asset/icon-calendar-exclamation.svg" />
-                        <div class="explain-text">등록된 기념일이 없어요</div>
-                        <button class="btn-add-event">기념일 등록하기</button>
+
+                <div class="list-stack">
+                    <div class="section-header">
+                        <button class="create-button">초대장 만들기</button>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
+                        </div>
+                        <div class="card">
+                            <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
+                        </div>
+                        <div class="card">
+                            <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
+                        </div>
+                        <div class="card">
+                            <div class="buttons"><button class="disabled">수정하기</button><button>전체보기</button></div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- 여기부터 코딩 시작!! -->
-
         </div>
     </content>
+
+    <!-- 푸터 -->
     <footer class="controller">
         <div id="sec-footer" class="sector">
             <div class="footer-links">
-                <a href="#terms">이용약관</a>  |
+                <a href="#terms">이용약관</a> |
                 <a href="#privacy">개인정보처리방침</a> |
-                <a href="#exchange">교환/반품 안내</a>  |
-                <a href="#faq">자주 묻는 질문</a>   |
+                <a href="#exchange">교환/반품 안내</a> |
+                <a href="#faq">자주 묻는 질문</a> |
                 <a href="#contact">1:1 문의</a>
             </div>
+
             <div class="company-info">
                 <p>
                     <span class="company-name">상호: 주식회사 보따리</span> |
