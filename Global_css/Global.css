@@ -42,13 +42,14 @@ footer {
 
 #sec-content {
     height: auto;       /* 원하는 높이 자유롭게 설정 가능 */
-    
+    margin: 0px auto;
     /* background-color: antiquewhite; */
 }
 
 .sec-content-main {
+    width: 1280px;
     display: flex;
-
+    margin: 0px auto;
 }
 
 #sec-footer {
@@ -58,6 +59,7 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 10px 0px;
+    margin: 0px auto;
 }
 
 /* header css */

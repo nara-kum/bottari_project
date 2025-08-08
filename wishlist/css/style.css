@@ -1,173 +1,66 @@
 @charset "UTF-8";
 
-.screen {
-  width: 1920px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding-right: 0;
-  /* height: 770px; */       
-  /* align-items: start; */
-  /* min-height: 100vh; */    
-}
-
-.screen .logo-colored {
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  top: 22px;
-  left: 290px;
-}
-
-.screen .nav{
-  position: absolute;
+.sec-sub-title {  /* My위시리스트, 마이펀딩, 친구펀딩 */
+  position: relative;
+  display: flex;         /* 플렉스 박스 설정 */
+  align-items: center;   /* 세로 방향 중앙 정렬 */
+  gap: 20px;             /* h2와 ul 사이 간격 */
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 30px;
-  top: 40px;
-  left: 350px;  
+  height: 80px;
+  padding-left: 30px;  /* 왼쪽에서 30px 띄움 */
+}
+ 
+/* My위시리스트 */
+.sec-sub-title h2 {  
+  display: flex;       /* li들을 가로로 배치 */
+  list-style: none;    /* 점 없애기 */
+  margin: 0;
+  padding: 30px 0px 10px 0px;
 }
 
-.screen .wishlist-header h1{ 
-  max-width: 1280px;
-  font-size: 20px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 30px;
-  top: 50px;
-  left: 700px;  
+/* 친구 펀딩, 마이 펀딩 */
+.sec-sub-title ul {  
+  display: flex;       /* li들을 가로로 배치 */
+  gap: 10px;           /* li 사이 간격 */
+  list-style: none;    /* 점 없애기 */
+  margin: 0;
+  padding: 30px 0px 10px 0px;
 }
 
-/*
-.screen .funding-tabs-1 .funding-tabs-2{ /* 친구 펀딩 */
-/*
+/* 친구 펀딩, 마이 펀딩 */
+.sec-sub-title ul li {
+  position: relative;
   width: 90px;
-  position: absolute;
   font-size: 20px;
   font-weight: bold;
   color: #dddddd;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px; 
-  padding-top: 30px;
-  top: 30px;
-  left: 230px;  
-  writing-mode: horizontal-tb; /* 기본값 */  /*
+  align-items: flex-end;  /* ← 하단 정렬로 변경 */
 }
-*/
 
-.screen .funding-tabs-1 .funding-tabs-3{ /* 마이 펀딩 */
-  width: 90px;
+.family .controller #sec-content.sector .sec-content-main .left-main content-height{
+  width: 640px;
+  height: 600px;
+}
+
+.family .controller #sec-content.sector .sec-content-main .left-main content-height .left-product-form{
+  width: 640px;
+  height: 600px;
+}
+
+.sec-content-main .left-main content-height {  /* 임신/출산축하 뱀띠 아기선물 */
   position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  color: #dddddd;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px; 
-  padding-top: 30px;
-  top: 30px;
-  left: 140px;  
-  writing-mode: horizontal-tb; /* 기본값 */  
+  top: 105px;
+  left: 171px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-/*
-.screen .wishlist-header .funding-tabs div{
-  writing-mode: horizontal-tb; /* 기본값 */
-/*  
-  top: 300px;
-  left: 30px;  
-}
-*/ 
 
-/*
-.screen .tab{  /* 마이 펀딩 */
-/*
-  position: absolute;
-  font-size: 20px;
-  font-weight: bold;
-  color: #dddddd;  
-  border-bottom: 1px solid #ccc;
-  top: 50px;
-  left: 150px;  
-}
-*/
-
-.screen .r-t01-1{
-  width: 180px;
-  height: 25px; 
-  position: absolute;
-  border: 2px solid #91836F;  
-  top: 20px;
-  left: 20px;
-  text-align: center;      /* 가로 정렬 */
-  vertical-align: middle;  /* 세로 정렬 */  
-}
-
-.screen .r-t01-2{
-  position: absolute;
-  width: 180px;
-  height: 25px; 
-  border: 2px solid #91836F;  
-  top: 43px;
-  left: 20px;
-  text-align: center;      /* 가로 정렬 */
-  vertical-align: middle;  /* 세로 정렬 */  
-}
-
-.screen .r-t01-3{
-  position: absolute;
-  width: 180px;
-  height: 25px; 
-  border: 2px solid #91836F;  
-  top: 66px;
-  left: 20px;
-  text-align: center;      /* 가로 정렬 */
-  vertical-align: middle;  /* 세로 정렬 */  
-}
-
-.screen .r-t01-4{
-  position: absolute;
-  width: 180px;
-  height: 25px;    
-  border: 2px solid #91836F;  
-  top: 89px;
-  left: 20px;
-  text-align: center;      /* 가로 정렬 */
-  vertical-align: middle;  /* 세로 정렬 */
-}
-
-.screen .r-t01-5{
-  position: absolute;
-  width: 180px;
-  height: 25px;    
-  border: 2px solid #91836F;  
-  top: 112px;
-  left: 20px;
-  text-align: center;      /* 가로 정렬 */
-  vertical-align: middle;  /* 세로 정렬 */
-
-}
-
-.screen .r-t01-6{
-  position: absolute;
-  width: 180px;
-  height: 25px;    
-  border: 2px solid #91836F; 
-  top: 135px;
-  left: 20px;
-  text-align: center;      /* 가로 정렬 */
-  vertical-align: middle;  /* 세로 정렬 */
-}
-
-.screen .r-t01-7{
-  position: absolute;
-  width: 180px;
-  height: 25px;    
-  border: 2px solid #91836F;  
-  top: 158px;
-  left: 20px;
-  text-align: center;      /* 가로 정렬 */
-  vertical-align: middle;  /* 세로 정렬 */
-}
 
 .screen .text-wrapper-29 {
   top: 25px;
@@ -294,12 +187,6 @@
   border-top-width: 2px;
   border-top-style: solid;
   border-color: #919191;
-}
-
-.screen .left-product-form {
-  width: 894px;
-  height: 900px;
-  border-right: 1px solid #929292;
 }
 
 .screen .right-product-form {
@@ -821,19 +708,6 @@
   height: 100px;
   top: 528px;
   left: 29px;
-}
-
-
-.screen .left-product-form .first-product {  /* 임신/출산축하 뱀띠 아기선물 */
-  position: absolute;
-  top: 105px;
-  left: 171px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
 .screen .left-product-form .text-wrapper-24 {
