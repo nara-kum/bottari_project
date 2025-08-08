@@ -35,20 +35,25 @@ footer {
 #sec-header {
     height: 80px;
     display: flex;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     justify-content: space-between;
 }
 
 #sec-content {
     height: 800px;       /* 원하는 높이 자유롭게 설정 가능 */
+    
+    /* background-color: antiquewhite; */
+}
 
-    background-color: antiquewhite;
+.sec-content-main {
+    display: flex;
+
 }
 
 #sec-footer {
     height: auto;
     display: flex;
-    background-color: aliceblue;
+    background-color: #F9F7F4;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -94,8 +99,19 @@ footer {
 }
 
 /* content css */
+.sec-sub-title {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
 
+.sec-content-main .left-main, .sec-content-main .right-main {
+    width: 640px;
+}
 
+/* left-main, right-main 높이 설정 */
+.content-height {
+    height: 600px;
+}
 
 /* footer css */
 
@@ -103,4 +119,6 @@ footer {
     margin: 0px 15px;
     padding: 7px 0px;
     line-height: 30px;
+    font-size: 13px;
+    color: #929292;
 }
