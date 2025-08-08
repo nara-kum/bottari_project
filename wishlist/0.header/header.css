@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-.screen {
-    width: 100vw;
-    height: 770px;    
-    background-color: #ffffff;
-    justify-items: center;
-    align-items: start;
-    min-height: 100vh;
-    padding-right: 0;
-}
-
 /*헤더 css*/
 .screen .header {
     background-color: #ffffff;
@@ -20,9 +10,10 @@
 }
 
 .logo-colored {
-    position: relative;
+    display: flex;
     width: 150px;
     height: 37px;
+    flex-direction: row;
     padding-right: 14px;
 }
 
