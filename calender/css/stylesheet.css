@@ -300,7 +300,7 @@
     width: 341px !important;
     appearance: none;       /* 브라우저 기본 스타일 제거 */
     border-bottom: 2px solid;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .custom-select {
