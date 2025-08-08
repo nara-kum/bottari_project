@@ -60,133 +60,34 @@
   line-height: normal;
 }
 
-
-
-.screen .text-wrapper-29 {
-  top: 25px;
-  left: 450px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
+.first-product .first-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */  
 }
 
-.screen .text-wrapper-30 {
-  top: 25px;
-  left: 520px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
+.second-product .second-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */  
 }
 
-.screen .text-wrapper-31 {
-  top: 25px;
-  left: 570px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
+.third-product .third-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */  
 }
 
-.screen .text-wrapper-32 {
-  top: 25px;
-  left: 640px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  font-size: 20px;
-  white-space: nowrap;
-  position: absolute;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: normal;
+.f-product .f-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */    
 }
 
-.screen .text-wrapper-36 {
-  align-content: space-between;
-  margin-top: 60px;
-  margin-left: 330px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.screen .text-wrapper-34 {
-  position: relative;
-  width: fit-content;
-  margin-top: -10px;
-  margin-left: -30px;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #0000004c;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.screen .text-wrapper-35 {
-  position: relative;
-  margin-top: -10px;
-  margin-left: -35px;
-  font-family: "Inter-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #0000004c;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.screen .frame-3 {
-  display: inline-flex;
-  justify-content: center;
-  gap: 12px;
-  top: 0;
-  left: 107px;
-  align-items: center;
-  position: absolute;
-}
-
-.screen .frame-4 {
-  display: inline-flex;
-  justify-content: center;
-  gap: 10px;
-  top: 0;
-  left: 0;
-  align-items: center;
-  position: absolute;
-}
-
-.screen .div {
-  background-color: #ffffff;
-  width: 1920px;
-  height: 1000px;
-  position: relative;
-}
-
-.screen .overlap {
-  position: absolute;
-  width: 1280px;
-  height: 809px;
-  top: 156px;
-  left: 323px;
-  border-top-width: 2px;
-  border-top-style: solid;
-  border-color: #919191;
+.o-product .o-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */    
 }
 
 .screen .right-product-form {
