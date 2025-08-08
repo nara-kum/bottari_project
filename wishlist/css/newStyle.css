@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+.sec-sub-title {  /* My위시리스트, 마이펀딩, 친구펀딩 */
+  display: flex;         /* 플렉스 박스 설정 */
+  align-items: center;   /* 세로 방향 중앙 정렬 */
+  gap: 20px;             /* h2와 ul 사이 간격 */
+  font-size: 20px;
+  font-weight: bold;
+  height: 80px;
+  padding: 0px;
+}
+ 
+/* My위시리스트 */
+.sec-sub-title h2 {  
+  display: flex;       /* li들을 가로로 배치 */
+  list-style: none;    /* 점 없애기 */
+  margin: 0;
+  padding: 30px 0px 10px 0px;
+}
+
+/* 친구 펀딩, 마이 펀딩 */
+.sec-sub-title ul {  
+  display: flex;       /* li들을 가로로 배치 */
+  gap: 10px;           /* li 사이 간격 */
+  list-style: none;    /* 점 없애기 */
+  margin: 0;
+  padding: 30px 0px 10px 0px;
+}
+
+/* 친구 펀딩, 마이 펀딩 */
+.sec-sub-title ul li {
+  width: 90px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #dddddd;
+  align-items: flex-end;  /* ← 하단 정렬로 변경 */
+}
+
+.first-product .first-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */  
+}
+
+.second-product .second-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */  
+}
+
+.third-product .third-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */  
+}
+
+.f-product .f-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */    
+}
+
+.o-product .o-product-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;  /* 모서리를 둥글게 */    
+}
+
+/*  select id="funding-table"   */
+.family .right-main #funding-table{
+    margin-top: 50px ;
+    margin-left: 50px;
+}
+
+.first-product .first-product-image{ /* 첫번째 이미지-이키 상품 */
+    margin-top: 5px ;
+    gap: 10px;            /* 체크박스와 이미지 사이 간격 */     
+}
+
+.first-product .eki{
+    gap: 20px;             /* h2와 ul 사이 간격 */
+}
+
+.first-product #chk-1{
+    margin-bottom: 20px; /* ✅ 원하는 만큼 띄우기 */
+}    
+
+
+

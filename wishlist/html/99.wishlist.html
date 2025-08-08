@@ -3,16 +3,9 @@
 
 <head>
     <meta charset="UTF-8"> 
-    <link rel="stylesheet" href="../../Global_css/Global.css" />     
-    <!-- CDN(외부 사이트 프리셋) 리셋 css 대용-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
-    <!-- 난 외부링크 못 믿겠다! 하시는 분은 CDN을 삭제 or 주석처리 후 아래의 css링크 주석 해제 후 사용할것 -->
-    <!-- <link rel="stylesheet" href="../Global_css/reset.css"> -->
-    <!--<link rel="stylesheet" href="../Global_css/Global.css">-->     <!-- 본인 파일의 경로에 맞게 수정해야함 -->
-    <link rel='stylesheet' href='../css/style.css' />         
-    <link rel='stylesheet' href='../html/left-product-form.html'  />    
-    <link rel='stylesheet' href='../html/right-product-form.html'  />     
-
+    <link rel="stylesheet" href="../../Global_css/reset.css">
+    <link rel="stylesheet" href="../css/Global.css" />    
+    <link rel='stylesheet' href='../css/newStyle.css' /> 
     <title>wishlist</title> 
 </head>
 
@@ -46,34 +39,6 @@
             <div class="sec-content-main">
                 <div class="left-main content-height">
 
-                    <!--1 번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
-                    <div class="first-product"> 
-                        <label for="chk-1"></label>
-                        <input id="chk-1" type="checkbox" name="" value="">
-
-                        <img class="first-product-image" src="../image/eki.webp" /> <!--상품이미지-->
-                        
-                        <p class="eki">이키</p>     <!--판매처-->
-                        <span>&#34;신생아 오가닉 선물&#34; [임신/출산축하] &#34;뱀띠 아기선물&#34; 유기농 오가닉 7종 맞춤선물세트</span>
-                        <div class="price38900">38,900원</div>  <!--가격-->
-                        <div class="first-cart"><img src="../image/add-to-cart.jpg" /></div> <!--장바구니-->
-                        <img class="first-heart" src="../image/heart.jpg" /> <!--하트(찜)-->
-                    </div> <!-- first-product 끝나는 지점 -->
-
-                    <!--2 번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
-                    <div class="second-product"> 
-                        <iabel for="chk-2"></iabel>
-                        <input id="chk-2" type="checkbox" name="" value="">
-
-                        <img class="second-product-image" src="../image/2.webp" />  <!--상품이미지-->
-                        
-                        <p class="reymoon">레이문</p>  <!--판매처-->
-                        <span>&#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등 L사이즈 (인물테두리컷팅, 눈코입O,USB케이블)</span>
-                        <div class="priceRmoon39800">39,800원</div> <!--가격-->
-                        <div class="second-cart"><img src="../image/add-to-cart.jpg" /></div>   <!--장바구니--> 
-                        <div class="second-heart" ><img src="../image/heart.jpg" /></div>  <!--하트(찜)-->
-                    </div>
-
                     <!--3 번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
                     <div class="third-product"> 
                         <label for="chk-3"></label>
@@ -88,6 +53,7 @@
                         <div class="third-cart"><img src="../image/add-to-cart.jpg"/></div>   <!--장바구니-->       
                         <div class="third-heart"><img src="../image/heart.jpg"/></div>  <!--하트(찜)-->                 
                     </div>
+
 
                     <!--4 번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
                     <div class="f-product"> 
@@ -115,28 +81,16 @@
                         <div class="5-cart"><img src="../image/add-to-cart.jpg" /></div>  <!--장바구니-->  
                         <div class="5-heart"><img src="../image/heart.jpg" /></div>  <!--하트(찜)-->  
                     </div>
-                
                 </div>
                 <div class="right-main content-height">
                     <!-- 오른쪽 기념일선택 V -->
+                    <!--
                     <div class="right-product-form"> <!--오른쪽-->
 
-                        <section class="funding-table">
-                            <table>
-                                <tr>
-                                    <td class="r-t01-1">기념일 선택 V</td>
-                                    <td class="r-t01-2">7월 11일 어머니 환갑잔치</td>
-                                    <td class="r-t01-3">7월 16일 ○○○생일</td>
-                                    <td class="r-t01-4">7월 27일 내 생일</td>
-                                    <td class="r-t01-5">8월 4일 결혼기념일</td>
-                                    <td class="r-t01-6">8월 8일 돌잔치</td>
-                                    <td class="r-t01-7">9월 5일 쫑파티</td>
-                                </tr>
-                            </table>
-                        </section>  
+
 
                        <button class="btn-funding1"  type="submit">펀딩시작하기</button>  
-                    </div>    
+                    </div> 
                 </div>
             </div>
 
