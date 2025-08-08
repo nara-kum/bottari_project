@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .no-event {
@@ -59,7 +60,7 @@
 }
 
 /**************************************/
-/******* calender_add_event scc *******/
+/******* calender_add_event css *******/
 /**************************************/
 
 #event-add-popup {
@@ -153,4 +154,33 @@
     color: white;
     text-align: center;
     margin-left: 345px;
+}
+
+/*****************************/
+/* event list (no event) css */
+/*****************************/
+
+.event-detail {
+    width: 380px;
+    height: 85px;
+}
+
+.celebrate-card {
+    width: 380px;
+    height: 280px;
+}
+
+.funding-goods {
+    width: 380px;
+    height: 205px;
+}
+
+.ad-banner {
+    width: 380px;
+    height: 150px;
+}
+
+.history-gift {
+    width: 380px;
+    height: 205px;
 }
