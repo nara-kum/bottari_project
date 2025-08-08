@@ -22,6 +22,7 @@ header {
 
 footer {
     border-top: 1px solid #ccc;
+    background-color: #F9F7F4;
 }
 
 
@@ -40,7 +41,7 @@ footer {
 }
 
 #sec-content {
-    height: 800px;       /* 원하는 높이 자유롭게 설정 가능 */
+    height: auto;       /* 원하는 높이 자유롭게 설정 가능 */
     
     /* background-color: antiquewhite; */
 }
@@ -53,7 +54,6 @@ footer {
 #sec-footer {
     height: auto;
     display: flex;
-    background-color: #F9F7F4;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -101,11 +101,12 @@ footer {
 /* content css */
 .sec-sub-title {
     height: 80px;
+	display: flex;
     border-bottom: 1px solid #ccc;
 }
 
 .sec-content-main .left-main, .sec-content-main .right-main {
-    width: 640px;
+    width: auto;
 }
 
 /* left-main, right-main 높이 설정 */
