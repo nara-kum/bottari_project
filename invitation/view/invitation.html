@@ -2,51 +2,72 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <!-- CDN(외부 사이트 프리셋) 리셋 css 대용-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
-    <!-- 난 외부링크 못 믿겠다! 하시는 분은 CDN을 삭제 or 주석처리 후 아래의 css링크 주석 해제 후 사용할것 -->
-    <!-- <link rel="stylesheet" href="../Global_css/reset.css"> -->
-    <link rel="stylesheet" href="../Global_css/Global.css">     <!-- 본인 파일의 경로에 맞게 수정해야함 -->
+    <meta charset="UTF-8">
+    <title>bottari 초대장 관리</title>
+    <link rel="stylesheet" href="../../invitation/css/invitation.css">
+    <link rel="stylesheet" href="../../Global_css/Global.css"> <!-- 본인 파일의 경로에 맞게 수정해야함 -->
 </head>
 
 <body class="family">
+    <!-- 헤더 -->
     <header class="controller">
         <div id="sec-header" class="sector">
             <div class="left-side">
-                <a href=""><img class="header-logo" src="../asset/Logo_colored.svg"></a>
+                <a href=""><img class="header-logo" src="../../asset/Logo_colored.svg"></a>
                 <h1 class="header-menu"><a href="">캘린더</a></h1>
                 <h1 class="header-menu"><a href="">펀딩</a></h1>
                 <h1 class="header-menu"><a href="">초대장</a></h1>
                 <h1 class="header-menu"><a href="">구매내역</a></h1>
             </div>
             <div class="right-side">
-                <a href=""><img class="header-icon header-shopping-cart" src="../asset/icon-shopping-cart.svg"></a>
+                <a href=""><img class="header-icon header-shopping-cart" src="../../asset/icon-shopping-cart.svg"></a>
                 <h1 class="header-usermenu">사용자이름</h1>
-                <a href=""><img class="header-icon" src="../asset/icon-caret-down.svg"></a>
+                <a href=""><img class="header-icon" src="../../asset/icon-caret-down.svg"></a>
             </div>
         </div>
     </header>
-	
+
+    <!-- 본문 -->
     <content class="controller">
         <div id="sec-content" class="sector">
             <div class="sec-sub-title">
-                <!-- 여기부터 코딩 시작!! -->
+                <h2>나의 초대장</h2>
             </div>
             <div class="sec-content-main">
-                
+
+                <div class="section-header">
+                    <button class="create-button">초대장 만들기</button>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="buttons"><button>수정하기</button><button>전체보기</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="buttons"><button class="disabled">수정하기</button><button>전체보기</button></div>
+                    </div>
+                </div>
             </div>
         </div>
     </content>
+
+    <!-- 푸터 -->
     <footer class="controller">
         <div id="sec-footer" class="sector">
             <div class="footer-links">
-                <a href="#terms">이용약관</a>  |
+                <a href="#terms">이용약관</a> |
                 <a href="#privacy">개인정보처리방침</a> |
-                <a href="#exchange">교환/반품 안내</a>  |
-                <a href="#faq">자주 묻는 질문</a>   |
+                <a href="#exchange">교환/반품 안내</a> |
+                <a href="#faq">자주 묻는 질문</a> |
                 <a href="#contact">1:1 문의</a>
             </div>
+
             <div class="company-info">
                 <p>
                     <span class="company-name">상호: 주식회사 보따리</span> |

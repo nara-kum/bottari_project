@@ -31,25 +31,14 @@
   padding-bottom: 10px;
 }
 
-
-.x {
-  background-color: #ffffff;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  width: 100vw;
-  min-height: 100vh;
-  height: 100%;
-}
-
-.x .overlap-wrapper {
+ .overlap-wrapper {
   background-color: #ffffff;
   width: 1920px;
   height: 1300px;
 }
 
 /*푸터 밑으로 내려가면 이거 수정하셈*/
-.x .overlap {
+ .overlap {
   position: relative; /* 또는 relative */
   margin-top: -200px;
   height: 1600px;
@@ -57,7 +46,7 @@
 
 
 
-.x .text-wrapper {
+ .text-wrapper {
   position: relative;
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
@@ -67,7 +56,7 @@
 }
 
 /*금액대_전체*/
-.x .frame {
+ .frame {
   height: 20px;
   padding: 10px;
   top: 267px;
@@ -82,7 +71,7 @@
 
 
 /*금액대_2만원미만*/
-.x .div-wrapper {
+ .div-wrapper {
   height: 20px;
   padding: 10px;
   top: 267px;
@@ -96,7 +85,7 @@
 }
 
 /*금액대_2만원대*/
-.x .div {
+ .div {
   height: 20px;
   padding: 10px;
   top: 267px;
@@ -110,7 +99,7 @@
 }
 
 /*금액대_3만원대*/
-.x .frame-2 {
+ .frame-2 {
   height: 20px;
   padding: 10px;
   top: 267px;
@@ -125,7 +114,7 @@
 
 
 /*금액대_5만원대*/
-.x .frame-3 {
+ .frame-3 {
   height: 20px;
   padding: 10px;
   top: 267px;
@@ -150,7 +139,7 @@
 }
 
 
-.x .rectangle {
+ .rectangle {
   position: absolute;
   width: 70px;
   height: 9px;
@@ -160,7 +149,7 @@
 }
 
 
-.x .text-wrapper-2 {
+ .text-wrapper-2 {
   position: absolute;
   top: 216px;
   left: 324px;
@@ -172,7 +161,7 @@
   line-height: normal;
 }
 
-.x .overlap-group-wrapper {
+ .overlap-group-wrapper {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -180,12 +169,12 @@
   left: 651px;
 }
 
-.x .overlap-group {
+ .overlap-group {
   position: relative;
   height: 430px;
 }
 
-.x .element-r {
+ .element-r {
   position: absolute;
   width: 292px;
   height: 291px;
@@ -195,7 +184,7 @@
   object-fit: cover;
 }
 
-.x .element-f-p {
+ .element-f-p {
   position: absolute;
   width: 294px;
   height: 17px;
@@ -203,14 +192,14 @@
   left: 0;
 }
 
-.x .overlap-group-2 {
+ .overlap-group-2 {
   position: relative;
   width: 292px;
   height: 17px;
   background-color: #ffffff;
 }
 
-.x .text-wrapper-3 {
+ .text-wrapper-3 {
   position: absolute;
   width: 83px;
   top: 0;
@@ -224,7 +213,7 @@
   white-space: nowrap;
 }
 
-.x .element-f {
+ .element-f {
   display: flex;
   width: 292px;
   height: 42px;
@@ -237,7 +226,7 @@
   background-color: #ffffff;
 }
 
-.x .BEST {
+ .BEST {
   position: relative;
   width: fit-content;
   font-family: "Inter-Regular", Helvetica;
@@ -248,7 +237,7 @@
   line-height: normal;
 }
 
-.x .element-f-2 {
+ .element-f-2 {
   position: absolute;
   width: 292px;
   height: 31px;
@@ -257,7 +246,7 @@
   background-color: #ffffff;
 }
 
-.x .p {
+ .p {
   position: absolute;
   width: 93px;
   top: 370px;
@@ -271,15 +260,15 @@
   line-height: normal;
 }
 
-.x .span {
+ .span {
   font-weight: 700;
 }
 
-.x .text-wrapper-4 {
+ .text-wrapper-4 {
   font-family: "Inter-Regular", Helvetica;
 }
 
-.x .img {
+ .img {
   position: absolute;
   width: 289px;
   height: 38px;
@@ -287,7 +276,7 @@
   left: 3px;
 }
 
-.x .element-2 {
+ .element-2 {
   position: absolute;
   width: 291px;
   height: 10px;
@@ -296,7 +285,7 @@
   background-color: #ffffff;
 }
 
-.x .element-3 {
+ .element-3 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -304,7 +293,7 @@
   left: 321px;
 }
 
-.x .element-4 {
+ .element-4 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -312,7 +301,7 @@
   left: 984px;
 }
 
-.x .element-5 {
+ .element-5 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -320,7 +309,7 @@
   left: 1308px;
 }
 
-.x .element-6 {
+ .element-6 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -328,7 +317,7 @@
   left: 321px;
 }
 
-.x .element-7 {
+ .element-7 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -336,7 +325,7 @@
   left: 321px;
 }
 
-.x .element-8 {
+ .element-8 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -344,7 +333,7 @@
   left: 651px;
 }
 
-.x .element-9 {
+ .element-9 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -352,7 +341,7 @@
   left: 651px;
 }
 
-.x .element-10 {
+ .element-10 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -360,7 +349,7 @@
   left: 983px;
 }
 
-.x .element-11 {
+ .element-11 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -368,7 +357,7 @@
   left: 983px;
 }
 
-.x .element-12 {
+ .element-12 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -376,7 +365,7 @@
   left: 1308px;
 }
 
-.x .element-13 {
+ .element-13 {
   position: absolute;
   width: 294px;
   height: 430px;
@@ -384,7 +373,7 @@
   left: 1308px;
 }
 
-.x .line {
+ .line {
   position: absolute;
   width: 1920px;
   height: 1px;
@@ -393,7 +382,7 @@
   object-fit: cover;
 }
 
-.x .rectangle-2 {
+ .rectangle-2 {
   position: absolute;
   width: 292px;
   height: 35px;
@@ -406,7 +395,7 @@
 }
 
 
-.x .text {
+ .text {
   position: absolute;
   top: 0;
   left: 139px;
@@ -418,7 +407,7 @@
   line-height: normal;
 }
 
-.x .navbar-wrapper {
+ .navbar-wrapper {
   position: absolute;
   width: 1920px;
   height: 100px;
@@ -430,7 +419,7 @@
   border-color: #919191;
 }
 
-.x .navbar {
+ .navbar {
   position: relative;
   width: 1292px;
   height: 42px;
@@ -438,7 +427,7 @@
   left: 319px;
 }
 
-.x .text-wrapper-5 {
+ .text-wrapper-5 {
   top: 18px;
   left: 177px;
   font-family: "Inter-Bold", Helvetica;
@@ -451,7 +440,7 @@
   line-height: normal;
 }
 
-.x .text-wrapper-6 {
+ .text-wrapper-6 {
   top: 18px;
   left: 256px;
   font-family: "Inter-Bold", Helvetica;
@@ -464,7 +453,7 @@
   line-height: normal;
 }
 
-.x .text-wrapper-7 {
+ .text-wrapper-7 {
   top: 18px;
   left: 316px;
   font-family: "Inter-Bold", Helvetica;
@@ -477,7 +466,7 @@
   line-height: normal;
 }
 
-.x .text-wrapper-8 {
+ .text-wrapper-8 {
   top: 18px;
   left: 395px;
   font-family: "Inter-Bold", Helvetica;
@@ -493,7 +482,7 @@
 
 
 
-.x .overlap-group-3 {
+ .overlap-group-3 {
   position: absolute;
   width: 48px;
   height: 36px;
@@ -502,7 +491,7 @@
 }
 
 
-.x .text-wrapper-9 {
+ .text-wrapper-9 {
   top: 20px;
   left: 1174px;
   font-family: "Inter-Regular", Helvetica;
@@ -514,7 +503,7 @@
   line-height: normal;
 }
 
-.x .text-wrapper-10 {
+ .text-wrapper-10 {
   top: 20px;
   left: 1228px;
   font-family: "Inter-Regular", Helvetica;
@@ -526,7 +515,7 @@
   line-height: normal;
 }
 
-.x .element-14 {
+ .element-14 {
   position: absolute;
   width: 731px;
   height: 32px;
@@ -534,7 +523,7 @@
   left: 420px;
 }
 
-.x .frame-4 {
+ .frame-4 {
   padding: 5px 30px;
   top: 0;
   left: 0;
@@ -547,7 +536,7 @@
   position: absolute;
 }
 
-.x .text-wrapper-11 {
+ .text-wrapper-11 {
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
@@ -559,7 +548,7 @@
   line-height: normal;
 }
 
-.x .frame-5 {
+ .frame-5 {
   padding: 5px 30px;
   top: 0;
   left: 100px;
@@ -572,7 +561,7 @@
   position: absolute;
 }
 
-.x .frame-6 {
+ .frame-6 {
  padding: 5px 30px;
   top: 0;
   left: 200px;
@@ -585,7 +574,7 @@
   position: absolute;
 }
 
-.x .frame-7 {
+ .frame-7 {
   padding: 5px 30px;
   top: 0;
   left: 317px;
@@ -598,7 +587,7 @@
   position: absolute;
 }
 
-.x .frame-8 {
+ .frame-8 {
   padding: 5px 30px;
   top: 0;
   left: 434px;
@@ -611,7 +600,7 @@
   position: absolute;
 }
 
-.x .frame-9 {
+ .frame-9 {
   padding: 5px 30px;
   top: 0;
   left: 534px;
@@ -631,12 +620,6 @@
   left: 310px;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  position: relative;
-}
 
 .product-card {
   transition: transform 0.2s ease-in-out;
@@ -656,7 +639,6 @@
   justify-content: space-between;
 }
 
-/* Accessibility improvements */
 .rectangle-2:focus,
 .icon-search:focus,
 .frame:focus,

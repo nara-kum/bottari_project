@@ -101,6 +101,7 @@ footer {
 /* content css */
 .sec-sub-title {
     height: 80px;
+	display: flex;
     border-bottom: 1px solid #ccc;
 }
 
