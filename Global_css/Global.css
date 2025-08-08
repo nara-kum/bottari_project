@@ -87,6 +87,11 @@ footer {
     font-weight: bold;
 }
 
+.header-sub {
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .header-usermenu {
     font-size: 14px;
 }
@@ -102,7 +107,7 @@ footer {
 
 /* content css */
 .sec-sub-title {
-    height: 80px;
+    height: 60px;
 	display: flex;
     border-bottom: 1px solid #ccc;
 }
