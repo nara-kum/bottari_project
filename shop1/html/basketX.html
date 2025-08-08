@@ -1,120 +1,137 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-  
-    <title>Bottari - 장바구니_상품없음</title>
+	<meta charset="utf-8">
+	<!-- CDN(외부 사이트 프리셋) 리셋 css 대용-->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" /> -->
+	<!-- 난 외부링크 못 믿겠다! 하시는 분은 CDN을 삭제 or 주석처리 후 아래의 css링크 주석 해제 후 사용할것 -->
+	<!-- <link rel="stylesheet" href="../Global_css/reset.css"> -->
+	<link rel="stylesheet" href="../../Global_css/Global.css"> <!-- 본인 파일의 경로에 맞게 수정해야함 -->
 	<link rel="stylesheet" href="../css/basketX_style.css">
-	<link rel="stylesheet" href="../0.header/header.css">
-	<link rel="stylesheet" href="../0.footer/footer.css">
-    
+
 </head>
-<body>
-    <div class="container">
-        <!-- 헤더 -->
-        <header class="header">
-            <div class="inner">
-                <div class="logo">b<span>●</span>ttari</div>
-                <nav class="nav">
-                    <a href="#">웹디자인</a>
-                    <a href="#">브랜딩</a>
-                    <a href="#">크리에이티브</a>
-                    <a href="#">구매내역</a>
-                </nav>
-                <div class="cart-area">
-                    🛒 <span>장바구니</span> ▼
-                </div>
-            </div>
-        </header>
 
-        <!-- 메인 배너 -->
-        <section class="main-banner">
-            <div class="inner">
-                <p class="banner-text">아직 담은 선물이 없어요</p>
-                <p class="banner-subtext">소중한 마음을 담아 선물을 골라보세요</p>
-            </div>
-        </section>
+<body class="family">
+	<header class="controller">
+		<div id="sec-header" class="sector">
+			<div class="left-side">
+				<a href=""><img class="header-logo" src="../../asset/Logo_colored.svg"></a>
+				<h1 class="header-menu"><a href="">캘린더</a></h1>
+				<h1 class="header-menu"><a href="">펀딩</a></h1>
+				<h1 class="header-menu"><a href="">초대장</a></h1>
+				<h1 class="header-menu"><a href="">구매내역</a></h1>
+			</div>
+			<div class="right-side">
+				<a href=""><img class="header-icon header-shopping-cart" src="../../asset/icon-shopping-cart.svg"></a>
+				<h1 class="header-usermenu">사용자이름</h1>
+				<a href=""><img class="header-icon" src="../../asset/icon-caret-down.svg"></a>
+			</div>
+		</div>
+	</header>
 
-        <!-- 상품 섹션 -->
-        <section class="product-section">
-            <div class="inner">
-                <div class="section-left">
-                    <div class="section-text">
-                        <h2 class="section-title">함께 선물하면<br>감동이 두 배!</h2>
-                        <p class="section-subtitle">예산에 맞는 추천 선물세트로<br>소중한 마음을 전해보세요.</p>
-                        <div class="button-group">
-                            <button class="btn">2만원대</button>
-                            <button class="btn">3만원대</button>
-                            <button class="btn active">5만원대</button>
-                            <button class="btn">5만원이상</button>
-                        </div>
-                    </div>
-                    
-                    <div class="product-cards">
-                        <div class="nav-arrow prev">‹</div>
-                        <div class="product-grid">
-                            <div class="product-card card1">
-                                <div class="check-icon">✓</div>
-                                <div class="product-image">
-                                    <div class="product-items">
-                                        <div class="product-bottle"></div>
-                                        <div class="product-bottle"></div>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-brand">버들잎차</div>
-                                    <div class="product-name">딱지붙는벚꽃 캘리포르니아 오일모이하와<br>브레인톤백 50ml</div>
-                                    <div class="product-price">37,000원</div>
-                                </div>
-                            </div>
-                            
-                            <div class="product-card card2">
-                                <div class="check-icon">✓</div>
-                                <div class="product-image">
-                                    <div class="product-jar"></div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-brand">클래시컬</div>
-                                    <div class="product-name">제이오아이지 BEST 미니<br>케어 세트잇집</div>
-                                    <div class="product-price">18,900원</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav-arrow next">›</div>
-                    </div>
-                </div>
-                
-                <div class="purchase-button">
-                    🛒 55,900원 구매하기
-                </div>
-            </div>
-        </section>
+	<content class="controller">
+		<div id="sec-content" class="sector">
+			<div class="sec-sub-title">
+				<h2>장바구니</h2>
+				<!-- 여기부터 코딩 시작!! -->
+			</div>
+			<div class="sec-content-main">
+				<section class="main-banner">
+					<div class="inner">
+						<p class="banner-text">아직 담은 선물이 없어요</p>
+						<p class="banner-subtext">소중한 마음을 담아 선물을 골라보세요</p>
+					</div>
+				</section>
 
-        <!-- 푸터 -->
-        <footer class="footer">
-            <div class="inner">
-                <div class="footer-links">
-                    <a href="#">이용약관</a>
-                    <span>|</span>
-                    <a href="#">개인정보처리방침</a>
-                    <span>|</span>
-                    <a href="#">고객/판매 문의</a>
-                    <span>|</span>
-                    <a href="#">자주 묻는 질문</a>
-                    <span>|</span>
-                    <a href="#">1:1 문의</a>
-                </div>
-                
-                <div class="footer-info">
-                    상호: 주식회사 보따리 | 대표: 김보따리 | 사업자등록번호: 123-45-67890 | 통신판매신고번호: 제2025-서울강동-0001<br>
-                    주소: 서울특별시 강동구 천호대로 1027, 5층 | 고객센터: 02-1234-5678 | 운영시간: 평일 10:00 ~ 18:00 (점심시간 12:00~13:00)
-                </div>
-                
-                <div class="footer-copyright">
-                    © 2025 bottari.com. All rights reserved.
-                </div>
-            </div>
-        </footer>
-    </div>
+				<!-- 상품 섹션 -->
+				<section class="product-section">
+					<div class="inner">
+						<div class="section-left">
+							<div class="section-text">
+								<h2 class="section-title">함께 선물하면<br>감동이 두 배!</h2>
+								<p class="section-subtitle">예산에 맞는 추천 선물세트로<br>소중한 마음을 전해보세요.</p>
+								<div class="button-group">
+									<button class="btn">2만원대</button>
+									<button class="btn">3만원대</button>
+									<button class="btn active">5만원대</button>
+									<button class="btn">5만원이상</button>
+								</div>
+							</div>
+
+							<div class="product-cards">
+								<div class="nav-arrow prev">‹</div>
+								<div class="product-grid">
+									<div class="product-card card1">
+										<div class="check-icon">✓</div>
+										<div class="product-image">
+											<div class="product-items">
+												<div class="product-bottle"></div>
+												<div class="product-bottle"></div>
+											</div>
+										</div>
+										<div class="product-info">
+											<div class="product-brand">버들잎차</div>
+											<div class="product-name">딱지붙는벚꽃 캘리포르니아 오일모이하와<br>브레인톤백 50ml</div>
+											<div class="product-price">37,000원</div>
+										</div>
+									</div>
+
+									<div class="product-card card2">
+										<div class="check-icon">✓</div>
+										<div class="product-image">
+											<div class="product-jar"></div>
+										</div>
+										<div class="product-info">
+											<div class="product-brand">클래시컬</div>
+											<div class="product-name">제이오아이지 BEST 미니<br>케어 세트잇집</div>
+											<div class="product-price">18,900원</div>
+										</div>
+									</div>
+								</div>
+								<div class="nav-arrow next">›</div>
+							</div>
+						</div>
+
+						<div class="purchase-button">
+							🛒 55,900원 구매하기
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</content>
+	<footer class="controller">
+		<div id="sec-footer" class="sector">
+			<div class="footer-links">
+				<a href="#terms">이용약관</a> |
+				<a href="#privacy">개인정보처리방침</a> |
+				<a href="#exchange">교환/반품 안내</a> |
+				<a href="#faq">자주 묻는 질문</a> |
+				<a href="#contact">1:1 문의</a>
+			</div>
+			<div class="company-info">
+				<p>
+					<span class="company-name">상호: 주식회사 보따리</span> |
+					<span class="company-name">대표: 김보따리</span> |
+					<span>사업자등록번호: 123-45-67890</span> |
+					<span>통신판매업신고: 제2025-서울강동-0001</span>
+				</p>
+				<p class="contact-info">
+					주소: 서울특별시 강동구 천호대로 1027, 5층 |
+					고객센터: 02-1234-5678
+				</p>
+				<p class="contact-info">
+					운영시간: 평일 10:00 ~ 18:00 (점심시간 12:00~13:00)
+				</p>
+			</div>
+
+			<div class="copyright">
+				<p>© 2025 bottari.com. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
 </body>
+
 </html>

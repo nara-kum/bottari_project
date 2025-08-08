@@ -87,6 +87,11 @@ footer {
     font-weight: bold;
 }
 
+.header-sub {
+    font-size: 22px;
+    font-weight: bold;
+}
+
 .header-usermenu {
     font-size: 14px;
 }
@@ -102,9 +107,10 @@ footer {
 
 /* content css */
 .sec-sub-title {
-    height: 80px;
+    height: 60px;
 	display: flex;
     border-bottom: 1px solid #ccc;
+	align-items: center;
 }
 
 .sec-content-main .left-main, .sec-content-main .right-main {
@@ -113,7 +119,7 @@ footer {
 
 /* left-main, right-main 높이 설정 */
 .content-height {
-    height: auto;
+    height: 600px;
 }
 
 /* footer css */

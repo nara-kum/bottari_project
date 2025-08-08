@@ -63,18 +63,23 @@
 /**************************************/
 
 #event-add-popup {
-    width:480px;
+    width: 480px;
     height: 365px;
     border: 1px solid #eee;
     border-radius: 5px;
     background-color: white;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #event-add-popup .event-name {
     width: 385px;
     display: flex;
     gap: 10px;
-    margin: 44px 0px 15px 30px;
+    margin: 24px 0px 15px 30px;
 }
 
 .event-icon-box {
@@ -85,6 +90,13 @@
 .popup-icon {
     width: 24px;
     height: 24px;
+}
+
+.cancel {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: end;
+
 }
 
 .event-name-box {
@@ -106,7 +118,6 @@
     border: none;
     font-size: 24px;
     font-weight: bold;
-    color: #eee;
     padding: 1px 0px;
 }
 
@@ -141,5 +152,5 @@
     font-size: 20px;
     color: white;
     text-align: center;
-    margin-left: 300px;
+    margin-left: 345px;
 }
