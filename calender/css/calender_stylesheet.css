@@ -162,16 +162,73 @@
 
 .event-detail {
     width: 380px;
-    height: 85px;
+    height: 100px;
+    border-bottom: 1px solid #eee;
+}
+
+.date-and-btn-edit {
+    width: 370px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px 0px 5px;
+}
+
+.selected-event {
+    display: flex;
+}
+
+.selected-event .event-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.event-title-detail .event-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-title-detail .event-explain {
+    font-size: 14px;
+}
+
+.celebrate-title {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 .celebrate-card {
-    width: 380px;
+    width: 360px;
     height: 280px;
+    border-bottom: 1px solid #eee;
+}
+
+.celebrate-card-img {
+    width: 318px;
+    height: 179px;
+    border-radius: 8px;
+    padding: 10px 0px;
+}
+
+.celebrate-guestcard {
+    font-size: 14px;
+    text-align: center;
+}
+
+.show-detail {
+    font-size: 12px;
+    text-align: right;
+    color: #7d7d7d;
 }
 
 .funding-goods {
-    width: 380px;
+    width: 360px;
     height: 205px;
 }
 
