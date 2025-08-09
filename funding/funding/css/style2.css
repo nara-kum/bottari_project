@@ -80,20 +80,14 @@
   flex-direction: column; /* ← 가로(x) → 세로 방향 정렬로 변경 */
   gap: 12px;
   font-size: 12px;
-  margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
 }
 
-.card-box .product-body {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  /* 정렬 */
-  align-items: flex-start;       /* ← 버튼 좌측 정렬 */
-  margin-left: auto;             /* 오른쪽 끝으로 붙이기 */
-  padding-right: 32px;           /* ← 카드 내부 패딩과 동일하게 맞춰줌 */
-  width: 100px;                  /* 버튼 묶음의 고정 너비 (필요시 조절 가능) */
+.card-box.ab {
+  margin-bottom: 20px;
+  /* 메인 이미지와 디자인 박스 사이 간격과 동일하게 */
 }
 
 .checkbox {
@@ -111,9 +105,15 @@
     padding: 30px 60px 0;  
 }
 
+.content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 20px 0;
+}
+
 .sec-content-main{
     width: 1280px;
-    height: 1200px;
+    height: 900px;
     justify-content: space-around;
 }
 
@@ -167,29 +167,25 @@
   gap: 8px;
 }
 
-.funding-action-wrapper {
+.product-body .right-ing-bar{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-body .funding-action-wrapper {
   display: flex;
   gap: 8px; /* 텍스트와 버튼 사이 간격 */
-  align-items: flex-start; /* 위쪽 정렬 */
+  /*align-items: flex-start; /* 위쪽 정렬 */
+  align-items: center; /* 가운데 정렬 */
   margin-left: auto;       /* 오른쪽 끝으로 정렬 */
   padding-right: 32px;     /* card-box 내부 padding과 동일 */
 }
 
-.status-labels {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 14px;
-  color: #666;
-  padding-top: 2px; /* 버튼 위치랑 시각적으로 맞추기 위한 미세 조정 */
+.funding-action-wrapper .ing{ /* 진행중, 완료 글자를 펀딩중단 버튼에서 15px 간격 띄움 */
+  margin-right: 15px;
 }
 
-.status-labels .ing{
-    flex-direction: row;
-    align-items: center;
-}
-
-.action-buttons {
+.product-body .action-buttons {
   display: flex;
   flex-direction: column;
   gap: 8px;
