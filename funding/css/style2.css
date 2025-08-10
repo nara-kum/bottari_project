@@ -26,6 +26,7 @@
   gap: 10px;           /* li 사이 간격 */
   list-style: none;    /* 점 없애기 */
   margin: 0;
+  color: #000;
   padding: 30px 0px 10px 0px;
 }
 
@@ -38,7 +39,17 @@
 }
 
 #sec-content .friend-fun{
+    font-weight: bold;    
     color: #dddddd;
+}
+
+#sec-content .myfun-a{
+  color: #dddddd;
+}
+
+#sec-content .friend-fun-a{
+  font-weight: bold;
+  align-items: flex-end;  /* ← 하단 정렬로 변경 */  
 }
 
 /* ==== 작성 화면 요소 ==== */
@@ -85,11 +96,6 @@
   margin-bottom: 20px;
 }
 
-.card-box.ab {
-  margin-bottom: 20px;
-  /* 메인 이미지와 디자인 박스 사이 간격과 동일하게 */
-}
-
 .checkbox {
   display: flex;
   align-items: center;
@@ -128,6 +134,8 @@
     font-size: 16px;
     font-weight: bold;
     color: #444;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #444;      
 }
 
 /* 엄마 생신 오른쪽 끝 펀딩 진행중 */
