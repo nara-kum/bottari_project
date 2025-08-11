@@ -14,11 +14,11 @@
   gap: 20px;           /* My위시리스트,마이펀딩,친구펀딩 사이 간격 */
   margin: 0;
   display: flex;         /* 가로로 정렬 */ 
-  padding-left: 20px;
 }
 
 .sec-sub-title .funding{ /* 마이 펀딩, 친구 펀딩 */
     padding-right: 20px;
+    padding-left: 20px;
     font-size: 22px;   
     font-weight: bold;
     color: #ddd;
