@@ -214,8 +214,10 @@
 .celebrate-card-img {
     width: 318px;
     height: 179px;
+    display: block;
     border-radius: 8px;
     padding: 10px 0px;
+    margin: 0px auto;
 }
 
 .celebrate-guestcard {
