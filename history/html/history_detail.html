@@ -8,7 +8,7 @@
     <!-- 난 외부링크 못 믿겠다! 하시는 분은 CDN을 삭제 or 주석처리 후 아래의 css링크 주석 해제 후 사용할것 -->
     <!-- <link rel="stylesheet" href="../Global_css/reset.css"> -->
     <link rel="stylesheet" href="../../Global_css/Global.css"> <!-- 본인 파일의 경로에 맞게 수정해야함 -->
-    <link rel="stylesheet" href="../css/calender_stylesheet.css">
+    <link rel="stylesheet" href="../css/history.css">
 </head>
 
 <body class="family">
@@ -28,53 +28,39 @@
             </div>
         </div>
     </header>
+
     <content class="controller">
         <div id="sec-content" class="sector">
             <div class="sec-sub-title">
-                <h2 class="header-sub">캘린더</h2>
-                <div class="date-and-btn-edit">
-                    <div class="selected-date">2025-08-09</div>
-                    <div class="edit-btn-box">
-                        <img class="popup-icon" src="../../asset/icon-add.svg">
-                        <img class="popup-icon" src="../../asset/icon-menu-dots.svg">
-                    </div>
-                </div>
                 <!-- 여기부터 코딩 시작!! -->
+                <h2 class="header-sub">구매내역</h2>
             </div>
             <div class="sec-content-main">
-                <div class="left-main content-height">
-                    <img class="dummy-calender" src="../dummy_calender.JPG">
-                </div>
-                <div class="right-main content-height">
-                    <div class="event-detail">
-                        <div class="selected-event">
-                            <img class="event-icon" src="../../asset/icon-cake-birthday.svg">
-                            <div class="event-title-detail">
-                                <div class="event-title">내 생일</div>
-                                <div class="event-explain">내 생일이다 머리를 조아리도록</div>
-                            </div>
+                <div class="goods-list align-center">
+                    <div class="left-side">
+                        <img class="goods-img" src="../임시.JPG">
+                        <div class="main-info">
+                            <div class="brand">맥(MAC)</div>
+                            <div class="goods-title">“단하루 루비우 증정” [단독/각인] 맥 BEST 립밤 (=미니립)</div>
+                            <div class="goods-price">38,000원</div>
                         </div>
                     </div>
-                    <div class="no-event no-detail">
-                        <img class="icon-calender" src="../../asset/icon-cross.svg" />
-                        <div class="explain-text">초대장이 없어요</div>
-                        <button class="btn-add-event">초대장 만들기</button>
+                    <div class="other-info">
+                        <div class="show-detail detail-bottom"><a href=""><a href="">제품 상세보기></a></div>
                     </div>
-                    <div class="no-event no-detail">
-                        <img class="icon-calender" src="../../asset/icon-cross.svg" />
-                        <div class="explain-text">펀딩 리스트가 비었어요</div>
-                        <button class="btn-add-event">펀딩 관리하기</button>
+                </div>
+                <div class="order-number-box">
+                    <div>주문번호</div>
+                    <div>0000000000</div>
+                    <button type="button">영수증 보기</button>
+                </div>
+                <div class="payment-info-box">
+                    <div class="payment-info">
+                        <div class="title">결제정보</div>
+                        <img class="">
                     </div>
-                    <div class="ad-banner">
-                        <a href="">
-                            <img src="../임시_배너.JPG">
-                        </a> 
-                    </div>
-                    <div class="history-gift disable"></div>
                 </div>
             </div>
-            
-
         </div>
     </content>
     <footer class="controller">
