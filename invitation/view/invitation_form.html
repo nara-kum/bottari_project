@@ -218,6 +218,89 @@
                                 <span><strong>3단계</strong> / 4단계</span>
                                 <button class="save-btn">임시저장</button>
                             </div>
+
+                            <!-- 갤러리 -->
+                            <div class="card-box">
+                                <div class="sub-title">갤러리</div>
+
+                                <div class="section">
+                                    <div class="pill-group">
+                                        <button class="btn pill is-active">일반형</button>
+                                        <button class="btn pill">스토리형</button>
+                                        <button class="btn pill">투명형</button>
+                                    </div>
+
+                                    <div class="upload-dropzone lg" id="gallery-cover">
+                                        <div class="upload-icon">＋</div>
+                                        <div class="upload-text">
+                                            이미지를 업로드하세요<br>
+                                            <span class="muted">최대 20MB / JPG·PNG·WEBP</span>
+                                        </div>
+                                        <input type="file" accept="image/*" class="upload-input" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 공유하기 링크 정보 -->
+                            <div class="card-box">
+                                <div class="sub-title">공유하기 링크 정보</div>
+
+                                <div class="section">
+                                    <p class="hint">
+                                        카카오/밴드 등으로 공유할 때 보이는 제목·내용·썸네일입니다. (미입력 시 기본값 사용)
+                                    </p>
+
+                                    <div class="small-label">제목</div>
+                                    <input type="text" class="text-input" placeholder="예: 두 사람의 시작에 함께해 주세요.">
+
+                                    <div class="small-label with-count">
+                                        내용 <span class="char-count" id="share-count">0</span><span class="muted"> /
+                                            200자</span>
+                                    </div>
+                                    <textarea class="textarea" id="share-desc" maxlength="200" rows="3"
+                                        placeholder="공유 메시지를 입력하세요."></textarea>
+
+                                    <div class="grid-2 mt12">
+                                        <div>
+                                            <div class="small-label">카카오톡 공유 이미지</div>
+                                            <div class="upload-dropzone sm">
+                                                <div class="upload-img-placeholder"></div>
+                                                <input type="file" accept="image/*" class="upload-input" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-row">
+                                <span><strong>4단계</strong> / 4단계</span>
+                                <button class="save-btn">임시저장</button>
+                            </div>
+
+                            <!-- 펀딩 -->
+                            <div class="card-box">
+                                <div class="sub-title">펀딩</div>
+                                <div class="section">
+                                    <div class="small-label">내펀딩</div>
+                                    <p class="hint">펀딩 등록 페이지에서 등록 가능합니다.</p>
+
+                                    <!-- 썸네일 리스트 (링크형) -->
+                                    <div class="funding-thumbs" id="funding-thumbs">
+                                        <!-- JS가 <a class="thumb" href="..."><img ...></a> 형태로 채움 -->
+                                    </div>
+
+                                    <!-- 필요 시 전체보기 링크 -->
+                                    <div class="thumbs-more" id="funding-more" style="display:none;">
+                                        <a class="more-link" href="/funding" aria-label="펀딩 상품 전체보기">+ 더보기</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-row">
+                                <span></span>
+                                <button class="save-btn">초대장 작성 완료</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -259,6 +342,53 @@
         </div>
     </footer>
 
+
+    <!--
+    <script>
+    /**
+    * 백엔드 응답 예시:
+    * GET /api/funding/items -> [
+    * { id: 1, title: "와인잔 세트", imageUrl: "/cdn/funding/1.jpg", url: "/funding/1" },
+    * { id: 2, title: "전동 커피그라인더", imageUrl: "/cdn/funding/2.jpg", url: "/funding/2" },
+    * ...
+    * ]
+    */
+    document.addEventListener('DOMContentLoaded', async () => {
+    const container = document.getElementById('funding-thumbs');
+    const moreWrap = document.getElementById('funding-more');
+
+    try {
+    // TODO: 실제 API로 교체
+    const res = await fetch('/api/funding/items', { credentials: 'include' });
+    if (!res.ok) throw new Error('펀딩 목록 불러오기 실패');
+    const items = await res.json();
+
+    // 최대 N개만 노출 후 "더보기"
+    const MAX = 5;
+    const show = items.slice(0, MAX);
+
+    if (!show.length) {
+    container.innerHTML = `<span class="hint">등록된 펀딩 상품이 없습니다.</span>`;
+    return;
+    }
+
+    // 썸네일 렌더링 (링크로 이동)
+    container.innerHTML = show.map(item => `
+    <a class="thumb" href="${item.url}" title="${item.title}" aria-label="${item.title}">
+        <img src="${item.imageUrl}" loading="lazy" alt="${item.title}">
+    </a>
+    `).join('');
+
+    if (items.length > MAX) {
+    moreWrap.style.display = 'block'; // /funding 등 전체보기 링크 표시
+    }
+    } catch (e) {
+    console.error(e);
+    container.innerHTML = `<span class="hint">펀딩 정보를 불러오지 못했습니다.</span>`;
+    }
+    });
+    </script>
+    -->
 </body>
 
 </html>
