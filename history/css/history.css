@@ -111,6 +111,20 @@
     margin-left: 10px;
 }
 
+.text-14.detail {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.text-16.bold.detail {
+    margin-left: 10px;
+    margin-top: 42px;
+}
+
+.show-detail.text-align-right.detail {
+    margin-top: 59px;
+}
+
 .other-info {
     font-size: 12px;
     text-align: right;
@@ -122,9 +136,6 @@
     margin-top: 5px;
 }
 
-.show-detail {
-    margin-top: 59px;
-}
 
 /* 여러상품 버전 */
 
@@ -150,16 +161,22 @@
 /* 구매내역 상세보기 페이지 */
 /**************************/
 
-.align-center {
-    margin-left: auto;
-    margin-right: auto;
+.sec-content-main {
+    margin-top: 30px;
 }
 
-.detail-box {
-    display: flex;
-    justify-content: space-between;
+div.list-basic.list-1200.between-flex-box.detail {
+   height: auto;
 }
 
-.detail-bottom {
-    margin-top: 87px;
+.list-basic.list-1200.column-flex-box.detail {
+    height: auto;
+    gap: 5px;
 }
+
+.box-line {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+

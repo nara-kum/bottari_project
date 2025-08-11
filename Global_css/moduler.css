@@ -5,6 +5,7 @@
 /* List Module css Document */
 
 .list-basic {
+    background-color: #f9f9f9;
     margin: 0 auto;
     padding: 0;
     border: 1px solid #ddd;
@@ -33,6 +34,7 @@
 
 .list-img-100 {
     display: block;
+    border: 1px solid #ddd;
     border-radius: 4px;
     width: 100px;
     height: 100px;
@@ -118,6 +120,14 @@
 
 .regular {
     font-weight: normal;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
 }
 
 /* Normal Preset css Document */
