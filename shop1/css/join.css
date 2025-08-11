@@ -47,7 +47,7 @@ body {
 	font-size: 14px;
 	border: 1px solid #ddd;
 	border-radius: 6px;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 
 /* 아이디 필드 전용 스타일 - 세로 배치 */
@@ -74,7 +74,7 @@ body {
 	border-radius: 6px;
 	font-weight: bold;
 	cursor: pointer;
-	white-space: nowrap;
+	/* white-space: nowrap; */
 }
 
 .email-inputs {
@@ -127,7 +127,7 @@ body {
 	cursor: pointer;
 }
 
-.submit-btn:hover {
+/* .submit-btn:hover {
 	background-color: #e64a17;
 }
 
@@ -137,4 +137,4 @@ body {
 
 .with-button .input-row button:hover {
 	background-color: #e64a17;
-}
+} */
