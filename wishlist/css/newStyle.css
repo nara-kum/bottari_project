@@ -2,114 +2,45 @@
 
 .right-main{
     width: 530px;
-    height: auto;    
+    text-align: start; /* <select>와 <button> 모두 start 정렬 */
 }
 
 .sec-content-main {
-    display: flex; /* ← 추가 */
     justify-content: space-between; /* 선택 사항 (공간 조절용) */
 }
 
-.sec-sub-title {  /*My위시리스트, 마이펀딩, 친구펀딩 */
-  display: flex;        /* 플렉스 박스 설정 */
-  align-items: center;  /* 세로 방향 중앙 정렬 */
-  gap: 20px;             /* h2와 ul 사이 간격 */
-}
-
-/* My위시리스트 */
-.sec-sub-title .header-sub {  
-  display: flex;       /* li들을 가로로 배치 */
-  list-style: none;    /* 점 없애기 */
-  margin: 0;
-  padding: 30px 0px 10px 0px;
-}
-
 /* 친구 펀딩, 마이 펀딩 */
-.sec-sub-title ul {  
-  display: flex;       /* li들을 가로로 배치 */
-  gap: 10px;           /* li 사이 간격 */
-  list-style: none;    /* 점 없애기 */
+.sec-sub-title h2 {  
+  gap: 20px;           /* My위시리스트,마이펀딩,친구펀딩 사이 간격 */
   margin: 0;
-  padding: 30px 0px 10px 0px;
+  display: flex;         /* 가로로 정렬 */ 
+  padding: 0px 20px 0px 0px;
 }
 
-/* 친구 펀딩, 마이 펀딩 */
-.sec-sub-title ul li {
-  width: 90px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #dddddd;
-  align-items: flex-end;  /* ← 하단 정렬로 변경 */
+.sec-sub-title .funding{
+    padding-right: 20px;   
 }
 
-.first-product{
+.a-product{
     padding-top: 10px;
+    gap: 20px;             /* h2와 ul 사이 간격 */
 }
 
-.first-product .first-product-image{
+.a-product .product-image{
   width: 100px;
   height: 100px;
+  margin-top: 5px ;
+  gap: 10px;            /* 체크박스와 이미지 사이 간격 */    
   border-radius: 10px;  /* 모서리를 둥글게 */  
-}
-
-.second-product{
-    padding-top: 10px;
-}
-
-.second-product .second-product-image{
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;  /* 모서리를 둥글게 */  
-}
-
-.third-product{
-    padding-top: 10px;
-}
-
-.third-product .third-product-image{
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;  /* 모서리를 둥글게 */  
-}
-
-.f-product{
-    padding-top: 10px;
-}
-
-.f-product .f-product-image{
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;  /* 모서리를 둥글게 */    
-}
-
-.f-product{
-    padding-top: 10px;
-}
-
-.o-product .o-product-image{
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;  /* 모서리를 둥글게 */    
-}
-
-.o-product{
-    padding-top: 10px;
-    padding-bottom: 20px;
 }
 
 /*  select id="funding-table"   */
 .family .right-main #funding-table{
     margin-top: 50px ;
-    margin-left: 50px;
 }
 
-.first-product .first-product-image{ /* 첫번째 이미지-이키 상품 */
-    margin-top: 5px ;
-    gap: 10px;            /* 체크박스와 이미지 사이 간격 */     
-}
-
-.first-product .buy{
-    gap: 20px;             /* h2와 ul 사이 간격 */
+.right-main{
+    border-left:1px solid #ddd ;
 }
 
 .image-row {
@@ -137,14 +68,10 @@
     gap: 4px; /* 줄 간 간격 조절 */
 }
 
-.right-main {  /* <select>와 <button> 모두 오른쪽 정렬 */
-    text-align: right;
-}
-
 .funding-controls {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 8px;
     margin-left: 20px;
 }
@@ -159,4 +86,8 @@
     height: auto;
 }
 
-
+.btn-funding1{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;    
+}

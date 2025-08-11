@@ -5,51 +5,44 @@
     height: auto;    
 }
 
-.sec-sub-title {  /*My위시리스트, 마이펀딩, 친구펀딩 */
-  display: flex;        /* 플렉스 박스 설정 */
-  align-items: center;  /* 세로 방향 중앙 정렬 */
+.sec-sub-title {  /* My위시리스트, 마이펀딩, 친구펀딩 */
+  /* align-items: center;  세로 방향 중앙 정렬 */
   gap: 20px;             /* h2와 ul 사이 간격 */
 }
 
-/* My위시리스트 */
-.sec-sub-title .header-sub {  
-  display: flex;       /* li들을 가로로 배치 */
-  list-style: none;    /* 점 없애기 */
-  margin: 0;
-  padding: 30px 0px 10px 0px;
-  color: #dddddd;
+.sec-sub-title h2 {
+  margin: 0;             /* 기본 마진 제거 */
 }
 
-/* 친구 펀딩, 마이 펀딩 */
-.sec-sub-title ul {  
-  display: flex;       /* li들을 가로로 배치 */
-  gap: 10px;           /* li 사이 간격 */
-  list-style: none;    /* 점 없애기 */
+.sec-sub-title ul {
+  display: flex;         /* ul 내부 li를 가로 정렬 */
+  gap: 10px;             /* li 사이 간격 */
+  list-style: none;    /* 점 없애기 */    
   margin: 0;
-  color: #000;
-  padding: 30px 0px 10px 0px;
-}
-
-/* 친구 펀딩, 마이 펀딩 */
-.sec-sub-title ul li {
-  width: 90px;
-  font-size: 20px;
-  font-weight: bold;
-  align-items: flex-end;  /* ← 하단 정렬로 변경 */
+  font-size: 22px;
+  font-weight: bold;  
+  padding: 10px 0px 10px 10px;  
+  list-style: none;
 }
 
 #sec-content .friend-fun{
     font-weight: bold;    
     color: #dddddd;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 #sec-content .myfun-a{
+  height: 60px;
+  display: flex;  
   color: #dddddd;
+  align-items: center; 
 }
 
 #sec-content .friend-fun-a{
-  font-weight: bold;
-  align-items: flex-end;  /* ← 하단 정렬로 변경 */  
+font-weight: bold;
+  /* align-items: flex-end;  ← 하단 정렬로 변경   */
 }
 
 /* ==== 작성 화면 요소 ==== */
