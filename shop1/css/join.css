@@ -1,15 +1,15 @@
 body {
   margin: 0;
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Inert';
   background: #fff;
-  color: #333;
+  color: #000000;
 }
 
 
 .nav-menu a {
   margin: 0 10px;
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-weight: 500;
 }
 
