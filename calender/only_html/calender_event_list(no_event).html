@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="../Global_css/reset.css"> -->
     <link rel="stylesheet" href="../../Global_css/Global.css"> <!-- 본인 파일의 경로에 맞게 수정해야함 -->
     <link rel="stylesheet" href="../css/calender_stylesheet.css">
+    <link rel="stylesheet" href="../../Global_css/moduler.css">
 </head>
 
 <body class="family">
@@ -31,6 +32,7 @@
     <content class="controller">
         <div id="sec-content" class="sector">
             <div class="sec-sub-title">
+                <!-- 여기부터 코딩 시작!! -->
                 <h2 class="header-sub">캘린더</h2>
                 <div class="date-and-btn-edit">
                     <div class="selected-date">2025-08-09</div>
@@ -39,41 +41,40 @@
                         <img class="popup-icon" src="../../asset/icon-menu-dots.svg">
                     </div>
                 </div>
-                <!-- 여기부터 코딩 시작!! -->
             </div>
             <div class="sec-content-main">
                 <div class="left-main content-height">
                     <img class="dummy-calender" src="../dummy_calender.JPG">
                 </div>
                 <div class="right-main content-height">
-                    <div class="event-detail">
-                        <div class="selected-event">
-                            <img class="event-icon" src="../../asset/icon-cake-birthday.svg">
-                            <div class="event-title-detail">
-                                <div class="event-title">내 생일</div>
-                                <div class="event-explain">내 생일이다 머리를 조아리도록</div>
+                    <div class="event-detail-area">
+                        <div class="row-flex-box">
+                            <img class="middle-icon" src="../../asset/icon-cake-birthday.svg">
+                            <div class="column-flex-box event-detail">
+                                <div class="text-16 bold">내 생일</div>
+                                <div class="text-14">내 생일이다. 친구들과 함께 생일 파티를 즐길 것이다</div>
                             </div>
                         </div>
                     </div>
-                    <div class="no-event no-detail">
-                        <img class="icon-calender" src="../../asset/icon-cross.svg" />
-                        <div class="explain-text">초대장이 없어요</div>
-                        <button class="btn-add-event">초대장 만들기</button>
+                    <div class="column-flex-box celebrate-card-area row-align no-event">
+                        <img class="middle-icon" src="../../asset/icon-cross.svg" />
+                        <div class="text-18">초대장이 없어요</div>
+                        <button class="btn-basic btn-orange size-normal">초대장 만들기</button>
                     </div>
-                    <div class="no-event no-detail">
-                        <img class="icon-calender" src="../../asset/icon-cross.svg" />
-                        <div class="explain-text">펀딩 리스트가 비었어요</div>
-                        <button class="btn-add-event">펀딩 관리하기</button>
+                    <div class="column-flex-box celebrate-card-area row-align no-event">
+                        <img class="middle-icon" src="../../asset/icon-cross.svg" />
+                        <div class="text-18">펀딩 리스트가 비었어요</div>
+                        <button class="btn-basic btn-orange size-normal">펀딩 관리하기</button>
                     </div>
                     <div class="ad-banner">
                         <a href="">
                             <img src="../임시_배너.JPG">
-                        </a> 
+                        </a>
                     </div>
                     <div class="history-gift disable"></div>
                 </div>
             </div>
-            
+
 
         </div>
     </content>
