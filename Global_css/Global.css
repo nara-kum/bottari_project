@@ -1,6 +1,8 @@
 @charset "utf-8";
 
+
 /* 전체 설정 */
+
 body {
     font-family: 'inter';
 }
@@ -23,7 +25,7 @@ header {
 footer {
     border-top: 1px solid #ccc;
     background-color: #F9F7F4;
-}
+} 
 
 
 /* sector css */

@@ -12,6 +12,7 @@
 
 .sub-title-container {
   display: flex;
+  padding: 0px 960px 0px 0px;
   margin: 0px auto;
   gap: 10px;
 }
