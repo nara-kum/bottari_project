@@ -74,7 +74,7 @@
     width: 480px;
     height: 365px;
     border: 1px solid #eee;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: white;
 
     position: absolute;
@@ -133,7 +133,7 @@
     width: 142px;
     height: 37px;
     border: 1px solid #eee;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .event-comment {
@@ -239,9 +239,8 @@
     width: 318px;
     height: 179px;
     display: block;
-    border-radius: 8px;
-    padding: 10px 0px;
-    margin: 0px auto;
+    border-radius: 4px;
+    margin: 10px auto;
 }
 
 .celebrate-guestcard {
@@ -273,7 +272,7 @@
 }
 
 .funding-list {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: #F9F7F4;
     display: flex;
     border: 1px solid #eee;
@@ -282,8 +281,8 @@
 .funding-list .list-img {
     width: 50px;
     height: 50px;
-    padding: 10px;
-    border-radius: 8px;
+    margin: 10px;
+    border-radius: 4px;
 }
 
 .goods-detail-box {
@@ -312,7 +311,7 @@
 .ad-banner img {
     width: 360px;
     height: 130px;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 10px;
 }
 
