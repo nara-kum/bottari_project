@@ -1,23 +1,23 @@
 /* 기본 레이아웃 */
 body {
   margin: 0;
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'Inert';
   background: #fff;
-  color: #333;
+  color: #000000;
 }
 
 
 .nav-menu a {
   margin: 0 12px;
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-weight: 500;
 }
 
 .auth-links a {
   margin-left: 15px;
   text-decoration: none;
-  color: #333;
+  color: #000000;
   font-size: 14px;
 }
 
