@@ -10,7 +10,7 @@
 
 .dummy-calender {
     width: 800px;
-    height: 800px;
+    height: 600px;
 }
 
 .right-main {
@@ -164,20 +164,27 @@
 
 .event-detail {
     width: 380px;
-    height: 100px;
+    height: auto;
     border-bottom: 1px solid #eee;
 }
 
 .date-and-btn-edit {
     width: 370px;
-    height: 30px;
+    height: auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 5px 5px 0px 5px;
+}
+
+.selected-date {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 10px;
 }
 
 .selected-event {
     display: flex;
+    margin: 10px 0px;
 }
 
 .selected-event .event-icon {
@@ -252,6 +259,7 @@
     border-radius: 5px;
     background-color: #F9F7F4;
     display: flex;
+    border: 1px solid #eee;
 }
 
 .funding-list .list-img {
@@ -301,7 +309,7 @@
 /*****************************/
 
 .no-detail {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 380px;
     height: 185px;
     border-bottom: 1px solid #eee;
