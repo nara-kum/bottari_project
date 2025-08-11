@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../Global_css/reset.css">
-    <link rel="stylesheet" href="../../Global_css/Global.css" />
-    <link rel='stylesheet' href='../css/newStyle.css' />
-    <title>wishlist</title>
+    <link rel="stylesheet" href='../Global_css/reset.css'> 
+    <link rel="stylesheet" href="../Global_css/Global.css" />
+    <link rel='stylesheet' href='../wishlist/css/newStyle.css' />
+    <title>funding option</title>
     <style>
 
 
@@ -17,28 +17,30 @@
     <header class="controller">
         <div id="sec-header" class="sector">
             <div class="left-side">
-                <a href=""><img class="header-logo" src="../../asset/Logo_colored.svg"></a>
+                <a href="">
+                    <img class="header-logo" src="../asset/Logo_colored.svg">  
+                </a>
                 <h1 class="header-menu"><a href="">캘린더</a></h1>
                 <h1 class="header-menu"><a href="">펀딩</a></h1>
                 <h1 class="header-menu"><a href="">초대장</a></h1>
                 <h1 class="header-menu"><a href="">구매내역</a></h1>
             </div>
             <div class="right-side">
-                <a href=""><div class="header-icon header-shopping-cart" ><img src="../../asset/icon-shopping-cart.svg"></div></a>
+                <a href=""><img class="header-icon header-shopping-cart" src="../asset/icon-shopping-cart.svg"></a>
 
                 <h1 class="header-usermenu">사용자이름</h1>
-                <div class="header-icon"><a href=""><img src="../../asset/icon-caret-down.svg"></a></div>
+                <a href=""><img class="header-icon" src="../asset/icon-caret-down.svg"></a>
             </div>
         </div>
     </header>
     <content class="controller">
         <div id="sec-content" class="sector">
             <div class="sec-sub-title">
-                <h2 class="header-sub"><a href="">My 위시리스트</a></h2>
-                <h2 class="myfunding">
-                    <div><a href="">마이 펀딩</a></div>
-                    <div><a href="">친구 펀딩</a></div>
-                </h2>
+                <h2 class="header-sub">My 위시리스트</h2>
+                <ul>
+                    <li>마이 펀딩</li>
+                    <li>친구 펀딩</li>
+                </ul>
             </div>
 
             <div class="sec-content-main">
@@ -48,7 +50,7 @@
                     <div class="first-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">
-                            <img class="first-product-image" src="../image/eki.webp" /><!--상품이미지-->
+                            <img class="first-product-image" src="../wishlist/image/eki.webp" /><!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info">
@@ -57,8 +59,8 @@
                                 <div class="price">38,900원</div> <!--가격-->
 
                             <div class="image-row">
-                                <div class="first-cart"><img src="../image/add-to-cart.jpg" /></div> <!--장바구니-->
-                                <div class="first-heart"><img src="../image/heart.jpg" /></div> <!--하트(찜)-->
+                                <div class="first-cart"><img src="../wishlist/image/add-to-cart.jpg" /></div> <!--장바구니-->
+                                <div class="first-heart"><img src="../wishlist/image/heart.jpg" /></div> <!--하트(찜)-->
                             </div>
                             </div>  <!-- "product-info" 끝나는 지점    -->
                         </div> <!--  image-row 끝나는 지점    -->
@@ -70,17 +72,17 @@
                     <div class="second-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">  
-                            <img class="second-product-image" src="../image/2.webp" /> <!--상품이미지-->
+                            <img class="second-product-image" src="../wishlist/image/2.webp" /> <!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info">
                                 <div class="buy">레이문</div> <!--판매처-->
-                                <div class="product-name">&#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등 L사이즈(인물테두리컷팅, ...</div>
+                                <div class="product-name">&#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등 L사이즈(인물테두리컷팅) ...</div>
                                 <div class="price">39,800원</div> <!--가격-->
 
                             <div class="image-row">
-                                <div class="second-cart"><img src="../image/add-to-cart.jpg" /></div> <!--장바구니-->
-                                <div class="second-heart"><img src="../image/heart.jpg" /></div> <!--하트(찜)-->
+                                <div class="second-cart"><img src="../wishlist/image/add-to-cart.jpg" /></div> <!--장바구니-->
+                                <div class="second-heart"><img src="../wishlist/image/heart.jpg" /></div> <!--하트(찜)-->
                             </div>  
                             </div> <!-- "product-info" 끝나는 지점    -->
                         </div> <!--  image-row 끝나는 지점    -->
@@ -90,7 +92,7 @@
                     <div class="third-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">   
-                            <img class="third-product-image" src="../image/3.webp" /> <!--상품이미지-->
+                            <img class="third-product-image" src="../wishlist/image/3.webp" /> <!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info">                            
@@ -99,8 +101,8 @@
                                 <div class="price">20,900원</div> <!--가격-->
 
                             <div class="image-row">    
-                                <div class="third-cart"><img src="../image/add-to-cart.jpg" /></div> <!--장바구니-->
-                                <div class="third-heart"><img src="../image/heart.jpg" /></div> <!--하트(찜)-->
+                                <div class="third-cart"><img src="../wishlist/image/add-to-cart.jpg" /></div> <!--장바구니-->
+                                <div class="third-heart"><img src="../wishlist/image/heart.jpg" /></div> <!--하트(찜)-->
                             </div>    
                             </div>  <!-- "product-info" 끝나는 지점    -->
                         </div> <!--  image-row 끝나는 지점    -->
@@ -111,7 +113,7 @@
                     <div class="f-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">   
-                            <img class="f-product-image" src="../image/4.webp" /> <!--상품이미지-->
+                            <img class="f-product-image" src="../wishlist/image/4.webp" /> <!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info">  
@@ -120,8 +122,8 @@
                                 <div class="price">22,900원</div> <!--가격-->
 
                             <div class="image-row">     
-                                <div class="4-cart"><img src="../image/add-to-cart.jpg" /></div> <!--장바구니-->
-                                <div class="4-heart"><img src="../image/heart.jpg" /></div> <!--하트(찜)-->
+                                <div class="4-cart"><img src="../wishlist/image/add-to-cart.jpg" /></div> <!--장바구니-->
+                                <div class="4-heart"><img src="../wishlist/image/heart.jpg" /></div> <!--하트(찜)-->
                             </div>
                             </div>  <!-- "product-info" 끝나는 지점    -->
                         </div> <!--  image-row 끝나는 지점    -->   
@@ -131,7 +133,7 @@
                     <div class="o-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">   
-                            <img class="o-product-image" src="../image/5.webp" /> <!--상품이미지-->
+                            <img class="o-product-image" src="../wishlist/image/5.webp" /> <!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info"> 
@@ -140,8 +142,8 @@
                                 <div class="price">249,000원</div> <!--가격-->
 
                             <div class="image-row">      
-                                <div class="5-cart"><img src="../image/add-to-cart.jpg" /></div> <!--장바구니-->
-                                <div class="5-heart"><img src="../image/heart.jpg" /></div> <!--하트(찜)-->
+                                <div class="5-cart"><img src="../wishlist/image/add-to-cart.jpg" /></div> <!--장바구니-->
+                                <div class="5-heart"><img src="../wishlist/image/heart.jpg" /></div> <!--하트(찜)-->
                             </div>
                             </div>     <!-- "product-info" 끝나는 지점    -->
                         </div>    <!--  image-row 끝나는 지점    -->   

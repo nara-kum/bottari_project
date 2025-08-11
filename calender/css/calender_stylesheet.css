@@ -1,4 +1,12 @@
 @charset "utf-8";
+
+/* Global.css 수정 */
+
+.sec-sub-title {
+    display: flex;
+    justify-content: space-between;
+}
+
 /*************************/
 /* calender_no_event css */
 /*************************/
@@ -10,7 +18,7 @@
 
 .dummy-calender {
     width: 800px;
-    height: 800px;
+    height: 600px;
 }
 
 .right-main {
@@ -42,20 +50,19 @@
 .btn-add-event {
     background: none;
     background-color: #ef5327;
-    border-radius: 20px;
+    border-radius: 4px;
     border: 1px solid;
-    border-color: #ff9a7e;
+    border-color: #ddd;
     color: #ffffff;
     text-align: center;
-    justify-content: center;
-    font-family: "inter";
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 14px;
     letter-spacing: 0;
     appearance: none;
     /* 브라우저 기본 스타일 제거 */
     line-height: normal;
     white-space: nowrap;
+    padding: 10px;
     margin: 5px auto;
 }
 
@@ -67,7 +74,7 @@
     width: 480px;
     height: 365px;
     border: 1px solid #eee;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: white;
 
     position: absolute;
@@ -126,7 +133,7 @@
     width: 142px;
     height: 37px;
     border: 1px solid #eee;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .event-comment {
@@ -144,18 +151,27 @@
     height: 121px;
 }
 
-.save-button {
+.btn-cancel {
     appearance: none;
     /* 브라우저 기본 스타일 제거 */
-    width: 90px;
-    height: 30px;
+    border: none;
+    background: none;
+}
+
+.btn-save {
+    display: flex;
+    appearance: none;
+    /* 브라우저 기본 스타일 제거 */
     background-color: #ef5327;
-    border: 1px solid #ff9a7e;
-    border-radius: 20px;
-    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
     color: white;
+    font-weight: 600px;
     text-align: center;
-    margin-left: 345px;
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: 45px;
 }
 
 /******************************/
@@ -164,20 +180,28 @@
 
 .event-detail {
     width: 380px;
-    height: 100px;
+    height: auto;
     border-bottom: 1px solid #eee;
 }
 
 .date-and-btn-edit {
     width: 370px;
-    height: 30px;
+    height: auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 5px 5px 0px 5px;
+    margin: 0px 10px;
+}
+
+.selected-date {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 10px;
 }
 
 .selected-event {
     display: flex;
+    margin: 10px 0px;
 }
 
 .selected-event .event-icon {
@@ -215,9 +239,8 @@
     width: 318px;
     height: 179px;
     display: block;
-    border-radius: 8px;
-    padding: 10px 0px;
-    margin: 0px auto;
+    border-radius: 4px;
+    margin: 10px auto;
 }
 
 .celebrate-guestcard {
@@ -249,16 +272,17 @@
 }
 
 .funding-list {
-    border-radius: 5px;
-    background-color: #F9F7F4;
+    border-radius: 4px;
+    background-color: #f9f9f9;
     display: flex;
+    border: 1px solid #eee;
 }
 
 .funding-list .list-img {
     width: 50px;
     height: 50px;
-    padding: 10px;
-    border-radius: 8px;
+    margin: 10px;
+    border-radius: 4px;
 }
 
 .goods-detail-box {
@@ -287,7 +311,7 @@
 .ad-banner img {
     width: 360px;
     height: 130px;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 10px;
 }
 
@@ -301,7 +325,7 @@
 /*****************************/
 
 .no-detail {
-    margin-top: 10px;
+    margin-top: 30px;
     width: 380px;
     height: 185px;
     border-bottom: 1px solid #eee;
