@@ -54,258 +54,167 @@
                         </div>
                     </div>
 
-                    <div class="main-content">
-                        <div class="preview-box">
-                            <img src="https://via.placeholder.com/300x300.png?text=대표+이미지" alt="대표 이미지">
+                    <div class="template-section">
+                        <div class="card-box">
+                            <div class="sub-title">테마</div>
+                            <div class="template-grid">
+                                <div class="template-card">타입A</div>
+                                <div class="template-card">타입A</div>
+                                <div class="template-card">타입A</div>
+                                <div class="template-card">타입A</div>
+                                <div class="template-card">타입A</div>
+                                <div class="template-card">타입A</div>
+                                <div class="template-card">타입A</div>
+                                <div class="template-card">타입A</div>
+                            </div>
+                            <div class="sub-title">메인사진</div>
+                            <div class="upload-info">이미지의 크기는 15MB 이내로 제한되어 있습니다.</div>
+
+                            <!-- 이미지 업로드 영역 -->
+                            <div class="image-upload-box">
+                                <label for="main-image-upload">이미지 첨부</label>
+                                <input type="file" id="main-image-upload" accept="image/*">
+                            </div>
                         </div>
 
-                        <div class="template-section">
-                            <div class="card-box">
-                                <div class="sub-title">메인 이미지</div>
-                                <div class="template-grid">
-                                    <div class="template-card">타입A</div>
-                                    <div class="template-card">타입A</div>
-                                    <div class="template-card">타입A</div>
-                                    <div class="template-card">타입A</div>
-                                    <div class="template-card">타입A</div>
-                                    <div class="template-card">타입A</div>
-                                    <div class="template-card">타입A</div>
-                                    <div class="template-card">타입A</div>
+                        <!-- 날짜/시간 -->
+                        <div class="card-box">
+                            <div class="sub-title">날짜/시간</div>
+                            <div class="section grid-2">
+                                <div>
+                                    <div class="small-label">날짜</div>
+                                    <input type="date">
                                 </div>
-                                <div class="upload-info">메인사진<br>이미지의 크기는 15MB 이내로 제한되어 있습니다.</div>
-
-                                <!-- 이미지 업로드 영역 -->
-                                <div class="image-upload-box">
-                                    <label for="main-image-upload">이미지 첨부</label>
-                                    <input type="file" id="main-image-upload" accept="image/*">
-                                </div>
-
-                            </div>
-
-                            <div class="card-box">
-                                <div class="sub-title">디자인</div>
-                                <div class="section">
-                                    <div class="small-label">배경</div>
-                                    <div class="option-group"><button class="btn">종이</button><button
-                                            class="btn">화이트</button></div>
-
-                                    <div class="small-label">테마</div>
-                                    <div class="option-group">
-                                        <span class="btn"
-                                            style="width:20px;height:20px;border-radius:50%;padding:0;background:#d9cdbf;"></span>
-                                        <span class="btn"
-                                            style="width:20px;height:20px;border-radius:50%;padding:0;background:#e9d6cc;"></span>
-                                        <span class="btn"
-                                            style="width:20px;height:20px;border-radius:50%;padding:0;background:#e0b5a4;"></span>
-                                        <span class="btn"
-                                            style="width:20px;height:20px;border-radius:50%;padding:0;background:#a3a1dc;"></span>
-                                    </div>
-
-                                    <div class="small-label">폰트</div>
-                                    <div class="option-group"><button class="btn">돋움1</button><button
-                                            class="btn">돋움2</button><button class="btn">바탕1</button><button
-                                            class="btn">바탕2</button>
-                                    </div>
-
-                                    <div class="small-label">폰트</div>
-                                    <div class="option-group"><button class="btn">보통</button><button
-                                            class="btn">약간굵게</button><button class="btn">크게</button></div>
-
-                                    <div class="small-label">신랑/신부 표기 순서</div>
-                                    <div class="option-group"><button class="btn">약간굵게</button><button
-                                            class="btn">신부먼저</button>
-                                    </div>
+                                <div>
+                                    <div class="small-label">시간</div>
+                                    <input type="time">
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="footer-row">
-                                <span><strong>1단계</strong> / 4단계</span>
-                                <button class="save-btn">임시저장</button>
+                        <!-- 인사말 -->
+                        <div class="card-box">
+                            <div class="sub-title">인사말</div>
+                            <div class="section">
+                                <div class="small-label">내용</div>
+                                <textarea class="textarea" rows="6" placeholder="두 사람의 마음을 담은 인사말을 입력하세요."></textarea>
                             </div>
+                        </div>
 
-                            <div class="card-box">
-                                <div class="sub-title">신랑측 정보</div>
-                                <div class="section">
-                                    <div class="small-label">아버님</div>
-                                    <div class="input-row"><input type="text" placeholder="성"><input type="text"
-                                            placeholder="이름"><input type="text" placeholder="연락처"></div>
-                                    <div class="checkbox"><input type="checkbox" id="groom-father-deceased"><label
-                                            for="groom-father-deceased">고인</label></div>
+                        <!-- 장소 -->
+                        <div class="card-box">
+                            <div class="sub-title">장소</div>
+                            <div class="section">
+                                <div class="small-label">장소명</div>
+                                <input type="text" placeholder="예: 보따리 웨딩홀 3층 아모르홀">
 
-                                    <div class="small-label">어머님</div>
-                                    <div class="input-row"><input type="text" placeholder="성"><input type="text"
-                                            placeholder="이름"><input type="text" placeholder="연락처"></div>
-                                    <div class="checkbox"><input type="checkbox" id="groom-mother-deceased"><label
-                                            for="groom-mother-deceased">고인</label></div>
+                                <div class="small-label">주소</div>
+                                <input type="text" placeholder="도로명 주소">
 
-                                    <div class="small-label">신랑 <span class="required">(필수)</span></div>
-                                    <div class="input-row"><input type="text" placeholder="성"><input type="text"
-                                            placeholder="이름"><input type="text" placeholder="연락처"></div>
+                                <div class="input-row">
+                                    <input type="text" placeholder="상세 주소">
+                                    <input type="text" placeholder="지도 링크(URL)">
+                                    <button class="invitation-btn" id="address-search">지도 보기</button>
+                                </div>
+                                <!-- 지도 영역 -->
+                                <div id="map" class="map"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-box">
+                            <div class="sub-title">신랑측 정보</div>
+                            <div class="section">
+                                <div class="small-label">아버님</div>
+                                <div class="input-row"><input type="text" placeholder="성"><input type="text"
+                                        placeholder="이름"><input type="text" placeholder="연락처"></div>
+                                <div class="checkbox"><input type="checkbox" id="groom-father-deceased"><label
+                                        for="groom-father-deceased">고인</label></div>
+
+                                <div class="small-label">어머님</div>
+                                <div class="input-row"><input type="text" placeholder="성"><input type="text"
+                                        placeholder="이름"><input type="text" placeholder="연락처"></div>
+                                <div class="checkbox"><input type="checkbox" id="groom-mother-deceased"><label
+                                        for="groom-mother-deceased">고인</label></div>
+
+                                <div class="small-label">신랑 <span class="required">(필수)</span></div>
+                                <div class="input-row"><input type="text" placeholder="성"><input type="text"
+                                        placeholder="이름"><input type="text" placeholder="연락처"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-box">
+                            <div class="sub-title">신부측 정보</div>
+                            <div class="section">
+                                <div class="small-label">아버님</div>
+                                <div class="input-row"><input type="text" placeholder="성"><input type="text"
+                                        placeholder="이름"><input type="text" placeholder="연락처"></div>
+                                <div class="checkbox"><input type="checkbox" id="bride-father-deceased"><label
+                                        for="bride-father-deceased">고인</label></div>
+
+                                <div class="small-label">어머님</div>
+                                <div class="input-row"><input type="text" placeholder="성"><input type="text"
+                                        placeholder="이름"><input type="text" placeholder="연락처"></div>
+                                <div class="checkbox"><input type="checkbox" id="bride-mother-deceased"><label
+                                        for="bride-mother-deceased">고인</label></div>
+
+                                <div class="small-label">신부 <span class="required">(필수)</span></div>
+                                <div class="input-row"><input type="text" placeholder="성"><input type="text"
+                                        placeholder="이름"><input type="text" placeholder="연락처"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-box">
+                            <div class="sub-title">아기정보</div>
+                            <div class="section">
+                                <div class="small-label">아기<span class="required">(필수)</span></div>
+                                <div class="input-row"><input type="text" placeholder="이름"></div>
+                            </div>
+                        </div>
+
+                        <div class="card-box">
+                            <div class="sub-title">부모정보</div>
+                            <div class="small-label">아버님</div>
+                            <div class="input-row"><input type="text" placeholder="성"><input type="text"
+                                    placeholder="이름"><input type="text" placeholder="연락처"></div>
+
+                            <div class="small-label">어머님</div>
+                            <div class="input-row"><input type="text" placeholder="성"><input type="text"
+                                    placeholder="이름"><input type="text" placeholder="연락처"></div>
+                            <div class="checkbox"><input type="checkbox" id="bride-mother-deceased"><label
+                                    for="bride-mother-deceased">고인</label></div>
+                        </div>
+
+                        <!-- 펀딩 -->
+                        <div class="card-box">
+                            <div class="sub-title">펀딩</div>
+                            <div class="section">
+                                <div class="small-label">등록된 펀딩 리스트가 있습니다.</div>
+                                <p class="hint">보러가기></p>
+                                <div class="small-label">등록된 펀딩 리스트가 없습니다.</div>
+                                <p class="hint">등록하기></p>
+
+                                <!-- 썸네일 리스트 (링크형) -->
+                                <div class="funding-thumbs" id="funding-thumbs">
+                                    <!-- JS가 <a class="thumb" href="..."><img ...></a> 형태로 채움 -->
+                                </div>
+
+                                <!-- 필요 시 전체보기 링크 -->
+                                <div class="thumbs-more" id="funding-more" style="display:none;">
+                                    <a class="more-link" href="/funding" aria-label="펀딩 상품 전체보기">+ 더보기</a>
                                 </div>
                             </div>
-
-                            <div class="card-box">
-                                <div class="sub-title">신부측 정보</div>
-                                <div class="section">
-                                    <div class="small-label">아버님</div>
-                                    <div class="input-row"><input type="text" placeholder="성"><input type="text"
-                                            placeholder="이름"><input type="text" placeholder="연락처"></div>
-                                    <div class="checkbox"><input type="checkbox" id="bride-father-deceased"><label
-                                            for="bride-father-deceased">고인</label></div>
-
-                                    <div class="small-label">어머님</div>
-                                    <div class="input-row"><input type="text" placeholder="성"><input type="text"
-                                            placeholder="이름"><input type="text" placeholder="연락처"></div>
-                                    <div class="checkbox"><input type="checkbox" id="bride-mother-deceased"><label
-                                            for="bride-mother-deceased">고인</label></div>
-
-                                    <div class="small-label">신부 <span class="required">(필수)</span></div>
-                                    <div class="input-row"><input type="text" placeholder="성"><input type="text"
-                                            placeholder="이름"><input type="text" placeholder="연락처"></div>
-                                </div>
-                            </div>
-
-                            <div class="footer-row">
-                                <span><strong>2단계</strong> / 4단계</span>
-                                <button class="save-btn">임시저장</button>
-                            </div>
-                            <!-- 모시는 글 -->
-                            <div class="card-box">
-                                <div class="sub-title">모시는 글</div>
-                                <div class="section">
-                                    <div class="small-label">내용</div>
-                                    <textarea class="textarea" rows="6"
-                                        placeholder="두 사람의 마음을 담은 인사말을 입력하세요."></textarea>
-                                </div>
-                            </div>
-
-                            <!-- 예식일 -->
-                            <div class="card-box">
-                                <div class="sub-title">예식일</div>
-                                <div class="section grid-2">
-                                    <div>
-                                        <div class="small-label">날짜</div>
-                                        <input type="date">
-                                    </div>
-                                    <div>
-                                        <div class="small-label">시간</div>
-                                        <input type="time">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 예식장소 -->
-                            <div class="card-box">
-                                <div class="sub-title">예식장소</div>
-                                <div class="section">
-                                    <div class="small-label">장소명</div>
-                                    <input type="text" placeholder="예: 보따리 웨딩홀 3층 아모르홀">
-
-                                    <div class="small-label">주소</div>
-                                    <input type="text" placeholder="도로명 주소">
-
-                                    <div class="input-row">
-                                        <input type="text" placeholder="상세 주소">
-                                        <input type="text" placeholder="지도 링크(URL)">
-                                        <button class="invitation-btn" id="address-search">지도 보기</button>
-                                    </div>
-                                    <!-- 지도 영역 -->
-                                    <div id="map" class="map"></div>
-                                </div>
-                            </div>
-
-                            <div class="footer-row">
-                                <span><strong>3단계</strong> / 4단계</span>
-                                <button class="save-btn">임시저장</button>
-                            </div>
-
-                            <!-- 갤러리 -->
-                            <div class="card-box">
-                                <div class="sub-title">갤러리</div>
-
-                                <div class="section">
-                                    <div class="pill-group">
-                                        <button class="btn pill is-active">일반형</button>
-                                        <button class="btn pill">스토리형</button>
-                                        <button class="btn pill">투명형</button>
-                                    </div>
-
-                                    <div class="upload-dropzone lg" id="gallery-cover">
-                                        <div class="upload-icon">＋</div>
-                                        <div class="upload-text">
-                                            이미지를 업로드하세요<br>
-                                            <span class="muted">최대 20MB / JPG·PNG·WEBP</span>
-                                        </div>
-                                        <input type="file" accept="image/*" class="upload-input" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 공유하기 링크 정보 -->
-                            <div class="card-box">
-                                <div class="sub-title">공유하기 링크 정보</div>
-
-                                <div class="section">
-                                    <p class="hint">
-                                        카카오/밴드 등으로 공유할 때 보이는 제목·내용·썸네일입니다. (미입력 시 기본값 사용)
-                                    </p>
-
-                                    <div class="small-label">제목</div>
-                                    <input type="text" class="text-input" placeholder="예: 두 사람의 시작에 함께해 주세요.">
-
-                                    <div class="small-label with-count">
-                                        내용 <span class="char-count" id="share-count">0</span><span class="muted"> /
-                                            200자</span>
-                                    </div>
-                                    <textarea class="textarea" id="share-desc" maxlength="200" rows="3"
-                                        placeholder="공유 메시지를 입력하세요."></textarea>
-
-                                    <div class="grid-2 mt12">
-                                        <div>
-                                            <div class="small-label">카카오톡 공유 이미지</div>
-                                            <div class="upload-dropzone sm">
-                                                <div class="upload-img-placeholder"></div>
-                                                <input type="file" accept="image/*" class="upload-input" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="footer-row">
-                                <span><strong>4단계</strong> / 4단계</span>
-                                <button class="save-btn">임시저장</button>
-                            </div>
-
-                            <!-- 펀딩 -->
-                            <div class="card-box">
-                                <div class="sub-title">펀딩</div>
-                                <div class="section">
-                                    <div class="small-label">내펀딩</div>
-                                    <p class="hint">펀딩 등록 페이지에서 등록 가능합니다.</p>
-
-                                    <!-- 썸네일 리스트 (링크형) -->
-                                    <div class="funding-thumbs" id="funding-thumbs">
-                                        <!-- JS가 <a class="thumb" href="..."><img ...></a> 형태로 채움 -->
-                                    </div>
-
-                                    <!-- 필요 시 전체보기 링크 -->
-                                    <div class="thumbs-more" id="funding-more" style="display:none;">
-                                        <a class="more-link" href="/funding" aria-label="펀딩 상품 전체보기">+ 더보기</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="footer-row">
-                                <span></span>
-                                <button class="save-btn">초대장 작성 완료</button>
-                            </div>
-
                         </div>
                     </div>
-                </div>
 
+
+                    <div class="footer-row">
+                        <span></span>
+                        <button class="save-btn">다음 단계</button>
+                    </div>
+
+                </div>
             </div>
+        </div>
         </div>
     </content>
 

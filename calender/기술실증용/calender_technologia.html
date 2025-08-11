@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="보따리 캘린더 - 기념일 관리와 펀딩 서비스">
+    <title>캘린더 - 보따리</title>
+    
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css">
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../../Global_css/Global.css">
+    <link rel="stylesheet" href="../css/calender_stylesheet.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="controller">
+        <div id="sec-header" class="sector">
+            <div class="left-side">
+                <a href="#" aria-label="보따리 홈페이지로 이동">
+                    <img class="header-logo" src="../../asset/Logo_colored.svg" alt="보따리 로고">
+                </a>
+                <nav>
+                    <h1 class="header-menu"><a href="#calendar">캘린더</a></h1>
+                    <h1 class="header-menu"><a href="#funding">펀딩</a></h1>
+                    <h1 class="header-menu"><a href="#invitation">초대장</a></h1>
+                    <h1 class="header-menu"><a href="#history">구매내역</a></h1>
+                </nav>
+            </div>
+            <div class="right-side">
+                <a href="#cart" aria-label="장바구니">
+                    <img class="header-icon header-shopping-cart" src="../../asset/icon-shopping-cart.svg" alt="장바구니">
+                </a>
+                <span class="header-usermenu">사용자이름</span>
+                <button type="button" aria-label="사용자 메뉴" aria-expanded="false">
+                    <img class="header-icon" src="../../asset/icon-caret-down.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="controller">
+        <div id="sec-content" class="sector">
+            <!-- Page Title Section -->
+            <div class="sec-sub-title">
+                <h2 class="header-sub">캘린더</h2>
+                <!-- Date and Edit Controls (only for event list pages) -->
+                <div id="date-controls" class="date-and-btn-edit" style="display: none;">
+                    <div class="selected-date" id="selected-date-text">선택된 날짜</div>
+                    <div class="edit-btn-box">
+                        <button type="button" aria-label="이벤트 추가" id="btn-add-event-header">
+                            <img class="popup-icon" src="../../asset/icon-add.svg" alt="">
+                        </button>
+                        <button type="button" aria-label="더보기 메뉴" aria-expanded="false">
+                            <img class="popup-icon" src="../../asset/icon-menu-dots.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="sec-content-main">
+                <!-- Calendar Section -->
+                <section class="left-main content-height" aria-label="캘린더">
+                    <img class="dummy-calender" src="../dummy_calender.JPG" alt="캘린더 인터페이스">
+                </section>
+
+                <!-- Side Panel -->
+                <aside class="right-main content-height" id="side-panel">
+                    <!-- Dynamic content will be inserted here -->
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="controller">
+        <div id="sec-footer" class="sector">
+            <nav class="footer-links" aria-label="푸터 링크">
+                <a href="#terms">이용약관</a> |
+                <a href="#privacy">개인정보처리방침</a> |
+                <a href="#exchange">교환/반품 안내</a> |
+                <a href="#faq">자주 묻는 질문</a> |
+                <a href="#contact">1:1 문의</a>
+            </nav>
+            <div class="company-info">
+                <p>
+                    <span class="company-name">상호: 주식회사 보따리</span> |
+                    <span class="company-name">대표: 김보따리</span> |
+                    <span>사업자등록번호: 123-45-67890</span> |
+                    <span>통신판매업신고: 제2025-서울강동-0001</span>
+                </p>
+                <address class="contact-info">
+                    주소: 서울특별시 강동구 천호대로 1027, 5층 |
+                    고객센터: <a href="tel:02-1234-5678">02-1234-5678</a>
+                </address>
+                <p class="contact-info">
+                    운영시간: 평일 10:00 ~ 18:00 (점심시간 12:00~13:00)
+                </p>
+            </div>
+            <div class="copyright">
+                <p>© 2025 bottari.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Event Add Popup Modal -->
+    <div id="event-add-popup" role="dialog" aria-labelledby="popup-title" aria-hidden="true" style="display: none;">
+        <form id="event-form">
+            <div class="cancel">
+                <button type="button" class="btn-cancel" aria-label="팝업 닫기">
+                    <img class="popup-icon" src="../../asset/icon-cross.svg" alt="">
+                </button>
+            </div>
+            
+            <div class="event-name">
+                <div class="event-icon-box">
+                    <label for="event-type" aria-label="이벤트 타입">
+                        <img class="popup-icon" src="../../asset/icon-interrogation.svg" alt="">
+                        <img class="popup-icon" src="../../asset/icon-caret-down.svg" alt="">
+                    </label>
+                </div>
+                <div class="event-name-box">
+                    <label for="event-title" class="sr-only">일정 제목</label>
+                    <input type="text" id="event-title" class="input-name" placeholder="일정 제목" required>
+                </div>
+            </div>
+            
+            <div class="repeat-option">
+                <label for="repeat-select" aria-label="반복 설정">
+                    <img class="popup-icon" src="../../asset/icon-refresh.svg" alt="">
+                </label>
+                <select id="repeat-select" class="select-option" aria-label="반복 옵션">
+                    <option value="none">반복안함</option>
+                    <option value="daily">매일</option>
+                    <option value="weekly">매주</option>
+                    <option value="monthly">매월</option>
+                    <option value="yearly">매년</option>
+                </select>
+            </div>
+            
+            <div class="event-comment">
+                <label for="event-memo" aria-label="메모">
+                    <img class="popup-icon" src="../../asset/icon-comment.svg" alt="">
+                </label>
+                <textarea id="event-memo" class="input-comment" placeholder="메모 입력" rows="6"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-save">저장</button>
+        </form>
+    </div>
+
+    <!-- Screen Reader Only Styles -->
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+
+    <script>
+        // Basic functionality for calendar states
+        const CalendarApp = {
+            // State management
+            currentState: 'no-event', // 'no-event', 'event-list-no', 'event-list-yes'
+            selectedDate: null,
+            
+            // Initialize
+            init() {
+                this.bindEvents();
+                this.loadState();
+            },
+            
+            // Event bindings
+            bindEvents() {
+                // Add event button
+                const addEventBtn = document.querySelector('.btn-add-event');
+                if (addEventBtn) {
+                    addEventBtn.addEventListener('click', this.showAddEventPopup.bind(this));
+                }
+                
+                // Close popup
+                const closeBtn = document.querySelector('.btn-cancel');
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', this.hideAddEventPopup.bind(this));
+                }
+                
+                // Form submission
+                const eventForm = document.getElementById('event-form');
+                if (eventForm) {
+                    eventForm.addEventListener('submit', this.handleEventSubmit.bind(this));
+                }
+            },
+            
+            // Show popup
+            showAddEventPopup() {
+                const popup = document.getElementById('event-add-popup');
+                popup.style.display = 'block';
+                popup.setAttribute('aria-hidden', 'false');
+                document.getElementById('event-title').focus();
+            },
+            
+            // Hide popup
+            hideAddEventPopup() {
+                const popup = document.getElementById('event-add-popup');
+                popup.style.display = 'none';
+                popup.setAttribute('aria-hidden', 'true');
+            },
+            
+            // Handle form submission
+            handleEventSubmit(e) {
+                e.preventDefault();
+                // Add your event saving logic here
+                console.log('Event saved');
+                this.hideAddEventPopup();
+            },
+            
+            // Load different states
+            loadState(state = 'no-event', date = null) {
+                this.currentState = state;
+                this.selectedDate = date;
+                
+                const sidePanel = document.getElementById('side-panel');
+                const dateControls = document.getElementById('date-controls');
+                
+                switch (state) {
+                    case 'no-event':
+                        this.renderNoEventState(sidePanel);
+                        dateControls.style.display = 'none';
+                        break;
+                    case 'event-list-no':
+                        this.renderEventListNoState(sidePanel, date);
+                        dateControls.style.display = 'flex';
+                        break;
+                    case 'event-list-yes':
+                        this.renderEventListYesState(sidePanel, date);
+                        dateControls.style.display = 'flex';
+                        break;
+                }
+                
+                if (date) {
+                    document.getElementById('selected-date-text').textContent = date;
+                }
+            },
+            
+            // Render no event state
+            renderNoEventState(container) {
+                container.innerHTML = `
+                    <div class="no-event">
+                        <img class="icon-calender" src="../../asset/icon-calendar-exclamation.svg" alt="캘린더">
+                        <div class="explain-text">등록된 기념일이 없어요</div>
+                        <button type="button" class="btn-add-event">기념일 등록하기</button>
+                    </div>
+                `;
+                this.bindEvents();
+            },
+            
+            // Render event list (no event) state
+            renderEventListNoState(container, date) {
+                container.innerHTML = `
+                    <div class="event-detail">
+                        <div class="selected-event">
+                            <img class="event-icon" src="../../asset/icon-cake-birthday.svg" alt="생일">
+                            <div class="event-title-detail">
+                                <div class="event-title">내 생일</div>
+                                <div class="event-explain">내 생일이다 머리를 조아리도록</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="no-event no-detail">
+                        <img class="icon-calender" src="../../asset/icon-cross.svg" alt="">
+                        <div class="explain-text">초대장이 없어요</div>
+                        <button type="button" class="btn-add-event">초대장 만들기</button>
+                    </div>
+                    <div class="no-event no-detail">
+                        <img class="icon-calender" src="../../asset/icon-cross.svg" alt="">
+                        <div class="explain-text">펀딩 리스트가 비었어요</div>
+                        <button type="button" class="btn-add-event">펀딩 관리하기</button>
+                    </div>
+                    <div class="ad-banner">
+                        <a href="#ad" aria-label="광고 배너">
+                            <img src="../임시_배너.JPG" alt="광고">
+                        </a> 
+                    </div>
+                    <div class="history-gift disable"></div>
+                `;
+            },
+            
+            // Render event list (yes event) state
+            renderEventListYesState(container, date) {
+                container.innerHTML = `
+                    <div class="event-detail">
+                        <div class="selected-event">
+                            <img class="event-icon" src="../../asset/icon-cake-birthday.svg" alt="생일">
+                            <div class="event-title-detail">
+                                <div class="event-title">내 생일</div>
+                                <div class="event-explain">내 생일이다. 친구들과 함께 생일 파티를 즐길 것이다</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="celebrate-card">
+                        <div class="celebrate-title">내가 만든 초대장</div>
+                        <img class="celebrate-card-img" src="../../asset/35d848a665f27f3c75f0e8234f7f69ce.jpg" alt="초대장 이미지">
+                        <div class="celebrate-guestcard">내 생일이다 머리를 조아려라</div>
+                        <div class="show-detail"><a href="#detail">자세히보기></a></div>
+                    </div>
+                    <div class="funding-goods">
+                        <div class="funding-title">진행중인 펀딩</div>
+                        <a href="#funding1" class="funding-list">
+                            <img class="list-img" src="../임시.JPG" alt="맥 제품">
+                            <div class="goods-detail-box">
+                                <div class="brand">맥(MAC)</div>
+                                <div class="goods-title">"단하루 루비우 증정" [단독/각인] 맥 BEST...</div>
+                                <div class="goods-price">38,000원</div>
+                            </div>
+                        </a>
+                        <a href="#funding2" class="funding-list">
+                            <img class="list-img" src="../임시.JPG" alt="한우 제품">
+                            <div class="goods-detail-box">
+                                <div class="brand">한우맘</div>
+                                <div class="goods-title">한우맘 1++등급 한우 패밀리 프리미엄...</div>
+                                <div class="goods-price">249,000원</div>
+                            </div>
+                        </a>
+                        <div class="show-detail"><a href="#all-funding">전체보기></a></div>
+                    </div>
+                    <div class="ad-banner">
+                        <a href="#ad" aria-label="광고 배너">
+                            <img src="../임시_배너.JPG" alt="광고">
+                        </a>
+                    </div>
+                    <div class="history-gift"></div>
+                `;
+            }
+        };
+        
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            CalendarApp.init();
+            
+            // Example: Load different states based on URL or conditions
+            // CalendarApp.loadState('no-event');
+            // CalendarApp.loadState('event-list-no', '2025년 1월 15일');
+            // CalendarApp.loadState('event-list-yes', '2025년 1월 20일');
+        });
+    </script>
+</body>
+</html>

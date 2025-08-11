@@ -104,7 +104,7 @@
     margin-left: 10px;
 }
 
-.main-info .goods-price {
+.goods-price {
     font-size: 16px;
     font-weight: bold;
     margin-top: 36px;
@@ -143,4 +143,23 @@
     height: 43px;
     border-radius: 4px;
     border: 1px solid #ddd;
+}
+
+
+/**************************/
+/* 구매내역 상세보기 페이지 */
+/**************************/
+
+.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-bottom {
+    margin-top: 87px;
 }

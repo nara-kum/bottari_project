@@ -24,20 +24,20 @@
                 <h1 class="header-menu"><a href="">구매내역</a></h1>
             </div>
             <div class="right-side">
-                <a href=""><div class="header-icon header-shopping-cart" ><img src="../../asset/icon-shopping-cart.svg"></div></a>
+                <a href=""><img class="header-icon header-shopping-cart" src="../../asset/icon-shopping-cart.svg"></a>
 
                 <h1 class="header-usermenu">사용자이름</h1>
-                <div class="header-icon"><a href=""><img src="../../asset/icon-caret-down.svg"></a></div>
+                <a href=""><img class="header-icon" src="../../asset/icon-caret-down.svg"></a>
             </div>
         </div>
     </header>
     <content class="controller">
         <div id="sec-content" class="sector">
             <div class="sec-sub-title">
-                <h2 class="header-sub"><a href="">My 위시리스트</a></h2>
-                <h2 class="myfunding">
-                    <div><a href="">마이 펀딩</a></div>
-                    <div><a href="">친구 펀딩</a></div>
+                <h2 class="header-sub"><a href="">펀딩 관리</a></h2>
+                <h2 class="funding">
+                    <div class="my-fun"><a href="">마이 펀딩</a></div>
+                    <div class="friend-fun"><a href="">친구 펀딩</a></div>
                 </h2>
             </div>
 
@@ -45,10 +45,11 @@
 
                 <div class="left-main content-height">
 
-                    <div class="first-product">
+                    <h2 class="top-text">위시리스트</h2>
+                    <div class="a-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">
-                            <img class="first-product-image" src="../image/eki.webp" /><!--상품이미지-->
+                            <img class="product-image" src="../image/eki.webp" /><!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info">
@@ -64,18 +65,16 @@
                         </div> <!--  image-row 끝나는 지점    -->
                     </div> 
 
-
-
                     <!--2 번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
-                    <div class="second-product">
+                    <div class="a-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">  
-                            <img class="second-product-image" src="../image/2.webp" /> <!--상품이미지-->
+                            <img class="product-image" src="../image/2.webp" /> <!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info">
                                 <div class="buy">레이문</div> <!--판매처-->
-                                <div class="product-name">&#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등 L사이즈(인물테두리컷팅, ...</div>
+                                <div class="product-name">&#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등 L사이즈(인물테두리컷팅) ...</div>
                                 <div class="price">39,800원</div> <!--가격-->
 
                             <div class="image-row">
@@ -87,15 +86,15 @@
                     </div>
 
                     <!--3 번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
-                    <div class="third-product">
+                    <div class="a-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">   
-                            <img class="third-product-image" src="../image/3.webp" /> <!--상품이미지-->
+                            <img class="product-image" src="../image/3.webp" /> <!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info">                            
                                 <div class="buy">헤이루미(키친)</div> <!--판매처-->
-                                <div class="product-name">&#34;봄날의 우리&#34; [선물포장+엽서증정] Our Marriage 웨딩 머그컵 2P 세트 / 신혼부부 연인 결혼 기념일선물</div>
+                                <div class="product-name">&#34;봄날의 우리&#34; [선물포장+엽서증정] Our Marriage 웨딩 머그컵 2P 세트 / 신혼부부 연인 결혼</div>
                                 <div class="price">20,900원</div> <!--가격-->
 
                             <div class="image-row">    
@@ -108,10 +107,10 @@
 
 
                     <!--4 번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
-                    <div class="f-product">
+                    <div class="a-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">   
-                            <img class="f-product-image" src="../image/4.webp" /> <!--상품이미지-->
+                            <img class="product-image" src="../image/4.webp" /> <!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info">  
@@ -128,10 +127,10 @@
                     </div>
 
                     <!--5 번째 상품이미지, 판매처, 상품명, 가격, 장바구니, 하트(찜) -->
-                    <div class="o-product">
+                    <div class="a-product">
                         <div class="image-row">
                             <input id="chk-1" type="checkbox" class="product-checkbox">   
-                            <img class="o-product-image" src="../image/5.webp" /> <!--상품이미지-->
+                            <img class="product-image" src="../image/5.webp" /> <!--상품이미지-->
 
                             <!-- 텍스트 가로 정렬 영역 -->
                             <div class="product-info"> 
@@ -150,6 +149,7 @@
                 </div> <!-- <div class="left-main content-height"> -->
 
                 <div class="right-main content-height">
+                    <h2 class="top-text">선택한 펀딩</h2>
                     <div class="funding-controls">
                         <select id="funding-table">
                             <option value="">-- 기념일 선택 --</option>
@@ -160,15 +160,95 @@
                             <option value="e">8월 8일 돌잔치</option>
                             <option value="f">9월 5일 쫑파티</option>
                         </select>
-                        <button class="btn-funding1" type="submit">펀딩시작하기</button>
-                    </div>
 
-                </div>                
-            </div>
+
+                        <!-- 1번 상품 5%, 전액 -->
+                        <div class="form-group">    
+                            <span for="rdo-o">5%</span>
+                            <input id="rdo-me" type="radio" name="range" value="">
+
+                            <span for="rdo-o">전액</span>
+                            <input id="rdo-me" type="radio" name="range" value="">      
+                        </div>  
+
+                        <div class="form-group2">
+                            <div>1,945원</div>
+                            <div class="right-choice-product">&#34;신생아 오가닉 선물&#34; [임신/출산축하] &#34;뱀띠 아기선물</div>
+                        </div>                            
+
+
+
+                        <!-- 2번 상품 5%, 전액 -->
+                        <div class="form-group-1">    
+                            <span for="rdo-o">5%</span>
+                            <input id="rdo-me" type="radio" name="range" value="">
+
+                            <span for="rdo-o">전액</span>
+                            <input id="rdo-me" type="radio" name="range" value="">      
+                        </div>      
+                        
+                        <div class="form-group2">
+                            <div>1,990원</div>
+                            <div class="right-choice-product">&#34;결혼선물 집들이선물&#34; [레이문] 주문제작 드로잉 무드등 L사이즈(인물)...</div>
+                        </div>
+
+                        <!-- 3번 상품 5%, 전액 -->
+                        <div class="form-group-1">    
+                            <span for="rdo-o">5%</span>
+                            <input id="rdo-me" type="radio" name="range" value="">
+
+                            <span for="rdo-o">전액</span>
+                            <input id="rdo-me" type="radio" name="range" value="">      
+                        </div>      
+                        
+                        <div class="form-group2">
+                            <div>1,045원</div>
+                            <div class="right-choice-product">&#34;봄날의 우리&#34; [선물포장+엽서증정] Our Marriage 웨딩 머그컵 2P 세트...</div>
+                        </div>
+
+
+
+                        <!-- 4번 상품 5%, 전액 -->
+                        <div class="form-group-1">    
+                            <span for="rdo-o">5%</span>
+                            <input id="rdo-me" type="radio" name="range" value="">
+
+                            <span for="rdo-o">전액</span>
+                            <input id="rdo-me" type="radio" name="range" value="">      
+                        </div>      
+                        
+                        <div class="form-group2">
+                            <div>1,145원</div>
+                            <div class="right-choice-product">[어버이날 스승의날] &#34;감사합니다사랑합니다&#34; [당일배송] 카네이션꽃...</div>
+                        </div>
+
+                        <!-- 5번 상품 5%, 전액 -->
+                        <div class="form-group-1">    
+                            <span for="rdo-o">5%</span>
+                            <input id="rdo-me" type="radio" name="range" value="">
+
+                            <span for="rdo-o">전액</span>
+                            <input id="rdo-me" type="radio" name="range" value="">      
+                        </div>      
+                        
+                        <div class="form-group2">
+                            <div>12,450원</div>
+                            <div class="right-choice-product">한우맘 1++등급 한우 패밀리 프리미엄 홈마카세 1.4kg(등심+살치+갈비+안심+채끝)...</div>
+                        </div>   
+                        
+                        </div>      
+                                             
+                        <button class="btn-funding1" type="submit">펀딩시작하기</button>
+                    </div>                           
+                </div>     <!-- right-main content-height --> 
+                        
+                         
+            </div>   <!--sec-content-main-->       
+ 
             
 
 
-        </div>
+        </div> 
     </content>
     <footer class="controller">
         <div id="sec-footer" class="sector">
