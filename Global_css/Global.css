@@ -114,12 +114,12 @@ footer {
 }
 
 .sec-content-main .left-main, .sec-content-main .right-main {
-    width: auto;
+    width: 640px;
 }
 
 /* left-main, right-main 높이 설정 */
 .content-height {
-    height: 600px;
+    height: auto;
 }
 
 /* footer css */

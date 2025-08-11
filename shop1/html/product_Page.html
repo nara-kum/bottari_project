@@ -1,219 +1,244 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bottari - 상품 상세</title>
-    <link rel="stylesheet" href="../0.header/header.css">	
-    <link rel="stylesheet" href="../0.footer/footer.css">
-	   <link rel="stylesheet" href="../css/product_Page.css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../../Global_css/reset.css">
+	<link rel="stylesheet" href="../../Global_css/Global.css"> <!-- 본인 파일의 경로에 맞게 수정해야함 -->
+	<link rel="stylesheet" href="../css/product_Page.css">
 
 </head>
-<body>
-    <!-- 헤더 -->
-    <header>
-		<div class="screen">
-			<div class="header">
-				<div class="auto-layout-left">
-					<img class="logo-colored" src="../../asset/Logo_colored.svg">
-					<div class="header-menu">캘린더</div>
-					<div class="header-menu">펀딩</div>
-					<div class="header-menu">초대장</div>
-					<div class="header-menu">구매내역</div>
-				</div>
-				<div class="auto-layout-right">
-					<div class="shopping-cart-frame">
-						<img class="icon-shopping-cart" src="../../asset/icon-shopping-cart.svg" />
-					</div>
-					<div class="header-usermenu">사용자이름</div>
-					<img class="icon-caret-down" src="../../asset/icon-caret-down.svg" />
-				</div>
+
+<body class="family">
+	<header class="controller">
+		<div id="sec-header" class="sector">
+			<div class="left-side">
+				<a href=""><img class="header-logo" src="../../asset/Logo_colored.svg"></a>
+				<h1 class="header-menu"><a href="">캘린더</a></h1>
+				<h1 class="header-menu"><a href="">펀딩</a></h1>
+				<h1 class="header-menu"><a href="">초대장</a></h1>
+				<h1 class="header-menu"><a href="">구매내역</a></h1>
+			</div>
+			<div class="right-side">
+				<a href=""><img class="header-icon header-shopping-cart" src="../../asset/icon-shopping-cart.svg"></a>
+				<h1 class="header-usermenu">사용자이름</h1>
+				<a href=""><img class="header-icon" src="../../asset/icon-caret-down.svg"></a>
 			</div>
 		</div>
 	</header>
 
-    <!-- 메인 컨텐츠 -->
-    <div class="main-container">
-        <!-- 상품 상세 섹션 -->
-        <div class="product-section">
-            <!-- 상품 이미지 -->
-            <div class="product-images">
-                <div class="main-image">
-                    <div class="haagen-logo">Häagen-Dazs</div>
-                    <div class="cake-image">
-                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, #8B4513 0%, #CD853F 50%, white 100%); border-radius: 50%; position: relative;">
-                            <div style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); background: white; padding: 4px 8px; border-radius: 12px; font-size: 10px; color: #8B4513; font-weight: bold;">premium</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="thumbnail-images">
-                    <div class="thumbnail active"></div>
-                    <div class="thumbnail"></div>
-                </div>
-            </div>
+	<content class="controller">
+		<div id="sec-content" class="sector">
+			<div class="sec-sub-title">
+				<h2 class="header-sub">상품페이지</h2>
+				<!-- 여기부터 코딩 시작!! -->
+			</div>
+			<div class="sec-content-main">
 
-            <!-- 상품 정보 -->
-            <div class="product-info">
-                <h1 class="product-title">[단독]하겐다즈 프리미엄 수제 아이스크림 케이크 리얼블랙 (바닐라+벨지안 초코)</h1>
-                <div class="product-price">32,900원</div>
-                <div class="brand-name">하겐다즈(하이브)</div>
+				<!-- 메인 컨텐츠 -->
+				<div class="main-container">
+					<!-- 상품 상세 섹션 -->
+					<div class="product-section">
+						<!-- 상품 이미지 -->
+						<div class="product-images">
+							<div class="main-image">
+								<div class="haagen-logo">Häagen-Dazs</div>
+								<div class="cake-image">
+									<div
+										style="width: 200px; height: 200px; background: linear-gradient(45deg, #8B4513 0%, #CD853F 50%, white 100%); border-radius: 50%; position: relative;">
+										<div
+											style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); background: white; padding: 4px 8px; border-radius: 12px; font-size: 10px; color: #8B4513; font-weight: bold;">
+											premium</div>
+									</div>
+								</div>
+							</div>
+							<div class="thumbnail-images">
+								<div class="thumbnail active"></div>
+								<div class="thumbnail"></div>
+							</div>
+						</div>
 
-                <div class="product-options">
-                    <div class="option-label">상품옵션</div>
-                    <div class="delivery-info">
-                        <span class="icon">🚚</span> 택배비 무료
-                    </div>
-                    <div class="delivery-info">
-                        <span class="icon">❄️</span> 주문 시간에 따라
-                    </div>
-                </div>
+						<!-- 상품 정보 -->
+						<div class="product-info">
+							<h1 class="product-title">[단독]하겐다즈 프리미엄 수제 아이스크림 케이크 리얼블랙 (바닐라+벨지안 초코)</h1>
+							<div class="product-price">32,900원</div>
+							<div class="brand-name">하겐다즈(하이브)</div>
 
-                <div class="service-info">
-                    <div class="option-label">서비스</div>
-                    <div class="service-item">한번에 배송되고 신선한 제품을 받아보세요.</div>
-                </div>
-            </div>
+							<div class="product-options">
+								<div class="option-label">상품옵션</div>
+								<div class="delivery-info">
+									<span class="icon">🚚</span> 택배비 무료
+								</div>
+								<div class="delivery-info">
+									<span class="icon">❄️</span> 주문 시간에 따라
+								</div>
+							</div>
 
-            <!-- 주문 영역 -->
-            <div class="order-section">
-                <div class="order-title">상품 선택</div>
-                <select class="option-select">
-                    <option>옵션선택</option>
-                </select>
-                <div style="font-size: 12px; color: #999; margin-bottom: 15px;">
-                    (선택하시면 프리미엄 수제 아이스크림케이크 리얼블랙 바닐라+벨지안초코)
-                </div>
-                
-                <div class="quantity-control">
-                    <button class="quantity-btn">-</button>
-                    <input type="number" value="1" class="quantity-input" min="1">
-                    <button class="quantity-btn">+</button>
-                </div>
+							<div class="service-info">
+								<div class="option-label">서비스</div>
+								<div class="service-item">한번에 배송되고 신선한 제품을 받아보세요.</div>
+							</div>
+						</div>
 
-                <div style="background: white; padding: 10px; border-radius: 4px; margin-bottom: 15px;">
-                    <div style="font-size: 12px; color: #999; margin-bottom: 5px;">
-                        (선택하시면 프리미엄 수제 아이스크림케이크 리얼블랙 바닐라+벨지안초코)
-                    </div>
-                    <div style="text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
-                        5%
-                    </div>
-                </div>
+						<!-- 주문 영역 -->
+						<div class="order-section">
+							<div class="order-title">상품 선택</div>
+							<select class="option-select">
+								<option>맛선택</option>
+								<option>바닐라</option>
+								<option>벨지안초콘</option>
+							</select>
+							<div style="font-size: 12px; color: #999; margin-bottom: 15px;">
+								(선택한 맛 표시)
+							</div>
 
-                <div style="background: white; padding: 10px; border-radius: 4px; margin-bottom: 15px; font-size: 12px; color: #666;">
-                    부족한 수량부분 등에 대해 상품에 대한 정보를 바로바로 파악하여 제공
-                </div>
+							<div class="quantity-control">
+								<button class="quantity-btn">-</button>
+								<input type="number" value="1" class="quantity-input" min="1">
+								<button class="quantity-btn">+</button>
+							</div>
 
-                <div style="background: white; padding: 10px; border-radius: 4px; margin-bottom: 15px;">
-                    <div style="text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
-                        5%
-                    </div>
-                </div>
+							<div style="background: white; padding: 10px; border-radius: 4px; margin-bottom: 15px;">
+								<div style="font-size: 12px; color: #999; margin-bottom: 5px;">
+									(선택하시면 프리미엄 수제 아이스크림케이크 리얼블랙 바닐라+벨지안초코)
+								</div>
+								<div
+									style="text-align: center; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+									5%
+								</div>
+							</div>
 
-                <div style="background: white; padding: 10px; border-radius: 4px; margin-bottom: 15px; font-size: 12px; color: #666;">
-                    (선택하시면 프리미엄 수제 아이스크림케이크 리얼블랙 바닐라+벨지안초코 메인지를 바꿔서 말씀해주실때 딱)
-                </div>
+							<div
+								style="background: white; padding: 10px; border-radius: 4px; margin-bottom: 15px; font-size: 12px; color: #666;">
+								(케이크 맛  x케이크수량)
+								(5%  x수량)
+							</div>
 
-                <div class="total-price">총 결제 금액 : 0000원</div>
-                
-                <button class="cart-btn">장바구니 담기</button>
-                
-                <div class="action-buttons">
-                    <button class="wishlist-btn">♡ 찜 등록하기</button>
-                    <button class="funding-btn">펀딩하기</button>
-                </div>
-            </div>
-        </div>
+							<div class="total-price">총 결제 금액 : 0000원</div>
 
-        <!-- 추천 상품 -->
-        <div class="recommendation-section">
-            <div class="section-title">이런 구성은 어떠세요?</div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div style="width: 100%; height: 100px; background: #FFB6C1; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">🧁</div>
-                    <div class="product-card-title">하겐다즈 (하이브) 프리미엄 스트로베리 스트로베리 케이크 캐러멜 바닐라주...</div>
-                    <div class="product-card-price">32,900원</div>
-                </div>
-                <div class="product-card">
-                    <div style="width: 100%; height: 100px; background: #DDA0DD; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">🍰</div>
-                    <div class="product-card-title">하겐다즈 (하이브) 프리미엄 초콜 바닐 초콜 하이브코코아...</div>
-                    <div class="product-card-price">29,900원</div>
-                </div>
-                <div class="product-card">
-                    <div style="width: 100%; height: 100px; background: #8B4513; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">🍫</div>
-                    <div class="product-card-title">하겐다즈 (하이브) 프리미엄 초콜릿 초콜 초콜 + 쪽 초콜릿초...</div>
-                    <div class="product-card-price">65,900원</div>
-                </div>
-                <div class="product-card">
-                    <div style="width: 100%; height: 100px; background: #DDA0DD; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">🍰</div>
-                    <div class="product-card-title">하겐다즈 (하이브) 프리미엄 초콜 바닐 초콜 하이브코코아...</div>
-                    <div class="product-card-price">39,900원</div>
-                </div>
-                <div class="product-card">
-                    <div style="width: 100%; height: 100px; background: #8B4513; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">🍫</div>
-                    <div class="product-card-title">하겐다즈 (하이브) 프리미엄 초콜릿 초콜 초콜 + 쪽 초콜릿초...</div>
-                    <div class="product-card-price">65,900원</div>
-                </div>
-            </div>
-        </div>
+							<button class="cart-btn">장바구니 담기</button>
 
-        <!-- 상품 설명 -->
-        <div class="product-description">
-            <div class="haagen-logo-large">Häagen-Dazs</div>
-            <div class="description-text">
-                테이블 넘나 그룹 토스시간 <span class="highlight-text">[32일] 최고 미칠 디저트 순간</span> 함니다.
-            </div>
-            <div class="description-text">
-                배축 미치 ㅋ ㅋ ㅋ [친방] 그 씨 x 친롭 건니 : 또 쟈 타무느로게 니단니다.
-            </div>
-            <div class="description-text">
-                <span class="highlight-text">[실기]현고에바 안더보여서</span> 넘씰나네 야미
-            </div>
-            <div class="description-text">
-                드라이어아이즈 인긍이엔에 <span class="highlight-text">[포링] 이마리오수오도</span>
-            </div>
-            <div class="description-text">
-                안얼련수수 외줍니다.
-            </div>
-            <div class="description-text">
-                배출센리 치사나ㄷ저린면 날계메이저 하쮸떠 받고해수오.
-            </div>
-        </div>
+							<div class="action-buttons">
+								<button class="wishlist-btn">♡ 찜 등록하기</button>
+								<button class="funding-btn">펀딩하기</button>
+							</div>
+						</div>
+					</div>
 
-        <div class="product-image-large"></div>
-    </div>
+					<!-- 추천 상품 -->
+					<div class="recommendation-section">
+						<div class="section-title">이런 구성은 어떠세요?</div>
+						<div class="product-grid">
+							<div class="product-card">
+								<div
+									style="width: 100%; height: 100px; background: #FFB6C1; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">
+									🧁</div>
+								<div class="product-card-title">하겐다즈 (하이브) 프리미엄 스트로베리 스트로베리 케이크 캐러멜 바닐라주...</div>
+								<div class="product-card-price">32,900원</div>
+							</div>
+							<div class="product-card">
+								<div
+									style="width: 100%; height: 100px; background: #DDA0DD; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">
+									🍰</div>
+								<div class="product-card-title">하겐다즈 (하이브) 프리미엄 초콜 바닐 초콜 하이브코코아...</div>
+								<div class="product-card-price">29,900원</div>
+							</div>
+							<div class="product-card">
+								<div
+									style="width: 100%; height: 100px; background: #8B4513; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">
+									🍫</div>
+								<div class="product-card-title">하겐다즈 (하이브) 프리미엄 초콜릿 초콜 초콜 + 쪽 초콜릿초...</div>
+								<div class="product-card-price">65,900원</div>
+							</div>
+							<div class="product-card">
+								<div
+									style="width: 100%; height: 100px; background: #DDA0DD; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">
+									🍰</div>
+								<div class="product-card-title">하겐다즈 (하이브) 프리미엄 초콜 바닐 초콜 하이브코코아...</div>
+								<div class="product-card-price">39,900원</div>
+							</div>
+							<div class="product-card">
+								<div
+									style="width: 100%; height: 100px; background: #8B4513; border-radius: 6px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: white;">
+									🍫</div>
+								<div class="product-card-title">하겐다즈 (하이브) 프리미엄 초콜릿 초콜 초콜 + 쪽 초콜릿초...</div>
+								<div class="product-card-price">65,900원</div>
+							</div>
+						</div>
+					</div>
 
-	<!--푸터-->
-	 <footer class="footer">
-		<div class="footer-container">
+					<!-- 상품 설명 -->
+					<div class="product-description">
+						<div class="haagen-logo-large">Hagen-Dazs</div>
+						<div class="description-text">
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							<p>상세 설명 사진 부분 입니다.</p>
+							
+
+						</div>
+
+					</div>
+
+					<div class="product-image-large"></div>
+				</div>
+
+
+			</div>
+		</div>
+	</content>
+	<footer class="controller">
+		<div id="sec-footer" class="sector">
 			<div class="footer-links">
-				<a href="#terms">이용약관</a>
-				<a href="#privacy">개인정보처리방침</a>
-				<a href="#exchange">교환/반품 안내</a>
-				<a href="#faq">자주 묻는 질문</a>
+				<a href="#terms">이용약관</a> |
+				<a href="#privacy">개인정보처리방침</a> |
+				<a href="#exchange">교환/반품 안내</a> |
+				<a href="#faq">자주 묻는 질문</a> |
 				<a href="#contact">1:1 문의</a>
 			</div>
-			</div>
-
 			<div class="company-info">
 				<p>
-					<span class="company-name">상호: 주식회사 보따리</span> | 
-					<span class="company-name">대표: 김보따리</span> | 
-					<span>사업자등록번호: 123-45-67890</span> | 
+					<span class="company-name">상호: 주식회사 보따리</span> |
+					<span class="company-name">대표: 김보따리</span> |
+					<span>사업자등록번호: 123-45-67890</span> |
 					<span>통신판매업신고: 제2025-서울강동-0001</span>
 				</p>
 				<p class="contact-info">
-					주소: 서울특별시 강동구 천호대로 1027, 5층 | 
+					주소: 서울특별시 강동구 천호대로 1027, 5층 |
 					고객센터: 02-1234-5678
 				</p>
 				<p class="contact-info">
 					운영시간: 평일 10:00 ~ 18:00 (점심시간 12:00~13:00)
 				</p>
 			</div>
-			
+
 			<div class="copyright">
 				<p>© 2025 bottari.com. All rights reserved.</p>
 			</div>
 		</div>
 	</footer>
 </body>
+
 </html>

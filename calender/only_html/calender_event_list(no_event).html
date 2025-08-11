@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css" />
     <!-- 난 외부링크 못 믿겠다! 하시는 분은 CDN을 삭제 or 주석처리 후 아래의 css링크 주석 해제 후 사용할것 -->
     <!-- <link rel="stylesheet" href="../Global_css/reset.css"> -->
-    <link rel="stylesheet" href="../../Global_css/Global.css">     <!-- 본인 파일의 경로에 맞게 수정해야함 -->
+    <link rel="stylesheet" href="../../Global_css/Global.css"> <!-- 본인 파일의 경로에 맞게 수정해야함 -->
     <link rel="stylesheet" href="../css/calender_stylesheet.css">
 </head>
 
@@ -38,11 +38,42 @@
                     <img class="dummy-calender" src="../dummy_calender.JPG">
                 </div>
                 <div class="right-main content-height">
-                    <div class="no-event">
-                        <img class="icon-calender" src="../../asset/icon-calendar-exclamation.svg" />
-                        <div class="explain-text">등록된 기념일이 없어요</div>
-                        <button class="btn-add-event">기념일 등록하기</button>
+                    <div class="event-detail">
+                        <div class="date-and-btn-edit">
+                            <div class="selected-date">selected-date</div>
+                            <div class="edit-btn-box">
+                                <img class="popup-icon" src="../../asset/icon-add.svg">
+                                <img class="popup-icon" src="../../asset/icon-menu-dots.svg">
+                            </div>
+                        </div>
+                        <div class="selected-event">
+                            <img class="event-icon" src="../../asset/icon-cake-birthday.svg">
+                            <div class="event-title-detail">
+                                <div class="event-title">내 생일</div>
+                                <div class="event-explain">내 생일이다. 친구들과 함께 생일 파티를 즐길 것이다</div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="celebrate-card">
+                        <div class="celebrate-title">내가 만든 초대장</div>
+                        <img class="celebrate-card-img" src="../../asset/35d848a665f27f3c75f0e8234f7f69ce.jpg">
+                        <div class="celebrate-guestcard">내 생일이다 머리를 조아려라</div>
+                        <div class="show-detail">자세히보기></div>
+                    </div>
+                    <div class="funding-goods">
+                        <div class="fundeing-title"></div>
+                        <div class="funding-list">
+                            <img class="list-img" src="">
+                            <div class="goods-detail-box">
+                                <div class="brand">맥(MAC)</div>
+                                <div class="goods-title">“단하루 루비우 증정” [단독/각인] 맥 BEST...</div>
+                                <div class="goods-price">38,000원</div>
+                            </div>
+                        </div>
+                        <div class="show-all"></div>
+                    </div>
+                    <div class="ad-banner"></div>
+                    <div class="history-gift"></div>
                 </div>
             </div>
 
@@ -53,10 +84,10 @@
     <footer class="controller">
         <div id="sec-footer" class="sector">
             <div class="footer-links">
-                <a href="#terms">이용약관</a>  |
+                <a href="#terms">이용약관</a> |
                 <a href="#privacy">개인정보처리방침</a> |
-                <a href="#exchange">교환/반품 안내</a>  |
-                <a href="#faq">자주 묻는 질문</a>   |
+                <a href="#exchange">교환/반품 안내</a> |
+                <a href="#faq">자주 묻는 질문</a> |
                 <a href="#contact">1:1 문의</a>
             </div>
             <div class="company-info">

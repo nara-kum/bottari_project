@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+.right-main{
+    width: 530px;
+    height: auto;    
+}
+
+.sec-sub-title {  /*My위시리스트, 마이펀딩, 친구펀딩 */
+  display: flex;        /* 플렉스 박스 설정 */
+  align-items: center;  /* 세로 방향 중앙 정렬 */
+  gap: 20px;             /* h2와 ul 사이 간격 */
+}
+
+/* My위시리스트 */
+.sec-sub-title .header-sub {  
+  display: flex;       /* li들을 가로로 배치 */
+  list-style: none;    /* 점 없애기 */
+  margin: 0;
+  padding: 30px 0px 10px 0px;
+  color: #dddddd;
+}
+
+/* 친구 펀딩, 마이 펀딩 */
+.sec-sub-title ul {  
+  display: flex;       /* li들을 가로로 배치 */
+  gap: 10px;           /* li 사이 간격 */
+  list-style: none;    /* 점 없애기 */
+  margin: 0;
+  padding: 30px 0px 10px 0px;
+}
+
+/* 친구 펀딩, 마이 펀딩 */
+.sec-sub-title ul li {
+  width: 90px;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: flex-end;  /* ← 하단 정렬로 변경 */
+}
+
+#sec-content .friend-fun{
+    color: #dddddd;
+}
+
+/* ==== 작성 화면 요소 ==== */
+.sub-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+  /* border-radius: 10px;  모서리를 둥글게   */
+  /* gap: 20px;             h2와 ul 사이 간격 */
+
+.product-checkbox {
+    /* 필요 시 크기 조절 */
+    width: 18px;
+    height: 18px;
+}
+
+/* 선택 사항: 텍스트 크기 조정 */
+.buy, .product-name, .price {
+    font-size: 14px;
+    white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;  /* 세로 방향으로 배치 */
+    align-items: flex-start; /* 왼쪽 정렬 (필요 시) */
+    gap: 4px; /* 줄 간 간격 조절 */
+}
+
+.card-box {
+  width: 1046px;  
+  background: #fcfcfc;
+  border-radius: 12px;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; /* ← 가로(x) → 세로 방향 정렬로 변경 */
+  gap: 12px;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.card-box.ab {
+  margin-bottom: 20px;
+  /* 메인 이미지와 디자인 박스 사이 간격과 동일하게 */
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.content {
+    flex-direction: column;
+    gap: 16px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 60px 0;  
+}
+
+.content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 20px 0;
+}
+
+
+.sec-content-main{
+    width: 1280px;
+    height: 900px;
+    justify-content: space-around;
+}
+
+.sec-content-main .product-header{
+    height: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* 엄마 생신 오른쪽 끝 펀딩 진행중 */
+.product-header.right-side{
+    justify-content: flex-end;
+}
+
+.sec-content-main .product-header .sub-title{
+    height: 18px;
+}
+
+.sec-content-main .product-header.funding-ing{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.product-body{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.product-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-body.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-body .right-ing-bar{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-brand {
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
