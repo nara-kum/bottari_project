@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* global.css 변형 */
+.sec-content-main {
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* 필터링 박스 */
+.filter-area {
+    width: 1280px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.icon-small {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    display: block;
+}
+
+.filter-period {
+    appearance: none;       /* 브라우저 기본 스타일 제거 */
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.search-name {
+    appearance: none;
+    width: 120px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.filter-category {
+    appearance: none;
+    width: 52px;
+    background-color: #F9F7F4;
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+
+.more-detail {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+/* 날짜별 구매내역 */
+
+.purchase-by-date {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+.purchase-by-date .date {
+    width: 1200px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.goods-list {
+    width: 1160px;
+    height: 100px;
+    background-color: #F9F7F4;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin-top: 30px;
+}
+
+.goods-list .left-side {
+    display: flex;
+}
+
+.goods-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.main-info .brand,
+.main-info .goods-title {
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
+.main-info .goods-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 36px;
+    margin-left: 10px;
+}
+
+.other-info {
+    font-size: 12px;
+    color: #9d9d9d;
+}
