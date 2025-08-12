@@ -3,6 +3,10 @@
 
 /* 전체 설정 */
 
+html {
+    overflow-y: scroll;
+}
+
 body {
     font-family: 'inter';
 }
