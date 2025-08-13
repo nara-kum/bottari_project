@@ -61,7 +61,7 @@
 
 .funding-list .box {
     width: 1070px;
-    height: 90px;
+    height: 80px;
     border: 1px solid #7777774b;
     border-radius: 5px;
     margin-left: 100px;
@@ -72,10 +72,10 @@
     width: 1000px;
     height: 25px;
     border: 1px solid #7777774b;
-    border-radius: 5px;
-    margin-top: 40px;
+    border-radius: 10px;
+    margin-top: 25px;
     margin-left: 30px;
-    padding: 5px 0px 0px 10px;
+    padding-top: 5px;
     align-items: center;    
     display: flex;
     justify-content: flex-end;    
@@ -88,7 +88,7 @@
 .funding-list .text-search .image-search {
     width: 20px;
     height: 20px;
-    padding: 0px 10px 5px 400px;
+    padding: 0px 10px 5px 820px;
 }
 
 .funding-list .wrap{
@@ -102,7 +102,7 @@ ul {
     display: flex;    /* ul 내부 li를 가로 정렬 */
     gap: 10px;    /* li 사이 간격 */
     list-style: none;    /* 점 없애기 */
-    margin-top: 30px;
+    margin-top: 70px;
     border-bottom: 1px solid #7777774b;    
 }
 
