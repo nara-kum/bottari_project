@@ -1,9 +1,18 @@
 @charset "UTF-8";
 
-.right-main{
-    width: 530px;
-    text-align: start; /* <select>와 <button> 모두 start 정렬 */
+#sec-content .friend-fun, #sec-content .my-fun{
+    font-weight: bold;
+    color: #dddddd;
+    height: 60px;
+    display: flex;
+    margin-top: 25px;
 }
+
+.right-main{
+    width: 500px;
+    text-align: start; /* <select>와 <button> 모두 start 정렬 */
+    border-left:1px solid #ddd ;
+}    
 
 .sec-content-main {
     justify-content: space-between; /* 선택 사항 (공간 조절용) */
@@ -38,26 +47,20 @@
   border-radius: 10px;  /* 모서리를 둥글게 */  
 }
 
-/*  select id="funding-table"   */
-.family .right-main #funding-table{
-    margin-top: 50px ;
+#sec-content .left-main{
+    width: 750px;
+    height: auto;
 }
 
-.right-main{
-    border-left:1px solid #ddd ;
-}
-
-.sec-content-main .left-main .top-text, .sec-content-main .right-main .top-text{
+.sec-content-main .left-main .top-text{
     font-weight: bold;
     font-size: 18px;
     margin-top: 10px;
 }
 
-.sec-content-main .right-main .top-text{
-    margin-left: 10px;
-}
-
 .image-row {
+    width: 15px;
+    height: auto;
     display: flex;
     align-items: center; /* 세로 가운데 정렬 */
     gap: 8px; /* 체크박스와 이미지 사이 여백 */
@@ -75,19 +78,11 @@
     white-space: nowrap; /* 줄바꿈 방지 */
 }
 
-.product-info {
+.left-main .product-info {
     display: flex;
     flex-direction: column;  /* 세로 방향으로 배치 */
     align-items: flex-start; /* 왼쪽 정렬 (필요 시) */
     gap: 4px; /* 줄 간 간격 조절 */
-}
-
-.funding-controls {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    margin-left: 20px;
 }
 
 .product-checkbox{
@@ -95,9 +90,19 @@
     height: 13px;
 }
 
-#sec-content .left-main{
-    width: 750px;
-    height: auto;
+
+
+
+
+
+
+/* 오른쪽 배치 */
+.funding-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 8px; */
+    margin-left: 10px;
 }
 
 .right-main>input[type="radio"]{
@@ -105,32 +110,75 @@
   margin-right: 10px;
 }  
 
-.rdo-opro-end-all.form-group>input[type="radio"]{
-    margin-right: 10px;
+.sec-content-main .right-main .top-text{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;    
+    margin-left: 10px;
 }
 
-.form-group-1>input[type="radio"]{
-    margin-right: 10px;
-}
-
-.funding-controls .form-group2 .right-choice-product{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.btn-funding1{
+.btn-funding1 {
+    background-color: #EF5124;  /* 배경색 */
+    color: white;               /* 글자색 */
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 13px;            /* 글자 크기 줄임 */
+    padding: 6px 12px;          /* 내부 여백 축소 */
+    margin-left: auto;          /* 오른쪽 정렬 */
+    margin-top: 170px;           /* 여백 줄임 */
+    margin-bottom: 0px;
+    display: block;             /* margin 적용을 위해 block 처리 */
+    cursor: pointer;
+    justify-content: end;
+}
+
+.right-product-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 좌측 정렬 */
+  margin-bottom: 20px; /* 상품 간 여백 */
+}
+
+.right-product-box .right-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right-product-box .form-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+/*  select id="funding-table"   */
+.right-main #funding-table{
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* 항목 사이 간격 조절 */
+  margin-bottom: 10px; /* 아래 여백 */
+}
+
+.form-group span {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* 오른쪽 상품이미지 */
+.right-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.right-image .product-info{
     font-size: 14px;
-    margin-left: 480px;
-    margin-top: 150px;        
+    justify-content: flex-start;
 }
-
-#sec-content .friend-fun, #sec-content .my-fun{
-    font-weight: bold;
-    color: #dddddd;
-    height: 60px;
-    display: flex;
-    margin-top: 25px;
-}
-
