@@ -121,9 +121,8 @@ ul li{
 .box-dn{
     width: 680px;
     height: auto;
-    margin-top: 90px;
     margin-left: 270px;
-    padding: 50px 300px;
+    padding: 10px 300px 50px 300px;
 }
 
 .box-dn .none-fund{
@@ -138,3 +137,9 @@ ul li{
     border: white;
 }
 
+.icon-down img{
+    width: 105px;
+    height: 90px;
+    padding-top: 100px;
+    padding-left: 580px;
+}
