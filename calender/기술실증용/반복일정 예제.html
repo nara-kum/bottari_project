@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullCalendar RRule 반복 일정</title>
+    
+    <!-- FullCalendar CSS -->
+    <link href="../full_calender/main.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .form-section {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        
+        .form-group {
+            flex: 1;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .calendar-section {
+            padding: 20px;
+        }
+        
+        #calendar {
+            margin-top: 20px;
+        }
+        
+        .preset-buttons {
+            margin-top: 15px;
+        }
+        
+        .preset-btn {
+            background: #28a745;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        
+        .preset-btn:hover {
+            background: #218838;
+        }
+        
+        .event-info {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 반복 일정 관리</h1>
+            <p>FullCalendar RRule을 이용한 반복 일정 등록</p>
+        </div>
+        
+        <div class="form-section">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="eventTitle">일정 제목</label>
+                    <input type="text" id="eventTitle" placeholder="일정 제목을 입력하세요" value="반복 일정 예시">
+                </div>
+                <div class="form-group">
+                    <label for="startDate">시작 날짜</label>
+                    <input type="date" id="startDate">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="frequency">반복 주기</label>
+                    <select id="frequency">
+                        <option value="DAILY">매일</option>
+                        <option value="WEEKLY" selected>매주</option>
+                        <option value="MONTHLY">매월</option>
+                        <option value="YEARLY">매년</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interval">간격</label>
+                    <input type="number" id="interval" value="1" min="1" placeholder="예: 2 (격주)">
+                </div>
+                <div class="form-group">
+                    <label for="count">반복 횟수 (선택사항)</label>
+                    <input type="number" id="count" min="1" placeholder="예: 10 (10번 반복)">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="endDate">종료 날짜 (선택사항)</label>
+                    <input type="date" id="endDate">
+                </div>
+                <div class="form-group">
+                    <label for="eventColor">일정 색상</label>
+                    <input type="color" id="eventColor" value="#667eea">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <button onclick="addRecurringEvent()">반복 일정 추가</button>
+                <button onclick="clearEvents()" style="background: #dc3545;">모든 일정 삭제</button>
+            </div>
+            
+            <div class="preset-buttons">
+                <button class="preset-btn" onclick="addPresetEvent('매일')">매일 반복 예시</button>
+                <button class="preset-btn" onclick="addPresetEvent('매주')">매주 반복 예시</button>
+                <button class="preset-btn" onclick="addPresetEvent('매월')">매월 반복 예시</button>
+                <button class="preset-btn" onclick="addPresetEvent('평일')">평일만 반복 예시</button>
+            </div>
+            
+            <div class="event-info">
+                <strong>💡 사용법:</strong>
+                <ul>
+                    <li>시작 날짜, 반복 주기, 간격을 설정하여 반복 일정을 만들 수 있습니다</li>
+                    <li>반복 횟수나 종료 날짜로 반복을 제한할 수 있습니다</li>
+                    <li>프리셋 버튼으로 빠르게 예시 일정을 추가해보세요</li>
+                    <li>캘린더의 일정을 클릭하면 삭제할 수 있습니다</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="calendar-section">
+            <div id="calendar"></div>
+        </div>
+    </div>
+
+    <!-- RRule 라이브러리 먼저 로드 -->
+    <script src='https://cdn.jsdelivr.net/npm/rrule@2.6.4/dist/es5/rrule.min.js'></script>
+    <!-- FullCalendar JS -->
+    <script src='../full_calender/main.js'></script>
+    <!-- FullCalendar RRule 플러그인 -->
+   <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/rrule@6.1.19/index.global.min.js'></script>
+
+    <script>
+        let calendar;
+        let eventId = 1;
+
+        // 페이지 로드 시 오늘 날짜로 초기화
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('startDate').value = today;
+            
+            // 캘린더 초기화
+            const calendarEl = document.getElementById('calendar');
+            calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                locale: 'ko',
+                height: 600,
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,listWeek'
+                },
+                events: [],
+                eventClick: function(info) {
+                    if (confirm('이 일정을 삭제하시겠습니까?')) {
+                        info.event.remove();
+                    }
+                },
+                eventDisplay: 'block',
+                dayMaxEvents: true
+            });
+            
+            calendar.render();
+            
+            // 예시 일정 추가
+            addPresetEvent('매주');
+        });
+
+        function addRecurringEvent() {
+            const title = document.getElementById('eventTitle').value;
+            const startDate = document.getElementById('startDate').value;
+            const frequency = document.getElementById('frequency').value;
+            const interval = parseInt(document.getElementById('interval').value) || 1;
+            const count = parseInt(document.getElementById('count').value);
+            const endDate = document.getElementById('endDate').value;
+            const color = document.getElementById('eventColor').value;
+
+            if (!title || !startDate) {
+                alert('일정 제목과 시작 날짜를 입력해주세요.');
+                return;
+            }
+
+            // RRule 설정
+            let rruleConfig = {
+                freq: rrule.RRule.DAILY,
+                interval: interval,
+                dtstart: new Date(startDate)
+            };
+
+            // 주기별로 설정
+            switch(frequency) {
+                case 'DAILY':
+                    rruleConfig.freq = rrule.RRule.DAILY;
+                    break;
+                case 'WEEKLY':
+                    rruleConfig.freq = rrule.RRule.WEEKLY;
+                    break;
+                case 'MONTHLY':
+                    rruleConfig.freq = rrule.RRule.MONTHLY;
+                    break;
+                case 'YEARLY':
+                    rruleConfig.freq = rrule.RRule.YEARLY;
+                    break;
+            }
+
+            // 반복 횟수나 종료 날짜 설정
+            if (count) {
+                rruleConfig.count = count;
+            } else if (endDate) {
+                rruleConfig.until = new Date(endDate);
+            }
+
+            // 평일만 반복하는 경우 (WEEKLY + 평일 설정)
+            if (frequency === 'WEEKLY' && title.includes('평일')) {
+                rruleConfig.byweekday = [
+                    rrule.RRule.MO, 
+                    rrule.RRule.TU, 
+                    rrule.RRule.WE, 
+                    rrule.RRule.TH, 
+                    rrule.RRule.FR
+                ];
+            }
+
+            const rule = new rrule.RRule(rruleConfig);
+
+            // 캘린더에 이벤트 추가
+            calendar.addEvent({
+                id: 'recurring-' + eventId++,
+                title: title,
+                rrule: rule.toString(),
+                color: color,
+                allDay: true
+            });
+
+            console.log('생성된 RRule:', rule.toString());
+            console.log('예상 날짜들:', rule.all().slice(0, 10)); // 처음 10개 날짜만 출력
+        }
+
+        function addPresetEvent(type) {
+            const today = new Date().toISOString().split('T')[0];
+            
+            switch(type) {
+                case '매일':
+                    document.getElementById('eventTitle').value = '매일 반복 일정';
+                    document.getElementById('frequency').value = 'DAILY';
+                    document.getElementById('interval').value = '1';
+                    document.getElementById('count').value = '7'; // 7일간
+                    document.getElementById('eventColor').value = '#28a745';
+                    break;
+                    
+                case '매주':
+                    document.getElementById('eventTitle').value = '주간 회의';
+                    document.getElementById('frequency').value = 'WEEKLY';
+                    document.getElementById('interval').value = '1';
+                    document.getElementById('count').value = '8'; // 8주간
+                    document.getElementById('eventColor').value = '#007bff';
+                    break;
+                    
+                case '매월':
+                    document.getElementById('eventTitle').value = '월례 보고';
+                    document.getElementById('frequency').value = 'MONTHLY';
+                    document.getElementById('interval').value = '1';
+                    document.getElementById('count').value = '6'; // 6개월간
+                    document.getElementById('eventColor').value = '#6f42c1';
+                    break;
+                    
+                case '평일':
+                    document.getElementById('eventTitle').value = '평일 출근';
+                    document.getElementById('frequency').value = 'WEEKLY';
+                    document.getElementById('interval').value = '1';
+                    document.getElementById('count').value = '20'; // 20회 (4주간)
+                    document.getElementById('eventColor').value = '#fd7e14';
+                    break;
+            }
+            
+            document.getElementById('startDate').value = today;
+            addRecurringEvent();
+        }
+
+        function clearEvents() {
+            if (confirm('모든 일정을 삭제하시겠습니까?')) {
+                calendar.removeAllEvents();
+            }
+        }
+    </script>
+</body>
+</html>
