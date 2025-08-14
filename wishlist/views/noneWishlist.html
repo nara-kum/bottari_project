@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../Global_css/reset.css">    
-    <link rel="stylesheet" href="../../Global_css/Global.css" />
-    <link rel="stylesheet" href="../assets/css/noneWishlist.css" />
-    <title>비어있는 wishlist</title>
+    <link rel="stylesheet" href="../../Global_css/reset.css">
+    <link rel="stylesheet" href="../../Global_css/Global.css">
+    <link rel="stylesheet" href="../assets/css/nonewish.css">
+    <title>비어있는 위시리스트</title>
     <style>
 
 
@@ -40,71 +40,49 @@
     <content class="controller">
         <div id="sec-content" class="sector">
             <div class="sec-sub-title">
-                <h2 class="header-sub"><a href="">위시리스트</a></h2>
+                <h2 class="header-sub"><a href="">펀딩 관리</a></h2>
+                <h2 class="funding">
+                    <div class="my-fun"><a href="">마이 펀딩</a></div>
+                    <div class="friend-fun"><a href="">친구 펀딩</a></div>
+                </h2>
             </div>
 
             <div class="sec-content-main">
 
                 <div class="left-main content-height">
-                    <div class="left-icon">
-                        <img src="../assets/images/image/icon-box-open-empty.jpg" alt="비어있는 위시리스트 상자">
-                    </div>
-                    <div class="left-box-down">
-                        <div>위시리스트가 비었어요</div>
-                        <button>위시리스트 등록</button>
+
+                    <h2 class="top-text">위시리스트</h2>
+                    <div>
+                        <img src="../assets/images/image/icon-box-open-empty.jpg" alt="비어있는 위시리스트"></img>
                     </div>
 
-                </div> <!-- "left-main content-height" -->
+                    <div class="none-wish">
+                        <div class="text-wish">위시리스트가 비었어요</div>
+                        <a href=""><button>위시리스트 등록</button></a>
+                    </div>
+
+
+                </div> <!-- <div class="left-main content-height"> -->
 
                 <div class="right-main content-height">
-                </div>
-
-            </div> <!--sec-content-main-->
-
-            <div class="funding-list">
-                <div class="funding-history">
-                    <h2>펀딩내역</h2>
-                </div>
-                <div class="box">
-                    <div>
-                        <div class="text-search">
-                            <div>검색어를 입력하세요</div>
-
-                            <!-- image-search -->
-                            <a href="">
-                                <img src="../assets/images/image/icon-search.jpg" alt="검색.svg" class="image-search">
-                            </a>
-                            <!-- image-search -->
-                        </div>
-
+                    <h2 class="top-text">선택한 펀딩</h2>
+                    <div class="funding-controls">
+                        <select id="funding-table">
+                            <option value="">-- 기념일 선택 --</option>
+                            <option value="a">7월 11일 어머니 환갑잔치</option>
+                            <option value="b">7월 16일 ○○○생일</option>
+                            <option value="c">7월 27일 내 생일</option>
+                            <option value="d">8월 4일 결혼 기념일</option>
+                            <option value="e">8월 8일 돌잔치</option>
+                            <option value="f">9월 5일 쫑파티</option>
+                        </select>
                     </div>
 
+                    <button class="btn-funding1" type="submit">펀딩시작하기</button>
                 </div>
-                <div class="wrap">
-                    <div class="myfun-down">
-                        <ul>
-                            <li>
-                                <a href="my-fun">마이 펀딩</a>
-                            </li>
-                            <li class="friend-fun">
-                                <a href="">친구 펀딩</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="icon-down">
-                        <img src="../assets/images/image/icon-box-open-empty.jpg" alt="비어있는 위시리스트 상자">
-                    </div>
-                    <div class="box-dn">
-                        <div class="none-fund">펀딩내역이 없습니다</div>
-                        <button>펀딩하러 가기</button>
-                    </div>
+            </div> <!-- right-main content-height -->
 
-                </div>
-
-            </div>
-
-
-        </div>
+        </div> <!--sec-content-main-->
 
         </div>
     </content>
