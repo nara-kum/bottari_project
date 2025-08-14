@@ -84,6 +84,20 @@ input[type="text"], select {
   color: white;
 }
 
+
+.add-logo {
+	width: 16px;
+	height: 16px;
+}
+
+
+.add-logo2 {
+	width: 16px;
+	height: 16px;
+	margin-top: 10px;	
+}
+
+
 .option-row {
   display: flex;
   gap: 10px;

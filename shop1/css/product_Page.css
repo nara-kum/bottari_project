@@ -11,6 +11,7 @@ body {
 	overflow-x: hidden;
 }
 
+
 /* 메인 컨텐츠 */
 .main-container {
 	width: 1280px;
@@ -143,7 +144,7 @@ body {
 
 .quantity-input {
 	text-align: center;
-	width: 60px;
+	width: 180px;
 	padding: 8px;
 	border: 1px solid #ddd;
 	border-radius: 4px;
@@ -159,9 +160,7 @@ body {
 }
 
 .total-order{
-	margin: 120px 0px 0px 0px;
-
-
+	margin: 200px 0px 0px 0px;
 }
 
 
