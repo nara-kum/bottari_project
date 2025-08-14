@@ -4,8 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../../Global_css/reset.css">
-	<link rel="stylesheet" href="../../Global_css/Global.css"> <!-- 본인 파일의 경로에 맞게 수정해야함 -->
-	<link rel="stylesheet" href="../css/product_Update_style.css">
+	<link rel="stylesheet" href="../../Global_css/Global.css"> 
+	<link rel="stylesheet" href="../css/product_Update.css">
 </head>
 
 <body class="family">
@@ -64,14 +64,21 @@
 
 				<!-- 옵션 -->
 				<section class="section">
-					<label>옵션 설정</label>
+					<label>옵션 설정
+						<a href=""><img class="add-logo" src="../../asset/icon-add.svg"></a>
+					</label>
+					
 					<div class="option-row">
-						<input type="text" placeholder="옵션명 입력 (예: 컬러)">
-						<select>
-							<option>하늘</option>
-							<option>보라</option>
-							<option>연두</option>
-						</select>
+						<!-- <select>
+							<option>옵션을 선택해주세요.</option>
+							<option>컬러</option>
+							<option>사이즈</option>
+							<option>맛</option>
+							<option>케이크호수</option>
+						</select> -->
+						<input type="text" placeholder="옵션타이틀 입력 (예: 컬러)">
+						<input type="text" placeholder="옵션 입력 (예: 하늘)">
+							<a href=""><img class="add-logo2" src="../../asset/icon-add.svg"></a>
 					</div>
 				</section>
 
@@ -88,7 +95,7 @@
 				<section class="section">
 					<label>상세 설명</label>
 					<div class="description-box">
-						<div class="upload-check">✔ 작성할 내용을 입력하세요.</div>
+						<div class="upload-check">✔ 사진을 등록하세요.</div>
 						<button class="upload-btn">등록하기</button>
 					</div>
 				</section>
