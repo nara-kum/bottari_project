@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel="stylesheet" href="../full_calender/main.css">
+    <script src='../full_calender/main.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/rrule/2.7.2/rrule.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar-rrule/6.1.8/index.global.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.12/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.12/sweetalert2.min.css">
+  </head>
+  <body>
+    <div id='calendar'></div>
+
+    <script>
+    	document.addEventListener('DOMContentLoaded', function() {
+        	var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                // Tool Bar 목록 document : https://fullcalendar.io/docs/toolbar
+                headerToolbar: {
+                    left: 'prevYear,prev,today',
+                    center: 'title',
+                    right: 'next,nextYear'
+                },
+
+                //타이틀 포맷 변경
+                titleFormat: {
+                    year: 'numeric',
+                    month: 'short'
+                },
+
+                selectable: true,
+                selectMirror: true,
+
+                navLinks: true, // can click day/week names to navigate views
+                editable: true,
+                // Create new event
+                select: function (arg) {
+                    Swal.fire({
+                        html: `
+                            <div class='mb-7'>Create new event</div>
+                            <div class='fw-bold mb-5'>Event Name:</div>
+                            <input type='text' class='form-control' id='event_name' placeholder='이벤트 이름을 입력하세요' />
+                            <div class='fw-bold mb-5'>반복 설정:</div>
+                            <select class='form-control' id='repeat_type'>
+                                <option value='none'>반복 없음</option>
+                                <option value='daily'>매일</option>
+                                <option value='weekly'>매주</option>
+                                <option value='monthly'>매월</option>
+                                <option value='yearly'>매년</option>
+                                <option value='custom'>사용자 정의</option>
+                            </select>
+                            <div id='custom_rrule' style='display:none; margin-top:10px;'>
+                                <div class='fw-bold mb-5'>RRULE:</div>
+                                <input type='text' class='form-control' id='rrule_input' placeholder='FREQ=WEEKLY;BYDAY=MO,WE,FR' />
+                                <small>예: FREQ=WEEKLY;BYDAY=MO,WE,FR (매주 월,수,금)</small>
+                            </div>
+                        `,
+                        icon: "info",
+                        showCancelButton: true,
+                        confirmButtonText: "생성",
+                        cancelButtonText: "취소",
+                        preConfirm: () => {
+                            const title = document.getElementById('event_name').value;
+                            const repeatType = document.getElementById('repeat_type').value;
+                            const customRrule = document.getElementById('rrule_input').value;
+                            
+                            if (!title) {
+                                Swal.showValidationMessage('이벤트 이름을 입력해주세요');
+                                return false;
+                            }
+                            
+                            return { title, repeatType, customRrule };
+                        }
+                    }).then(function (result) {
+                        if (result.isConfirmed) {
+                            const { title, repeatType, customRrule } = result.value;
+                            
+                            let eventData = {
+                                title: title,
+                                start: arg.start,
+                                end: arg.end,
+                                allDay: arg.allDay
+                            };
+
+                            // RRULE 설정
+                            if (repeatType !== 'none') {
+                                let rruleString = '';
+                                
+                                switch (repeatType) {
+                                    case 'daily':
+                                        rruleString = 'FREQ=DAILY;COUNT=30'; // 30일간 반복
+                                        break;
+                                    case 'weekly':
+                                        rruleString = 'FREQ=WEEKLY;COUNT=12'; // 12주간 반복
+                                        break;
+                                    case 'monthly':
+                                        rruleString = 'FREQ=MONTHLY;COUNT=12'; // 12개월간 반복
+                                        break;
+                                    case 'yearly':
+                                        rruleString = 'FREQ=YEARLY;COUNT=5'; // 5년간 반복
+                                        break;
+                                    case 'custom':
+                                        rruleString = customRrule;
+                                        break;
+                                }
+                                
+                                if (rruleString) {
+                                    eventData.rrule = rruleString;
+                                    eventData.className = 'recurring-event';
+                                }
+                            }
+                            
+                            calendar.addEvent(eventData);
+                            calendar.unselect();
+                        }
+                    });
+                },
+
+                // Delete event
+                eventClick: function (arg) {
+                    Swal.fire({
+                        text: "Are you sure you want to delete this event?",
+                        icon: "warning",
+                        showCancelButton: true,
+                        buttonsStyling: false,
+                        confirmButtonText: "Yes, delete it!",
+                        cancelButtonText: "No, return",
+                        customClass: {
+                            confirmButton: "btn btn-primary",
+                            cancelButton: "btn btn-active-light"
+                        }
+                    }).then(function (result) {
+                        if (result.value) {
+                            arg.event.remove()
+                        } else if (result.dismiss === "cancel") {
+                            Swal.fire({
+                                text: "Event was not deleted!.",
+                                icon: "error",
+                                buttonsStyling: false,
+                                confirmButtonText: "Ok, got it!",
+                                customClass: {
+                                    confirmButton: "btn btn-primary",
+                                }
+                            });
+                        }
+                    });
+                },
+
+                // Click date
+                eventClick: function(arg){
+                    console.log('이벤트 클릭 감지');
+
+
+                },
+                
+                dayMaxEvents: true, // allow "more" link when too many events
+                // 이벤트 객체 필드 document : https://fullcalendar.io/docs/event-object
+                events: [
+                ]
+            });
+
+            calendar.render();
+        });
+
+    </script>
+출처: https://kyurasi.tistory.com/entry/달력-뷰-만들기-fullcalendar-사용하기-일정-달력-만들기-캘린더-만들기 [Junmannn의 Archive:티스토리]
+  </body>
+</html>
