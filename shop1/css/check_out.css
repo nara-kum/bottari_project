@@ -39,3 +39,12 @@
     display: block;
     margin-left: auto;
 }
+
+.detail-list {
+    
+    padding: 5px 0px;
+}
+
+.row-flex-box.detail-list {
+    border-bottom: 1px solid #9d9d9d;
+}
