@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8' />
+    <link href='../full_calender/main.css' rel='stylesheet' />
+    <script src='../full_calender/main.js'></script>
+    <!-- SweetAlert2 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div id='calendar'></div>
+    <div id="event-info" style="position:fixed; top:20px; right:20px; display:none; background:#fff; border:1px solid #ccc; padding:16px; border-radius:8px; min-width:200px;"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let lastClickTime = 0;
+            let lastClickedDate = null;
+            let selectedEventId = null; // 삭제할 이벤트 추적용
+
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                headerToolbar: {
+                    left: 'prevYear,prev, today',
+                    center: 'title',
+                    right: 'next,nextYear'
+                },
+                titleFormat: {
+                    year: 'numeric',
+                    month: 'short'
+                },
+                selectable: false, // 날짜 드래그(범위 선택) 비활성화
+                selectMirror: true,
+                navLinks: false,
+                editable: true,
+                dateClick: function (info) {
+                    // 날짜 클릭 시 정보창 숨김
+                    document.getElementById('event-info').style.display = 'none';
+                    document.getElementById('event-info').innerHTML = '';
+                    lastClickedDate = info.dateStr;
+                    lastClickTime = new Date().getTime();
+                },
+                eventClick: function (arg) {
+                    showEventInfo(arg.event);
+                },
+                dayMaxEvents: true,
+                events: [
+                    {
+                        id: '1',
+                        title: '임시 이벤트',
+                        start: '2025-08-15'
+                    },
+                    
+                    {
+                        id: '2',
+                        title: '회의',
+                        start: '2025-08-15'
+                    },
+
+                    { id: '4',
+                        title: '프로젝트 마감',
+                        start: '2025-08-15'
+                    },
+
+                    {
+                        id: '3',
+                        title: '미팅',
+                        start: '2025-08-20'
+                    }
+                ]
+            });
+
+            calendar.render();
+
+            // 이벤트 정보 우측에 출력 + 생성/삭제 버튼
+            function showEventInfo(event) {
+                const eventInfoDiv = document.getElementById('event-info');
+                selectedEventId = event.id;
+                let html = `<h2>이벤트 정보</h2>
+                            <strong>${event.title}</strong><br>
+                            <span style="font-size:12px;color:#888;">${event.startStr}</span><br><br>
+                            <button id="create-event-btn" style="padding:6px 12px; background:#3498db; color:#fff; border:none; border-radius:4px; cursor:pointer; margin-right:8px;">이벤트 생성</button>
+                            <button id="delete-event-btn" style="padding:6px 12px; background:#e74c3c; color:#fff; border:none; border-radius:4px; cursor:pointer;">삭제</button>`;
+                eventInfoDiv.innerHTML = html;
+                eventInfoDiv.style.display = 'block';
+
+                // 생성 버튼 이벤트 등록
+                document.getElementById('create-event-btn').onclick = function () {
+                    openScheduleModal(event.startStr.split('T')[0]);
+                };
+
+                // 삭제 버튼 이벤트 등록
+                document.getElementById('delete-event-btn').onclick = function () {
+                    deleteSelectedEvent();
+                };
+            }
+
+            // 삭제 함수
+            function deleteSelectedEvent() {
+                if (!selectedEventId) return;
+                const event = calendar.getEventById(selectedEventId);
+                if (event) {
+                    Swal.fire({
+                        text: "이 이벤트를 삭제하시겠습니까?",
+                        icon: "warning",
+                        showCancelButton: true,
+                        buttonsStyling: false,
+                        confirmButtonText: "네, 삭제합니다!",
+                        cancelButtonText: "아니오",
+                        customClass: {
+                            confirmButton: "btn btn-primary",
+                            cancelButton: "btn btn-active-light"
+                        }
+                    }).then(function (result) {
+                        if (result.value) {
+                            event.remove();
+                            document.getElementById('event-info').style.display = 'none';
+                            document.getElementById('event-info').innerHTML = '';
+                            selectedEventId = null;
+                        }
+                    });
+                }
+            }
+
+            // 일정 추가 팝업 함수(구현 필요)
+            function openScheduleModal(dateStr) {
+                alert(dateStr + " 일정 추가 팝업을 구현하세요.");
+            }
+        });
+    </script>
+</body>
+
+</html>
